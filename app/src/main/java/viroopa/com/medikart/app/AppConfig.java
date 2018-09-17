@@ -1,7 +1,7 @@
 package viroopa.com.medikart.app;
 
 public class AppConfig {
-//Waseem coomit
+//Waseem commited for test 3
     public static final String IMAGE_DIRECTORY_NAME = "Medikart";
 
     //public static String URL_IPADDRESS = "http://198.50.198.184:86";
