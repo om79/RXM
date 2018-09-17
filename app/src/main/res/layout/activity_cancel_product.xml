@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+
+    tools:context="com.viroopa.Buying.CancelProduct">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/medi_sali"
+        android:background="@drawable/white_bg_border"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Order No : "
+            android:padding="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignRight="@+id/txt_product_name"
+            android:layout_alignEnd="@+id/txt_product_name"
+            android:id="@+id/txt_order_no"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/txt_order_no"
+            android:text="154654648"
+            android:padding="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/order_no"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Order Date : "
+            android:padding="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignRight="@+id/txt_product_name"
+            android:layout_alignEnd="@+id/txt_product_name"
+            android:id="@+id/txt_order_date"
+            android:layout_below="@+id/txt_order_no"
+            android:layout_height="wrap_content"
+
+
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/txt_order_date"
+            android:text="154654648"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/txt_order_no"
+            android:padding="5dp"
+            android:id="@+id/order_date"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="product Name : "
+            android:padding="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/txt_product_name"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_order_date"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/txt_product_name"
+            android:text="154654648"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/order_date"
+            android:padding="5dp"
+            android:id="@+id/product_name"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Dosage form : "
+            android:padding="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignRight="@+id/txt_product_name"
+            android:layout_alignEnd="@+id/txt_product_name"
+            android:id="@+id/txt_dosage_form"
+            android:layout_below="@+id/product_name"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignWithParentIfMissing="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/txt_dosage_form"
+            android:text="154654648"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/product_name"
+            android:padding="5dp"
+            android:id="@+id/dosage_form"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Invoice No : "
+            android:padding="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/txt_invoice_no"
+            android:layout_below="@+id/dosage_form"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txt_product_name"
+            android:layout_alignEnd="@+id/txt_product_name"
+            android:layout_alignWithParentIfMissing="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/txt_invoice_no"
+            android:text="154654648"
+            fontPath="Lato-Regular.ttf"
+            android:layout_below="@+id/dosage_form"
+            android:textColor="@color/colorPrimary"
+            android:padding="5dp"
+            android:id="@+id/invoice_no"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Order value : "
+            android:padding="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/txt_order_amount"
+            android:layout_below="@+id/invoice_no"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txt_product_name"
+            android:layout_alignEnd="@+id/txt_product_name"
+            android:layout_alignWithParentIfMissing="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/txt_order_amount"
+            android:text="154654648"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/invoice_no"
+            android:padding="5dp"
+            android:id="@+id/order_amount"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/txt_cancel_reason"
+        android:background="@drawable/drpdwn"
+        android:textColor="#08446a"
+        android:padding="10dp"
+        android:hint="Select Reason"
+        android:layout_marginBottom="5dp"
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_marginTop="10dp"
+        android:drawableEnd="@drawable/drop_down" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txt_Comments"
+        android:background="@drawable/drpdwn"
+        android:textColor="#08446a"
+        android:padding="10dp"
+        android:hint="Remarks"
+        android:layout_marginBottom="5dp"
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btncancel_product"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:text="Cancel Order"
+            android:background="@drawable/orgbtn"
+            android:textColor="@android:color/white"
+            android:layout_weight=".5"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginRight="5dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="false"
+            android:layout_weight=".5"
+            android:text="Back"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:background="@drawable/orgbtn"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

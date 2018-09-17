@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="#08446a"
+    android:shape="rectangle">
+
+    <!-- view background color -->
+    <gradient
+        android:startColor="@color/btncolor_orange"
+        android:endColor="#e47926"
+        android:angle="90"/>
+
+    <!-- view border color and width -->
+    <stroke
+        android:width="0dp"
+        android:color="@color/gray" >
+    </stroke>
+
+    <!-- If you want to add some padding-->
+    <padding
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp"    >
+    </padding>
+
+    <!-- Here is the corner radius -->
+    <corners
+        android:radius="45dp" >
+    </corners>
+
+
+
+
+</shape>

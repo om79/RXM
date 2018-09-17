@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/a">
+
+    <!--<TextView
+        android:id="@+id/txt_srno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:text = "Sr No "
+        tools:Text ="Product Title"
+        android:layout_alignBottom="@+id/txt_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+
+    <TextView
+        android:id="@+id/txt_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_one"
+        android:text = "Size"
+        tools:Text =""
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignTop="@+id/txt_price"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <!-- customername -->
+   <!-- <TextView
+        android:id="@+id/txt_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "size"
+        android:textSize="@dimen/rating"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/txt_price"
+        android:layout_toStartOf="@+id/txt_price"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="15dp" />-->
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "txt_price"
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_one"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btnaddtocart"
+        android:layout_toStartOf="@+id/btnaddtocart"
+        android:layout_marginRight="105dp"
+        android:layout_marginEnd="65dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnaddtocart"
+        android:src="@drawable/newcart"
+        android:layout_gravity="right"
+        android:adjustViewBounds="false"
+        android:padding="8dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>

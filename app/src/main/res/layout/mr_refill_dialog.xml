@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+
+            android:text="Refill Reminder"
+            fontPath="Roboto-Bold.ttf"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/lnr_pack_size"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Packsize :          "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_refill_packsize"
+            android:text="15"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:gravity="center"
+        android:id="@+id/txt_select_qty"
+        android:text="Select Quantity :            "
+        android:layout_height="wrap_content" />
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/lnr_qty"
+        >
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+
+            android:text=" - "
+            android:background="@drawable/ligh_blue_border"
+            android:id="@+id/btnminus"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/Qty"
+            fontPath="Lato-Regular.ttf"
+            android:gravity="center"
+            android:background="@drawable/textbox_border_light_black_white_background"
+            android:textColor="@color/btncolor_orange"
+            android:text=" 1"
+
+            android:textSize="@dimen/custom_font_Level_two" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text=" + "
+            android:background="@drawable/ligh_blue_border"
+            android:padding="2dp"
+            android:id="@+id/btnplus"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:gravity="center"
+        android:id="@+id/txt_refill_text"
+        android:text="Enter Number of Units Purchased :"
+        android:layout_height="wrap_content" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:hint="Enter total units"
+        android:padding="10dp"
+        android:id="@+id/edt_total_units"
+
+        android:background="@drawable/sky_blue_border"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/refill_units"
+        android:text="Ml"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Refill Reminder"
+           android:padding="5dp"
+            android:id="@+id/btn_ok"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="@drawable/orgbtn"
+            android:textColor="@color/white"
+
+            android:layout_margin="3dp" />
+
+</LinearLayout>

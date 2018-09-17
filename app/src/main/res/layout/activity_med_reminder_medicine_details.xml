@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/med_img"
+        android:animateLayoutChanges="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/lnrmain"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+
+        android:src="@drawable/mark"
+        android:visibility="invisible"
+        android:layout_below="@+id/lnrmain"
+        android:layout_toLeftOf="@+id/med_heading"
+        android:layout_toStartOf="@+id/med_heading" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Medicine"
+        android:layout_marginTop="10dp"
+        android:id="@+id/med_heading"
+        android:layout_toRightOf="@+id/med_img"
+        android:layout_below="@+id/lnrmain"
+        android:textColor="#df6301"
+        android:textSize="@dimen/custom_font_Level_four" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:layout_below="@+id/med_heading"
+        android:layout_toRightOf="@+id/med_img"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Medicine"
+        android:id="@+id/txtmedname"
+        android:textSize="@dimen/custom_font_Level_two" />
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/bell_orange"
+        android:id="@+id/img_second"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/med_img"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Reminders"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/med_img"
+        android:layout_toRightOf="@+id/img_second"
+        android:id="@+id/reminder_heading"
+        android:textColor="#df6301"
+        android:textSize="@dimen/custom_font_Level_four"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Next Reminder : "
+        android:id="@+id/txtnextreminder"
+        android:layout_toRightOf="@+id/img_second"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_below="@+id/reminder_heading"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Last Taken : "
+        android:id="@+id/txtlasttaken"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_toRightOf="@+id/img_second"
+        android:layout_below="@+id/txtnextreminder"
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/add_user_orange"
+        android:id="@+id/img_third"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txtlasttaken"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_title"
+        android:layout_toRightOf="@+id/img_third"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pill Buddy"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtlasttaken"
+        android:textColor="#df6301"
+        android:textSize="@dimen/custom_font_Level_four" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_third"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Not Synced Yet"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:layout_below="@+id/friend_title"
+        android:id="@+id/txtMedfriends"
+        android:textSize="@dimen/custom_font_Level_two" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/add_doctor_orange"
+        android:id="@+id/img_forth"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txtMedfriends"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Doctor"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/img_forth"
+        android:id="@+id/doctor_heading"
+        android:layout_below="@+id/txtMedfriends"
+        android:textColor="#df6301"
+        android:textSize="@dimen/custom_font_Level_four" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_forth"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:layout_below="@+id/doctor_heading"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="No Doctor was set"
+        android:id="@+id/txtdoctor"
+        android:textSize="@dimen/custom_font_Level_two" />
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/clock_orange"
+        android:id="@+id/img_fifth"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txtdoctor"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_toRightOf="@+id/img_fifth"
+        android:text="Refill"
+        android:id="@+id/refil_heading"
+        android:layout_below="@+id/txtdoctor"
+        android:textColor="#df6301"
+        android:textSize="@dimen/custom_font_Level_four"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_toRightOf="@+id/img_fifth"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refil_heading"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="No refill was set"
+        android:id="@+id/txtRefill"
+        android:textSize="@dimen/custom_font_Level_two" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home_icon" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/lnrmain"
+        android:animateLayoutChanges="true"
+        android:background="@color/orange"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/btntake"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".3"
+            android:text="Take"
+            android:textAllCaps="false"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            />
+
+        <View
+
+            android:layout_width="0px"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight=".005"
+            android:background="@color/white"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btnsuspend"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".3"
+            android:textAllCaps="false"
+            android:layout_toRightOf="@+id/btntake"
+            android:text="Suspend"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            />
+
+
+        <View
+            android:layout_width="0px"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight=".005"
+            android:background="@color/white"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btnrefill"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".3"
+            android:textAllCaps="false"
+            android:layout_toRightOf="@+id/btnsuspend"
+            android:text="Refill"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

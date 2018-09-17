@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp"
+   >
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="TextView"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:textSize="@dimen/custom_font_Level_one"
+        fontPath="Lato-Regular.ttf"
+
+
+       />
+
+    <TextView
+        android:id="@+id/textViewItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="TextView"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:textSize="@dimen/custom_font_Level_two"
+        fontPath="Lato-Regular.ttf"
+
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray" />
+
+</LinearLayout>

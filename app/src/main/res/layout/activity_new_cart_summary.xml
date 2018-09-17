@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:binding="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_frame"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+   >
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/scroll"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_above="@+id/bottom_relative"
+    android:animationCache="false"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/sky_blue"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:id="@+id/view2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/firstid"
+                    android:layout_alignStart="@+id/firstid" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstid"
+                    android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/s_medicine_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableBottom="@drawable/orangecircle"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/view2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="60dp"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_medicine_txt"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:text="   Select Medicines"
+                android:padding="4dp"
+
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:id="@+id/view" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/secondid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/firstid"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/orangecircle"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/view2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        fontPath="Lato-Regular.ttf"
+                        android:textSize="@dimen/custom_font_Level_two"
+                        android:textColor="@color/gray"
+                        android:gravity="center_vertical"
+                        android:text="   Upload Prescription"
+                        android:padding="4dp"
+
+                       />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thirdid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/secondid"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/orangecircle"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/view2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/gray"
+                        android:gravity="center_vertical"
+                        android:text="Shipping Address"
+                        android:padding="4dp"
+                        fontPath="Lato-Regular.ttf"
+                        android:textSize="@dimen/custom_font_Level_two"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forthdid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/thirdid"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableBottom="@drawable/orangecircle"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/view2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/gray"
+                        android:gravity="center_vertical"
+                        android:text="Confirmation"
+                        android:padding="4dp"
+                        fontPath="Lato-Regular.ttf"
+                        android:textSize="@dimen/custom_font_Level_two"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/line"
+                android:background="@color/sky_blue"
+                android:layout_below="@+id/thumbnail">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lin2"
+
+                  android:layout_marginTop="20dp"
+                    android:height="1dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    fontPath="Roboto-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_two"
+                    android:background="#a0afc9"
+                    android:alpha=".5" />
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/img"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="0.25"
+                        android:paddingBottom="2dp"
+                        android:layout_height="65dp">
+
+                        <ImageView
+                            android:id="@+id/txtStatus"
+                            android:layout_marginTop="13dp"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/fill_circle_orange"
+                            />
+                        <TextView
+                            android:id="@+id/txtStatus1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_gravity="center"
+                            android:text="     Select Medicines"
+                            fontPath="Roboto-Regular.ttf"
+                            android:textSize="@dimen/custom_font_Level_four"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="0.25"
+
+                        android:paddingBottom="2dp"
+                        android:layout_height="65dp">
+
+
+                        <ImageView
+                            android:id="@+id/txt0Status"
+                            android:layout_width="15dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            fontPath="Roboto-Regular.ttf"
+                            android:src="@drawable/fill_circle_grey"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/txt0Status2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="Roboto-Regular.ttf"
+                            android:padding="2dp"
+                            android:gravity="center"
+                            android:textSize="@dimen/custom_font_Level_four"
+                            android:text="Upload Prescription"
+
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="0.25"
+                        android:paddingBottom="2dp"
+                        android:layout_height="65dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/fill_circle_grey"
+                            android:id="@+id/txt1Status"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/txt0Status3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="Roboto-Regular.ttf"
+                            android:textSize="@dimen/custom_font_Level_four"
+                            android:text="    Shipping Address"
+                            android:padding="2dp"
+                            android:layout_gravity="center"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="0.25"
+
+                        android:paddingBottom="2dp"
+                        android:layout_height="65dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/fill_circle_grey"
+                            android:id="@+id/txt2Status"
+                            android:gravity="center_horizontal" />
+
+
+                        <TextView
+                            android:id="@+id/txt0Status4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="Roboto-Regular.ttf"
+                            android:padding="2dp"
+                            android:textSize="@dimen/custom_font_Level_four"
+                            android:text="Confirmation"
+                            android:layout_gravity="center"
+                            android:drawablePadding="5dp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <ListView
+                android:id="@+id/list_cart"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:divider="#e7e7e7"
+                android:dividerHeight="1px"
+                android:listSelector="@drawable/list_row_selector"
+                android:choiceMode="singleChoice"
+                tools:Text ="Prescrption lists"
+                >
+            </ListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note :"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    binding:customFont="Roboto-regular.ttf"
+                  android:textColor="@color/btncolor_orange"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView76" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/medicine_detail_first_msg"
+                    android:textColor="@color/rx_medikart_small_text_half_dark"
+                    fontPath="Roboto-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="30dp"
+                    android:layout_toRightOf="@+id/textView76"
+
+                    android:id="@+id/textView75"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+                <CheckBox
+                    android:id="@+id/chkisemergency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView75"
+                    android:text="Emergency?"
+                    fontPath="Roboto-Bold.ttf"
+                    android:textSize="@dimen/custom_font_Level_two"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="(Note:Emergency delivery will be charged additional RS.99.)"
+                    android:id="@+id/textView69"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="2dp"
+                    android:layout_below="@+id/chkisemergency"
+                    android:layout_alignParentBottom="true"
+                     />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Please select date and time for Emergency Delivery"
+                    android:id="@+id/txtemergenctDate"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/chkisemergency"
+                    android:visibility="gone"
+                    android:layout_marginLeft="30dp"
+                    android:paddingBottom="5dp"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+
+               />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_marginLeft="10dp"
+                android:text="Price Summary"
+                android:textStyle="bold"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                 />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/list_divider">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_dscrptn"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_vertical"
+                    android:text="Description"
+                    android:layout_weight="0.6"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_vertical"
+                    android:text="Amount"
+                    android:layout_weight="0.4"
+                    android:id="@+id/textView51"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txt_dscrptn"
+                    android:layout_toEndOf="@+id/txt_dscrptn"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_pricelist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                tools:Text ="Prescrption lists"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+            </ListView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/promo_text_background"
+                android:id="@+id/promocode_open"
+                android:layout_marginLeft="20dp"
+                android:text="Have a Promo Code?"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_marginRight="5dp"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="right" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/rlt"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight=".4"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_price_heading"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/custom_font_Level_two"
+                    fontPath="Roboto-Regular.ttf"
+                    android:text = "Total Price : "
+                    tools:Text ="Order No"
+                    android:layout_weight=".3"
+                    android:textColor="@color/btncolor_orange"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text = "Rs.54.00"
+                    fontPath="Roboto-Bold.ttf"
+                    tools:Text ="Product Title"
+
+                    android:textSize="@dimen/custom_font_Level_one"
+                    android:textColor="@color/btncolor_orange"
+                    android:layout_weight=".3"
+                    android:layout_marginRight="10dp"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/btncolor_orange"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="20dp"
+        android:id="@+id/bottom_relative"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/txt_Next_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Next"
+            android:textAllCaps="true"
+            tools:Text ="Product Title"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+
+            android:textColor="@color/white"
+             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+
+
+            android:layout_toLeftOf="@+id/btnNext"
+            android:layout_toStartOf="@+id/btnNext" />
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/right_arrow_white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/promo_layout"
+        android:visibility="gone"
+       >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight=".35"
+            android:background="@color/btncolor_orange"
+            android:paddingRight="5dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_name"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:layout_marginTop="10dp"
+                android:text="Add Promo Code"
+                android:layout_marginLeft="10dp"
+
+                android:textColor="@color/white"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:id="@+id/btnPromcode"
+                android:background="@color/colorPrimary"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two" />
+
+        </LinearLayout>
+
+
+
+
+      <!--  <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go ahead!"
+            android:id="@+id/btnprocess"
+            android:background="@drawable/orgbtn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/redo"
+            android:paddingLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:drawablePadding="10dp" />-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_below="@+id/promo_layout"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_Next"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Next"
+            android:layout_marginRight="5dp"
+            tools:Text ="Product Title"
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:layout_toLeftOf="@+id/btnprocess"
+            android:layout_toStartOf="@+id/btnprocess"
+            android:textColor="@color/colorPrimary"
+         />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/bottom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text = "Upload Prescription"
+            tools:Text ="Order No"
+            android:layout_marginRight="5dp"
+
+            android:textColor="@color/btncolor_orange"
+            android:layout_centerVertical="true"
+            fontPath="Roboto-regular.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:layout_below="@+id/txt_Next"
+            android:layout_toLeftOf="@+id/btnprocess"
+            android:layout_toStartOf="@+id/btnprocess" />
+
+        <ImageView
+            android:id="@+id/btnprocess"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/right_arrow_forword"
+            android:layout_alignTop="@+id/txt_Next"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

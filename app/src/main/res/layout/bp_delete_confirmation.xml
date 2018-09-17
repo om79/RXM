@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/lnrfirst"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:text="Delete"
+            fontPath="Roboto-Bold.ttf"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Are you sure?"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:drawablePadding="5dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/linearSec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="20dp">
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentLeft="false"
+        android:layout_gravity="center_horizontal"
+        android:text="Delete"
+        android:drawableLeft="@drawable/delete_white"
+        android:background="@drawable/orgbtn"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="25dp" />
+        </LinearLayout>
+</LinearLayout>

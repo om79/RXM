@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sky_blue"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:text="Details"
+            android:id="@+id/textView"
+            android:textAllCaps="true"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:background="@drawable/close"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glucose :"
+            android:id="@+id/textView74"
+            android:padding="10dp"
+            android:textColor="#070224"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_above="@+id/textView75"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category :"
+            android:id="@+id/textView75"
+            android:padding="10dp"
+            android:textColor="#070224"
+            android:layout_alignTop="@+id/txtCategory"
+            android:layout_alignRight="@+id/textView76"
+            android:layout_alignEnd="@+id/textView76" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time :"
+            android:id="@+id/textView76"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textColor="#070224"
+            android:layout_below="@+id/textView75"
+            android:layout_alignRight="@+id/textView74"
+            android:layout_alignEnd="@+id/textView74" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtCategory"
+            android:layout_below="@+id/txtglucose"
+            android:layout_alignLeft="@+id/txtglucose"
+            android:layout_alignStart="@+id/txtglucose"
+            android:padding="10dp"
+            android:textColor="#070224" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtglucose"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView74"
+            android:layout_toEndOf="@+id/textView74"
+            android:layout_marginLeft="54dp"
+            android:layout_marginStart="54dp"
+            android:padding="10dp"
+            android:textColor="#070224" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtdmdate"
+            android:layout_below="@+id/txttime"
+            android:layout_alignLeft="@+id/txttime"
+            android:layout_alignStart="@+id/txttime"
+            android:padding="10dp"
+            android:textColor="#070224" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of DM :"
+            android:id="@+id/textView80"
+            android:padding="10dp"
+            android:textColor="#070224"
+            android:layout_below="@+id/txttime"
+            android:layout_alignRight="@+id/textView76"
+            android:layout_alignEnd="@+id/textView76" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txttime"
+            android:layout_below="@+id/txtCategory"
+            android:layout_alignLeft="@+id/txtCategory"
+            android:layout_alignStart="@+id/txtCategory"
+            android:padding="10dp"
+            android:textColor="#070224" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments :"
+            android:id="@+id/textView77"
+            android:padding="10dp"
+            android:textColor="#070224"
+
+            android:layout_alignTop="@+id/txtcomment"
+            android:layout_alignRight="@+id/textView80"
+            android:layout_alignEnd="@+id/textView80" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtcomment"
+            android:padding="10dp"
+            android:textColor="#070224"
+            android:layout_below="@+id/txtdmdate"
+            android:layout_alignLeft="@+id/txtdmdate"
+            android:layout_alignStart="@+id/txtdmdate" />
+        TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtdateofbirth"
+            android:layout_below="@+id/txtdmdate"
+            android:layout_alignLeft="@+id/txtdmdate"
+            android:layout_alignStart="@+id/txtdmdate"
+            android:padding="10dp"
+            android:textColor="#070224" />
+
+
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearSec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="50dp">
+
+
+        <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Edit"
+        android:background="@drawable/orgbtn"
+        android:textColor="@android:color/white"
+        android:layout_weight=".5"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".5"
+        android:text="Delete"
+        android:background="@drawable/orgbtn"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="5dp" />
+        </LinearLayout>
+</LinearLayout>

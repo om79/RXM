@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg"
+    android:layout_height="fill_parent"
+    tools:ignore="MissingPrefix" >
+
+
+    <LinearLayout
+        android:id="@+id/lnrhead"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Blood Sugar and weight in this entry"
+            android:id="@+id/txtheader"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+
+            android:textColor="#fff"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrbsheader"
+        android:layout_below="@+id/lnrhead"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Sugar Entry"
+            android:id="@+id/txtddsf"
+            android:layout_marginTop="@dimen/space_between_two_control"
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/colorAccent"
+            android:inputType="number"
+            />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext"
+        android:padding="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtGlucose"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:drawableLeft="@drawable/bloodsugar_blue"
+            android:layout_gravity="center_vertical"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:hint="Add Current Reading"
+            android:text=""
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/txtGlucoseUnit"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            style="@style/style_double_textview_with_arrow"
+            android:text=""
+            android:padding="8dp"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/custom_font_Level_one"
+            />
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtSelectedInjsite"
+            android:layout_marginTop="@dimen/space_between_two_control"
+            android:layout_margin="4dp"
+            style="@style/style_textview_with_arrow"
+            fontPath="Roboto-Regular.ttf"
+            android:padding="8dp"
+            android:drawablePadding="15dp"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:drawableLeft="@drawable/blue_injection"
+            android:hint="Injection Site"
+            android:text=""
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight Reading"
+            android:id="@+id/txtddsf1"
+            android:layout_marginTop="@dimen/space_between_two_control"
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/colorAccent"
+            android:inputType="number"
+
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext"
+            android:padding="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TextView
+                android:id="@+id/txtWeight"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:drawableLeft="@drawable/blue_weight"
+                android:layout_gravity="center_vertical"
+                 android:layout_height="40dp"
+                android:padding="8dp"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:hint="Add Current Weight"
+                android:text=""
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+                />
+
+
+            <View
+                android:layout_width="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/txtWeightUnit"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                style="@style/style_double_textview_with_arrow"
+                android:text="Kg"
+                android:padding="8dp"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/custom_font_Level_one"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Others"
+            android:id="@+id/txtother"
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/space_between_two_control"
+            android:inputType="number"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="@dimen/space_between_two_control"
+            android:layout_height="wrap_content"
+
+
+            >
+
+            <TextView
+                android:id="@+id/txtDate"
+                fontPath="Roboto-Regular.ttf"
+                android:drawablePadding="15dp"
+                android:layout_margin="0dp"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                style="@style/style_textview_with_arrow"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/blue_calendar"
+                android:hint="Add Date"
+                android:text=""
+                android:layout_weight="0.5" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/txtTime"
+                fontPath="Roboto-Regular.ttf"
+                android:drawablePadding="10dp"
+                android:layout_margin="0dp"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                style="@style/style_textview_with_arrow"
+                android:drawableLeft="@drawable/blue_time"
+                android:hint="Add Time"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+
+       <!-- <TextView
+            android:id="@+id/txtdmdate_NotUsed"
+            android:padding="10dp"
+            fontPath="Roboto-Regular.ttf"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:background="@drawable/edittext"
+            style="@style/style_edittext"
+            android:drawableLeft="@drawable/calendar_blue"
+            android:text="Add Date and Time"
+            android:visibility="gone"
+            />-->
+
+        <Spinner
+            android:id="@+id/spnrCategory"
+            style="@style/style_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight=".5"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <EditText
+            android:id="@+id/edtNote"
+            style="@style/style_edittext"
+            android:layout_marginBottom="@dimen/space_between_two_control"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/space_between_two_control"
+            tools:text=""
+            android:textSize="@dimen/custom_font_Level_one"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            fontPath="Roboto-Regular.ttf"
+            android:drawableLeft="@drawable/blue_pencil"
+            android:drawablePadding="15dp"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Notes"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrbutton"
+        android:layout_below="@+id/lnrbsheader"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/space_between_two_control"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/space_between_two_control"
+        >
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rect"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="50dp"
+            app:rv_type="rectangle"
+            android:padding="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            app:rv_zoom="true">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/navybluebtn"
+                android:drawableLeft="@drawable/delete_white"
+                android:elevation="20dp"
+                android:text="Clear"
+                android:textColor="@color/white"
+                android:textSize="@dimen/custom_font_Level_two"/>
+
+        </com.andexert.library.RippleView>
+
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rect2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="50dp"
+            app:rv_type="rectangle"
+            android:padding="2dp"
+            android:layout_weight="1"
+            app:rv_zoom="true">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/orgbtn"
+                android:drawableLeft="@drawable/save_white_icon"
+                android:elevation="20dp"
+                android:text="   Save Entry  "
+                android:textColor="@color/white"
+                android:textSize="@dimen/custom_font_Level_two"/>
+        </com.andexert.library.RippleView>
+
+        <!--<Button
+               android:id="@+id/btnSave1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:drawablePadding="5dp"
+               android:background="@drawable/orgbtn"
+               android:textSize="@dimen/custom_font_Level_two"
+               android:layout_marginLeft="5dp"
+               android:layout_weight="1"
+               android:textColor="#fff"
+               android:layout_gravity="center"
+               fontPath="Roboto-Bold.ttf"
+               android:drawableLeft="@drawable/save_white_icon"
+               android:text="Save Entry"
+               />-->
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rect1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="50dp"
+            app:rv_type="rectangle"
+            android:padding="2dp"
+            android:layout_weight="1"
+            app:rv_zoom="true">
+
+            <Button
+                android:id="@+id/btnAnalysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/orgbtn"
+                android:drawableLeft="@drawable/search_white_icon"
+                android:elevation="20dp"
+                android:text="Analysis"
+                android:textColor="@color/white"
+                android:textSize="@dimen/custom_font_Level_two"/>
+
+
+        </com.andexert.library.RippleView>
+
+       <!-- <Button
+            android:id="@+id/btnAnalysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:background="@drawable/orgbtn"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            fontPath="Roboto-Bold.ttf"
+            android:drawableLeft="@drawable/search_white_icon"
+            android:text="Analysis"
+            />-->
+
+    </LinearLayout>
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:background="@color/Footer_blue"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</RelativeLayout>

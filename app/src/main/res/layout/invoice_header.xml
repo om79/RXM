@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/product_item"
+   >
+
+    <!-- Thumbnail Image-->
+    <LinearLayout android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:clickable="false"
+       android:visibility="gone"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/sky_blue"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <TextView
+            android:id="@+id/result_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "5 of 100 results"
+            tools:Text ="Product Title"
+            android:layout_weight=".3"
+            android:visibility="gone"
+            fontPath="Lato-Regular.ttf"
+            android:textColor="#484848"
+            android:layout_alignRight="@+id/group_heading"
+             />
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/main_data_layout"
+        android:layout_below="@+id/heading"
+        android:layout_height="wrap_content"
+       >
+
+        <TextView
+            android:id="@+id/group_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "Suggested Medicines"
+            tools:Text ="Product Title"
+            android:paddingTop="8dp"
+
+            android:paddingLeft="10dp"
+            android:paddingBottom="8dp"
+            android:background="@color/sky_blue"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="#0d0c0c" />
+
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/na"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignTop="@+id/productname" />
+
+    <!-- Movie productname -->
+    <TextView
+        android:id="@+id/productname"
+        android:layout_marginTop="10dp"
+         android:layout_below="@+id/group_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Product Name"
+        tools:Text ="Product Title"
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginBottom="5dp"
+        android:textColor="#ed7d13" />
+
+    <!-- Movie formName -->
+    <TextView
+        android:id="@+id/formName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/custom_font_Level_four"
+        android:text = "forms"
+        android:layout_marginBottom="5dp"
+        tools:Text ="Order No"
+        fontPath="Lato-regular.ttf"
+        android:textColor="#484848"
+        android:layout_below="@+id/productname"
+        android:layout_toRightOf="@+id/thumbnail"
+        />
+
+        <TextView
+            android:id="@+id/catalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_above="@+id/packSize"
+
+            android:text = ""
+
+            tools:Text ="Order No"
+
+            android:layout_marginLeft="3dp"
+            fontPath="Lato-regular.ttf"
+            android:textColor="@color/aluminum"
+            android:layout_below="@+id/productname"
+            android:layout_toRightOf="@+id/formName"
+            />
+
+    <!-- packSize -->
+    <TextView
+        android:id="@+id/packSize"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text = "Mfg : Glaxosmithkline"
+        fontPath="Lato-Bold.ttf"
+        android:textSize="@dimen/custom_font_Level_four"
+        android:textColor="#666"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/formName"
+        android:layout_toRightOf="@+id/thumbnail"
+        />
+
+    <!-- price -->
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Price"
+        fontPath="Lato-Regular.ttf"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+       android:layout_marginRight="10dp"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_below="@+id/productname"
+        android:layout_alignTop="@+id/formName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false" />
+
+    <!-- pincode -->
+    <TextView
+        android:id="@+id/pincode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_marginTop="1dip"
+        android:text = "Pincode"
+        android:textSize="@dimen/rating"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:visibility="gone" />
+        
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/phoneno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pincode"
+        android:layout_marginTop="1dip"
+        android:text = "Phone"
+        android:textSize="@dimen/rating"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:visibility="gone" />
+        
+    <!-- Genre -->
+    <TextView
+        android:id="@+id/orderstatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneno"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/genre"
+        android:text = "Product Gener"
+        android:textSize="@dimen/genre"
+        tools:Text ="product Gener"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:visibility="gone" />
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/space"
+            android:layout_below="@+id/productname"
+            android:layout_height="50dp" />-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/packSize"
+            android:background="@color/gray"
+            android:id="@+id/view2"
+
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Show All"
+            android:gravity="right"
+            android:layout_below="@+id/view2"
+            android:layout_width="match_parent"
+            fontPath="Lato-Regular.ttf"
+            android:id="@+id/btn_showall"
+
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/btncolor_orange"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+           />
+
+
+    <!-- Release Year -->
+
+    <!-- Release Year
+    <ImageView
+        android:id="@+id/button_popup"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_overflow"
+        android:contentDescription="@string/content_open_popup"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        />
+    -->
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:visibility="gone"
+       android:layout_below="@+id/main_data_layout"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+<!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:id="@+id/view2"
+
+            />-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

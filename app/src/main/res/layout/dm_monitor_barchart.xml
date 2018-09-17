@@ -1,0 +1,30 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="260dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/lnrrela"
+    android:layout_below="@+id/lnrmaxval"
+    android:layout_marginRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="10dp"
+        android:padding="1dp"
+        android:textSize="@dimen/custom_font_Level_four"
+        android:id="@+id/xaxis_label"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/xaxis_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     />
+
+    
+</RelativeLayout>

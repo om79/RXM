@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".buymain">
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/circlularImage"
+        android:icon="@drawable/avtar1"
+        android:orderInCategory="100"
+        android:title="profile image"
+        app:showAsAction="always|withText"
+        />
+
+</menu>
+
+
+

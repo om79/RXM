@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lnr_med_main"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+
+    <!-- Single ListItem -->
+
+    <!-- Product Name -->
+    <ImageView
+        android:layout_width="25dp"
+        android:id="@+id/med_img"
+        android:layout_gravity="center"
+        android:src="@drawable/med3_1"
+        android:layout_height="25dp" />
+
+    <TextView android:id="@+id/product_name"
+        android:text="crocin"
+        android:layout_marginLeft="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:textStyle="bold"/>
+    <!--  <View
+          android:layout_width="wrap_content"
+          android:layout_marginTop="8dp"
+          android:background="@color/gray"
+          android:layout_marginBottom="2dp"
+          android:layout_height="1px"/>-->
+
+</LinearLayout>

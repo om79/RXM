@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:background="@drawable/logo_rx"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:background="@color/sky_blue"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="About us"
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+             android:textColor="@color/colorPrimary"
+            android:id="@+id/textView9001"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:id="@+id/about_text"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="RxBuying is founded with a vision to provide everyone safe, affordable &amp; understandable healthcare and to reach a maximum number of people in order to help them in their medication needs."
+            android:id="@+id/textView2"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="At RxBuying, we strongly believe that a pharmacy should be a trustworthy healthcare partner &amp; should be “Caring beyond prescription”. With this vision and mission, we try our best to reach everyone to provide them the access to their medication in a convenient and quicker way.  "
+            android:id="@+id/textView3"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="We start with the vision of providing innovative, affordable integrated healthcare technology platform for everyone &amp; deliver genuine medicines at the lowest cost and our mission is to provide everyone with affordable, quality and understandable health care.  "
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="RxBuying is your own pharmacist as the website is maintained and run by qualified pharmacist and the delivery of your medication is all controlled by a well qualified team of pharmacist. We have robust process of order handling so that you won&apos;t face any problem regarding your order and delivery. The main aim of RxBuying is to be your one stop solution for all medicines, a place where you can know your drugs and how they work and precautions too."
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:layout_marginBottom="20dp"
+            />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="The Core Values of RxBuying are:"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                fontPath="Roboto-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+               />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="1. Patient Care: With the motto of &apos;Caring beyond prescription&apos;, We put our best efforts to serve and care for the patients in order to keep them healthy. "
+                android:layout_gravity="center_horizontal"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                 />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="2. Knowledge:  We not only deliver the medication, but we believe in letting you know the complete details of your medication and other health requisites like blood sugar record, water intake and blood pressure too. "
+                android:layout_gravity="center_horizontal"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+
+                 />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="3.  Transparency : This is what we believe in. At RxBuying, transparency with our customer is our uttermost responsibility as they are family to us. "
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+               />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="RxBuying not only focuses on mere dispensing and offering discounts, we go way beyond it in our endeavour to be a partner in your fight against the illness and treat everyone as our own family. Trust is what it takes to build the base of a family, We believe in serving you with trust and responsibility"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="We not only deliver the medication, we deliver the care, trust and love to keep you safe and healthy.   "
+                android:layout_gravity="center"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:id="@+id/DoctorShowFirst">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight=".05"
+            android:id="@+id/heading_icon"
+            android:layout_marginLeft="5dp"
+
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:gravity="left|center"
+            android:text="Select type"
+            android:id="@+id/textView"
+            fontPath="Lato-Bold.ttf"
+            android:layout_weight="0.85"
+            android:textAlignment="gravity"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            fontPath="Lato-Bold.ttf"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:layout_weight="0.025"
+            android:padding="2dp" />
+
+    </LinearLayout>
+
+    <!-- Editext for Search -->
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search products.."
+        fontPath="Lato-Bold.ttf"
+        android:layout_below="@+id/DoctorShowFirst"
+        android:inputType="text"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:theme="@style/LinearProgress"
+        android:layout_width="match_parent"
+        android:indeterminate="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_below="@+id/inputSearch"
+        android:indeterminateTint="@color/orange"
+        android:id="@+id/progressBar"
+        android:progressTint="@color/orange"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DoctorShowSecond"
+        android:layout_above="@+id/AddDoctorShowHide"
+        android:layout_below="@+id/progressBar"
+        >
+
+    <!-- List View -->
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/DoctorShowSecond"
+        android:id="@+id/addpillbuddyShowHide"
+ android:visibility="gone"
+
+        >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="8dp"
+            android:layout_height="1px"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_add_pill_buddy"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:text="AddPill Buddy"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:drawableRight="@drawable/round_plus_white"
+            android:textAllCaps="false"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="2dp"
+            android:layout_height="1px"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/addDoctorlnr"
+        android:visibility="gone"
+        android:layout_below="@+id/addpillbuddyShowHide"
+        android:orientation="vertical"
+
+
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:text="Add Doctor"
+                android:id="@+id/heding"
+                fontPath="Lato-Bold.ttf"
+                android:layout_weight="0.9"
+                android:textAlignment="gravity"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text=""
+                android:src="@drawable/white_action_cancel"
+                android:textColor="@color/white"
+                android:id="@+id/btnDoctorcancel"
+                android:layout_weight="0.1"
+                android:padding="0dp" />
+        </LinearLayout>
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imageView22"
+            android:src="@drawable/doctor_icon2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:animationCache="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                <EditText
+                    android:id="@+id/doctorname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/drpdwn"
+                    android:padding="10dp"
+                    fontPath="Lato-Bold.ttf"
+                    android:textColor="@color/colorPrimary"
+                    android:hint="Doctor Name"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:autoText="false" />
+
+                <EditText
+                    android:id="@+id/clinicname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:background="@drawable/drpdwn"
+                    android:padding="10dp"
+                    fontPath="Lato-Bold.ttf"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:autoText="false"
+                    android:hint="Clinic Name"
+                    android:layout_below="@+id/doctorname"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="20dp" />
+
+                <EditText
+                    android:id="@+id/doctor_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/drpdwn"
+                    android:padding="10dp"
+                    fontPath="Lato-Bold.ttf"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:autoText="false"
+                    android:hint="Email Id"
+                    android:layout_below="@+id/clinicname"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="20dp" />
+
+                <EditText
+                    android:id="@+id/doctor_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:background="@drawable/drpdwn"
+                    android:padding="10dp"
+                    fontPath="Lato-Bold.ttf"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:autoText="false"
+                    android:hint="Mobile Number"
+                    android:layout_below="@+id/doctor_email"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="20dp" />
+
+            </RelativeLayout>
+
+
+
+
+            <!-- Login Button -->
+
+            <!-- <RelativeLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/relativeLayout">
+
+             <android.support.v7.widget.AppCompatButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Save Doctor"
+                 android:background="@drawable/orgbtn"
+                 android:textColor="@android:color/white"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/btnLogin"
+                 android:padding="12dp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_marginLeft="60dp"
+                 android:layout_marginStart="60dp" />
+
+
+             <android.support.v7.widget.AppCompatButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Cancel"
+                 android:background="@drawable/orgbtn"
+                 android:textColor="@android:color/white"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/btncancel"
+                 android:padding="12dp"
+                 android:layout_alignParentTop="true"
+                 android:layout_toRightOf="@+id/btnLogin"
+                 android:layout_toEndOf="@+id/btnLogin"
+                 android:layout_marginLeft="28dp"
+                 android:layout_marginStart="28dp" />
+             </RelativeLayout>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="SAVE"
+                fontPath="Lato-Bold.ttf"
+                android:layout_margin="20dp"
+                android:background="@drawable/orgbtn"
+                android:textColor="@color/white"
+                android:id="@+id/btnok"
+                android:enabled="false"
+                android:textSize="16sp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        android:id="@+id/AddDoctorShowHide"
+        android:layout_alignParentBottom="true"
+
+        >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="8dp"
+            android:layout_height="1px"/>
+
+        <TextView
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            fontPath="Lato-Bold.ttf"
+            android:visibility="gone"
+            android:gravity="left|center"
+            android:text="Doctor Not in List ? +"
+            android:id="@+id/textViewExp"
+            android:textAlignment="gravity"
+            android:layout_marginLeft="10dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnExp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            fontPath="Lato-Bold.ttf"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Add New Doctor to the list"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+           android:padding="5dp"
+            android:drawableRight="@drawable/round_plus_small_white"
+            android:textAllCaps="false"
+          />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="2dp"
+            android:layout_height="1px"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/AddDoctorShowHide"
+        android:id="@+id/AddMemberShowHide"
+        android:layout_alignParentBottom="true"
+      android:visibility="gone"
+        >
+
+       <View
+           android:layout_width="wrap_content"
+           android:layout_marginTop="2dp"
+           android:background="@color/gray"
+           android:layout_marginBottom="8dp"
+           android:layout_height="1px"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnmem"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Add Member to the List"
+            android:padding="5dp"
+            fontPath="Lato-Bold.ttf"
+            android:drawableRight="@drawable/round_plus_small_white"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+          />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="2dp"
+            android:layout_height="1px"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+
+    <!-- Movie invoiceno -->
+  <!--  <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "title"
+        android:background="@color/color_primary"
+        android:textColor="@color/sky_blue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />-->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/lnrtop">
+
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Date"
+            fontPath="Roboto-Bold.ttf"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="0.13" />
+
+
+
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text ="Time"
+            fontPath="Roboto-Bold.ttf"
+            android:padding="5dp"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:gravity="center"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/bloodsugar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Blood Sugar"
+            fontPath="Roboto-Bold.ttf"
+            android:gravity="center"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.14" />
+
+
+        <TextView
+            android:id="@+id/Weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Weight"
+            android:padding="5dp"
+            android:gravity="center"
+            fontPath="Roboto-Bold.ttf"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.13" />
+
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/lnrtop"
+        android:orientation="vertical"
+        android:background="@color/sky_blue"
+        android:textColor="@color/black"
+        android:id="@+id/lnrItemDetail">
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

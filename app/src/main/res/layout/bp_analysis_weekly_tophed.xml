@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_row_selector"
+                tools:ignore="MissingPrefix">
+
+
+    <LinearLayout
+        android:id="@+id/lnrHeaderBlan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/title"
+
+        android:orientation="horizontal"
+        android:textColor="@color/black">
+
+
+        <TextView
+            android:id="@+id/txttitle"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.42"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="Title"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+
+        <TextView
+            android:id="@+id/max"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Max"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:id="@+id/min"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Min"
+
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:id="@+id/avg"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="Avg"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <ImageView
+            android:id="@+id/imgavgright"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.07"
+            android:src="@drawable/gray_down_arrows"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

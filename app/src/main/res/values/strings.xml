@@ -1,0 +1,346 @@
+<resources>
+
+    <string name="package_name">viroopa.com.medikart.</string>
+    <item name="key_product_id" type="id" />
+    <item name="key_product_qty" type="id" />
+    <item name="key_product_name" type="id" />
+    <item name="key_product_actual_id" type="id" />
+
+    <item name="key_product_snooze_count" type="id" />
+    <item name="key_product_price" type="id" />
+    <item name="key_Order_item_no" type="id" />
+    <item name="key_is_pressed" type="id" />
+    <item name="key_category_id" type="id" />
+    <item name="key_category_name" type="id" />
+    <item name="key_brand_id" type="id" />
+    <item name="key_is_pharma" type="id" />
+    <item name="key_uom" type="id" />
+    <item name="key_pack_size" type="id" />
+
+    <item name="key_view" type="id" />
+
+
+    <item name="key_adress_title" type="id" />
+    <item name="key_adress_person_name" type="id" />
+    <item name="key_adress_adress" type="id" />
+    <item name="key_adress_check" type="id" />
+    <item name="key_adress_phone" type="id" />
+    <item name="key_adress_landmark" type="id" />
+    <item name="key_adress_pincode" type="id" />
+    <item name="key_adress_district_id" type="id" />
+    <string name="title_activity_image_zoom_procduct">ImageZoomProcduct</string>
+
+
+    <item name="key_medicine_id" type="id" />
+    <item name="key_medicine_name" type="id" />
+    <item name="key_schedule_id" type="id" />
+    <item name="key_schedule_date" type="id" />
+    <item name="key_schedule_dosage" type="id" />
+    <item name="key_MemberName" type="id" />
+    <item name="key_MemberImage" type="id" />
+    <item name="key_RelationShipId" type="id" />
+
+    <item name="key_injectionsite_type" type="id" />
+    <item name="key_injectionsite_id" type="id" />
+
+    <item name="key_Member_Id" type="id" />
+    <item name="key_medicine_status" type="id" />
+    <item name="key_refill_flag" type="id" />
+
+    <item name="key_first_color_id" type="id" />
+    <item name="key_second_color_id" type="id" />
+    <item name="key_medicine_image_id" type="id" />
+    <item name="key_refill_date" type="id" />
+    <item name="key_no_reminder_flag" type="id" />
+    <item name="key_sound_uri" type="id" />
+
+
+    <string name="app_name">Rx Medikart</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_conpassword">confirm Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="hint_Lastname">Lastname</string>
+    <string name="hint_pincode">Pincode</string>
+    <string name="hint_phoneno">Phone No</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="websitename">www.medikart.com</string>
+    <string name="medicine_detail_first_msg">Please ensure that you have original prescription handy for inspection by our pharmacist who visits your place to deliver your order.In absence of original prescription, we will not be able to handover the medicines to you.</string>
+    <string name="title_checkout_msg">Order will be dispatched only once we receive the prescription also kindly keep hard copy of your prescription ready at the time of your medicine delivered as it is mandatory as per government regulation.</string>
+    <string name="systolic">120</string>
+    <string name="pulse">72</string>
+    <item name="key_order_id" type="id" />
+
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <string name="action_search">Buy/Search Medicine</string>
+
+    <string name="upload_patient_prompt">Select patient type</string>
+    <string-array name="patient_array">
+        <item>Self</item>
+        <item>Relative</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="besttime_prompt">Select patient type</string>
+    <string-array name="bestime_array">
+        <item>As soon as possible</item>
+        <item>8am - 12 Noon</item>
+        <item>12pm - 3pm</item>
+        <item>3pm - 6pm</item>
+        <item>6pm - 8pm</item>
+    </string-array>
+
+
+    <string-array name="notification_Interval_array">
+        <item>One Hour</item>
+        <item>Two Hours</item>
+        <item>Three Hours</item>
+        <item>Four Hours</item>
+    </string-array>
+
+
+    <string name="position_prompt">Select Position</string>
+    <string-array name="array_position">
+        <item>Left Arm</item>
+        <item>Right Arm</item>
+        <item>Left Wrist</item>
+        <item>Right Wrist</item>
+        <item>Left Leg</item>
+        <item>Right Leg</item>
+    </string-array>
+
+    <string-array name="array_snooze">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+
+
+    <string name="bpcondition_prompt">Select Condition</string>
+    <string-array name="array_bpcondition">
+        <item>Normal</item>
+        <item>Arrhythnia</item>
+        <item>Gestational</item>
+        <item>Hypertension</item>
+    </string-array>
+
+
+    <string-array name="array_weight_unit">
+        <item>kg</item>
+        <item>lbs</item>
+    </string-array>
+
+    <string name="positiontype_prompt">Select Position Type</string>
+    <string-array name="array_positiontype">
+        <item>Seated</item>
+        <item>Horizontal</item>
+        <item>Upright</item>
+    </string-array>
+
+    <string name="weighttype_prompt">Select Weight Type</string>
+    <string-array name="array_weighttype">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+
+    <string name="dosagetype_prompt">Select Dosage Type</string>
+    <string-array name="array_dosagetype">
+        <item>Mg</item>
+        <item>lb</item>
+    </string-array>
+
+    <string name="frequency_prompt">Select Frequency</string>
+    <string-array name="array_frequency">
+        <item>Once A Day 1-0-0</item>
+        <item>Once A Day 0-1-0</item>
+        <item>Once A Day 0-0-1</item>
+        <item>Twice daily 1-1-0</item>
+        <item>Twice daily 0-1-1</item>
+        <item>Twice daily 1-0-1</item>
+    </string-array>
+
+    <string name="condition_prompt">Select Condition</string>
+    <string-array name="array_condition">
+        <item>After Meal</item>
+        <item>Before Meal</item>
+    </string-array>
+
+    <string-array name="BPsetting_Sort">
+        <item>Oldest first</item>
+        <item>Newest First</item>
+
+    </string-array>
+
+
+    <string-array name="Activity_Level">
+        <item>Regular</item>
+        <item>Sedentary</item>
+        <item>Active</item>
+
+    </string-array>
+
+
+    <string name="BPsetting_classification">Select patient type</string>
+    <string-array name="BPsetting_classification">
+        <item>JNC7(USA,2004)</item>
+        <item>AHA(USA,2015)</item>
+        <item>ESH/ESC(EU,2013)</item>
+    </string-array>
+
+    <string-array name="array_setcycle">
+        <item>21+7</item>
+        <item>22+6</item>
+        <item>23+5</item>
+        <item>24+4</item>
+        <item>26+2</item>
+        <item>28+0</item>
+        <item>35+7</item>
+        <item>42+7</item>
+        <item>63+7</item>
+        <item>84+7</item>
+    </string-array>
+
+    <string-array name="array_setdoseunit">
+        <item>pills</item>
+        <item>cc</item>
+        <item>ml</item>
+        <item>gr</item>
+        <item>mg</item>
+        <item>drops</item>
+        <item>pieces</item>
+        <item>puffs</item>
+        <item>units</item>
+        <item>teaspoon</item>
+        <item>tablespoon</item>
+        <item>patch</item>
+        <item>mcg</item>
+        <item>iu</item>
+        <item>meq</item>
+        <item>ie</item>
+
+
+    </string-array>
+
+    <string-array name="medadd_frequency">
+        <item>SELECT FREQUENCY</item>
+        <item>ONCE a day</item>
+        <item>Twice a day</item>
+        <item>3 times a day</item>
+        <item>4 times a day</item>
+        <item>5 times a day</item>
+        <item>6 times a day</item>
+        <item>7 times a day</item>
+        <item>8 times a day</item>
+        <item>9 times a day</item>
+        <item>10 times a day</item>
+        <item>11 times a day</item>
+        <item>12 times a day</item>
+
+        <item>EVERY MONTH</item>
+        <item>EVERY TWO MONTHS</item>
+        <item>EVERY THREE MONTHS</item>
+        <item>EVERY SIX MONTHS</item>
+        <item>ONCE A WEEK</item>
+        <item>TWO TIMES A WEEK</item>
+        <item>THREE TIMES A WEEK</item>
+    </string-array>
+
+    <string-array name="addmed_condition">
+        <item>AFTER MEAL</item>
+        <item>BEFORE MEAL</item>
+        <item>AT BEDTIME</item>
+        <item>AS DIRECTED ON THE MEDICINE BOX</item>
+        <item>TWO HOURS FROM MEAL</item>
+        <item>AS REQUIRED</item>
+        <item>EVERYDAY</item>
+        <item>IMMEDIATELY</item>
+        <item>BEFORE BREAKFAST</item>
+        <item>AFTER BREAKFAST</item>
+        <item>BEFORE DINNER</item>
+        <item>AFTER DINNER</item>
+        <item>WITH MILK</item>
+        <item>SOS</item>
+
+
+    </string-array>
+
+    <string-array name="array_med_rem_days">
+        <item>every day</item>
+        <item>specific days of week</item>
+        <item>days interval</item>
+        <item>birth control cycle</item>
+
+    </string-array>
+
+    <string-array name="array_category">
+        <item>Before Food</item>
+        <item>After Food</item>
+        <item>With Food</item>
+        <item>No Food Instructions</item>
+        <item>SOS</item>
+        <!--<item>Sick</item>-->
+
+    </string-array>
+
+    <string name="title_activity_watermain">Water Monitor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_water_goal">water_goal</string>
+
+    <string-array name="array_familyrelations">
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Wife</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Self</item>
+        <item>Friend</item>
+    </string-array>
+
+    <string-array name="water_monitor_ml_l">
+        <item>ml</item>
+        <item>L</item>
+    </string-array>
+
+    <string-array name="dm_kg_lbs">
+        <item>kg</item>
+        <item>Lbs</item>
+    </string-array>
+    <string-array name="dm_Unit">
+        <item>mg/dl</item>
+        <item>mmol/l</item>
+    </string-array>
+
+
+    <string name="AMPM_prompt">Select patient type</string>
+    <string-array name="AMPM_array">
+        <item>AM/PM</item>
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+    <string name="Rs">\u20B9</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_custom_gallery">CustomGalleryActivity</string>
+    <string name="title_activity_med_reminder_medicine_add">MedReminderMedicineAdd</string>
+
+
+</resources>

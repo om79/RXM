@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            fontPath="Lato-Regular.ttf"
+
+            android:text="Add Promo Code"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have a Promo Code?"
+        android:id="@+id/textView77"
+        android:layout_marginLeft="30dp"
+        fontPath="fonts/Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/promo_input_name"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Promo Code"
+        fontPath="fonts/Lato-Regular.ttf"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/promo_text_background"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp"
+        android:singleLine="true" />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+       >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Add Promo Code"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/orgbtn"
+            android:textColor="@color/white"
+            android:id="@+id/btnApplyPromcode"
+            android:paddingLeft="20dp"
+            fontPath="fonts/Lato-Bold.ttf"
+            android:paddingRight="20dp"
+            android:textAllCaps="false"
+
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

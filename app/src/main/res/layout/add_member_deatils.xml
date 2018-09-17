@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:id="@+id/main_layout"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView android:text="Add Member"
+            android:background="@color/sky_blue"
+            android:padding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+
+            fontPath="Lato-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginBottom="10dp"/>
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/profile_pic"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:background="@drawable/friend"/>-->
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/friend"
+            android:adjustViewBounds="true"
+            android:id="@+id/profile_pic"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Click on above Picture to change your profile picture"
+            android:id="@+id/txtnote"
+
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:paddingBottom="15dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtfname"
+            android:background="@drawable/drpdwn"
+            android:padding="10dp"
+            android:hint="Full Name"
+            android:gravity="center|left"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text|textNoSuggestions"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/txtpass"
+            android:background="@drawable/drpdwn"
+            android:padding="10dp"
+            android:hint="Date of Birth"
+            android:gravity="center|left"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="8dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"  />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Gender"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp" />
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/sexgroup"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_below="@+id/self"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<android.support.v7.widget.AppCompatRadioButton-->
+                <!--android:id="@+id/btnradio1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:padding="12dp"-->
+                <!--android:text="Male"-->
+                <!--android:textColor="#08446a"-->
+                <!--android:checked="false"-->
+                <!--android:buttonTint="@color/colorAccent"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginRight="10dp" />-->
+
+            <!--<android.support.v7.widget.AppCompatRadioButton-->
+                <!--android:id="@+id/btnradio2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:textColor="#08446a"-->
+                <!--android:padding="12dp"-->
+                <!--android:buttonTint="@color/colorAccent"-->
+                <!--android:text="Female"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp" />-->
+
+        <!--</RadioGroup>-->
+        <RadioGroup
+            android:id="@+id/sexgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/self"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnmale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="12dp"
+                android:text="Male"
+                android:textColor="#08446a"
+                android:checked="false"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:buttonTint="@color/colorAccent"
+                android:layout_marginLeft="2dp" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#08446a"
+                android:padding="12dp"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:buttonTint="@color/colorAccent"
+                android:text="Female" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#08446a"
+                android:padding="12dp"
+                android:buttonTint="@color/colorAccent"
+                android:text="Other"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_weight=".33" />
+
+        </RadioGroup>
+
+        <!--<Spinner-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/drpdwn"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/spinner9"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:entries="@array/array_familyrelations"-->
+            <!--/>-->
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/drpdwn"
+            android:id="@+id/boxtextview"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Select Relation"
+            android:padding="10dp"
+            android:entries="@array/array_familyrelations"
+            android:drawableRight="@drawable/drop_down"
+            android:focusable="false"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"  />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_margin="10dp"
+            android:id="@+id/ll_image"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imgView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imgView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imgView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+            </ImageView>
+
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/linearLayout4"-->
+            <!--android:background="@color/tabbg"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:id="@+id/relativeLayout9">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/imageView8"-->
+                <!--android:src="@drawable/dp"-->
+                <!--android:layout_alignTop="@+id/imageView9"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true" />-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/imageView10"-->
+                <!--android:src="@drawable/selfie"-->
+                <!--android:layout_alignTop="@+id/imageView9"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+            <!--&lt;!&ndash; <TextView-->
+                 <!--android:layout_width="wrap_content"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--android:background="@drawable/circle"-->
+                 <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                 <!--android:text="OR"-->
+                 <!--android:textColor="@color/white"-->
+                 <!--android:padding="5dp"-->
+                 <!--android:id="@+id/textView44"-->
+                 <!--android:gravity="center_vertical|center_horizontal"-->
+                 <!--android:layout_alignBottom="@+id/imageView9"-->
+                 <!--android:layout_centerHorizontal="true"-->
+                 <!--android:layout_marginBottom="35dp" />&ndash;&gt;-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/imageView9"-->
+                <!--android:src="@drawable/uldp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="false"-->
+                <!--android:layout_margin="2dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:text="Pick A Buying Avtar"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:textColor="@color/color_primary"-->
+                <!--android:id="@+id/textView45"-->
+                <!--android:textSize="9dp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_below="@+id/imageView8"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignRight="@+id/imageView8"-->
+                <!--android:layout_alignEnd="@+id/imageView8"-->
+                <!--android:layout_marginTop="5dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:text="Pick a photo in your Gallary"-->
+                <!--android:textColor="@color/color_primary"-->
+                <!--android:id="@+id/textView46"-->
+                <!--android:textSize="9dp"-->
+                <!--android:layout_alignTop="@+id/textView45"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignLeft="@+id/imageView9"-->
+                <!--android:layout_alignStart="@+id/imageView9"-->
+                <!--android:gravity="center" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:text="take  a selfie"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:textColor="@color/color_primary"-->
+                <!--android:id="@+id/textView18"-->
+                <!--android:textSize="9dp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_alignTop="@+id/textView46"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:id="@+id/btn2"-->
+            <!--android:visibility="gone">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnbrowse"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/navybluebtn"-->
+                <!--android:padding="8dp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:drawableLeft="@drawable/serchicn"-->
+                <!--android:text="Browse to upload"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_margin="10dp" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnTake"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/navybluebtn"-->
+                <!--android:padding="8dp"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="#fff"-->
+                <!--android:drawableLeft="@drawable/camera"-->
+                <!--android:text="Take Picture"-->
+
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="10dp" />-->
+
+
+
+            <!--&lt;!&ndash;<android.support.v7.widget.AppCompatButton-->
+            <!--android:id="@+id/btnbrowse"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="Browse to upload"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/navybluebtn"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:lines="1"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_toRightOf="@+id/imageView5"-->
+            <!--android:layout_toEndOf="@+id/imageView5" />&ndash;&gt;-->
+
+        <!--</LinearLayout>-->
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout10"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Clear"
+                android:background="@drawable/orgbtn"
+                android:textColor="@color/white"
+                android:id="@+id/btnnocode"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"  />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Submit"
+                android:layout_margin="3dp"
+                android:background="@drawable/orgbtn"
+                android:textColor="@color/white"
+                android:id="@+id/btnsbmit"
+                android:layout_weight="1"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

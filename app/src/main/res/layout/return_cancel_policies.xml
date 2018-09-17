@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg2"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView25"
+                android:src="@drawable/logo_rx"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:background="@color/sky_blue"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Returns/Refunds Policy :"
+
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView901"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="At RxMedikart, we do our best to ensure that you are completely satisfied with our products. We understand that returns may be necessary in some cases. And we are happy to offer you peace of mind when you are not fully satisfied with the purchase and want to return back the products to us. You may return the ordered item(s), or any item(s) included in the order, within 5 days of your order delivery date. You may receive a full refund based on the conditions listed below:"
+            android:id="@+id/textView9002"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:layout_below="@+id/textView901" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Refunds Conditions If the Item(s) You Received :"
+            android:background="@color/sky_blue"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/textView9002"
+            fontPath="Roboto-Bold.ttf"
+            android:padding="10dp"
+            android:id="@+id/txt_rec"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_below="@+id/txt_rec"
+            android:id="@+id/txt_desc"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="is different from the ones you ordered"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+             />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="is past its expiry date"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+              />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="is a defective item"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            fontPath="Roboto-Regular.ttf"
+            android:padding="10dp"
+            android:layout_below="@+id/txt_desc"
+            android:text="Please note: RxMedikart ‘Returns Policy’ may vary depending on the specific nature of the products."
+            android:textSize="@dimen/custom_font_Level_four"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+

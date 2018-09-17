@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/relweeklydetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sky_blue"
+                tools:ignore="MissingPrefix">
+
+
+    <!-- Movie invoiceno -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="title"
+        android:textColor="@color/sky_blue"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/detailtop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.13"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/first_image_circle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/usecircle"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDate"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:text="28"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:textSize="@dimen/custom_font_Level_two"/>
+
+            <TextView
+                android:id="@+id/txtbtDate"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDate"
+                android:layout_centerHorizontal="true"
+                android:text="Mar"
+                android:layout_centerInParent="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/custom_font_Level_four"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTime"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="2"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:textSize="@dimen/custom_font_Level_two"
+
+                />
+
+            <TextView
+                android:id="@+id/txtbtTime"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="PM"
+                android:visibility="gone"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/custom_font_Level_four"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtSystolic"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.14"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="120"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:id="@+id/txtDiastolic"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="120"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+
+        <TextView
+            android:id="@+id/txtPulse"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.11"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="120"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtWeight"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="120"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+
+            <TextView
+                android:id="@+id/txtbtWeightunit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Kg"
+                android:textSize="@dimen/custom_font_Level_four"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLocation"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Right"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:textSize="@dimen/custom_font_Level_two"
+
+                />
+
+            <View
+                android:id="@+id/viewsys"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray"></View>
+
+
+            <TextView
+                android:id="@+id/txtbtPosition"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Seated"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:textSize="@dimen/custom_font_Level_two"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/heading"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:text="Set reminder time"
+            fontPath="Roboto-Bold.ttf"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/heading"
+        android:orientation="vertical"
+        android:padding="10dp"
+      >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView2"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        android:gravity="right">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="center"
+
+            android:background="@drawable/orgbtn"
+            android:textColor="@color/white"
+            android:id="@+id/btnok" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

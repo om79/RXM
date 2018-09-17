@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            fontPath="Lato-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+
+            android:text="Add Address"
+            android:id="@+id/textView_main_title"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            fontPath="fonts/Lato-Bold.ttf"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/adres_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginBottom="10dp"
+            android:hint="Address Title"
+
+            android:layout_marginTop="10dp" />
+        <EditText
+            android:id="@+id/input_person_nmae"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:hint="Name"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+        <EditText
+            android:id="@+id/input_address_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:hint="Address 1"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+        <EditText
+            android:id="@+id/input_address_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:hint="Address 2"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+        <EditText
+            android:id="@+id/edt_pincode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:hint="Pincode"
+            android:maxLength="6"
+            android:inputType="number"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="State :"
+            android:textColor="#08446a"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_state"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:hint="State"
+            android:inputType="text"
+            tools:text=""
+            android:textAllCaps="false"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginBottom="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="City :"
+            android:textColor="#08446a"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_city"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:hint="City"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginBottom="10dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <EditText
+            android:id="@+id/edt_landamrk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:hint="Landmark"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+
+
+        <EditText
+            android:id="@+id/edt_phoneno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:hint="Your Phone Number"
+            android:inputType="number"
+
+            tools:text=""
+            android:maxLength="10"
+            android:layout_marginBottom="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnok"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Add New Address"
+            android:layout_weight="1"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/orgbtn"
+            android:textColor="@android:color/white"
+            fontPath="Lato-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" />
+
+        <!-- <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="6dp"
+             android:layout_marginTop="6dp">
+
+             <EditText
+                 android:id="@+id/input_name"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="First Name"
+                 android:inputType="text"
+                 tools:text="First Name" />
+         </android.support.design.widget.TextInputLayout>
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="6dp"
+             android:layout_marginTop="6dp">
+
+             <EditText
+                 android:id="@+id/lastname"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="Last Name"
+                 android:inputType="text"
+                 tools:text="Last Name" />
+         </android.support.design.widget.TextInputLayout>
+
+
+         <android.support.v7.widget.AppCompatSpinner
+             android:id="@+id/sp_state"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:focusableInTouchMode="true"
+             tools:text=""/>
+
+         <android.support.v7.widget.AppCompatSpinner
+             android:id="@+id/sp_city"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:focusableInTouchMode="true"
+             tools:text="city data"/>
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="6dp"
+             android:layout_marginTop="6dp">
+
+             <EditText
+                 android:id="@+id/landamrk"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="landmark"
+
+                 android:inputType="text"
+                 tools:text="landmark" />
+         </android.support.design.widget.TextInputLayout>
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="6dp"
+             android:layout_marginTop="6dp">
+
+             <EditText
+                 android:id="@+id/pincode"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="pincode"
+                 android:inputType="number"
+                 tools:text="pincode" />
+         </android.support.design.widget.TextInputLayout>
+
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="6dp"
+             android:layout_marginTop="6dp">
+
+             <EditText
+                 android:id="@+id/phoneno"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="phoneno"
+                 android:inputType="number"
+                 tools:text="phoneno" />
+         </android.support.design.widget.TextInputLayout>
+
+         <android.support.v7.widget.AppCompatButton
+             android:id="@+id/btnRegister"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="24dp"
+             android:layout_marginTop="24dp"
+             android:padding="12dp"
+             android:text="Submit" />
+
+         <android.support.v7.widget.AppCompatButton
+             android:id="@+id/btnLinkToLoginScreen"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="24dp"
+             android:layout_marginTop="24dp"
+             android:padding="12dp"
+             android:text="Login"
+             android:visibility="gone" />-->
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

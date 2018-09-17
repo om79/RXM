@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/lnrLastReading"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/sky_blue"
+        android:id="@+id/lnrLastReading1"
+        >
+
+ 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:textColor="@color/colorPrimary"
+            fontPath="Roboto-Regular.ttf"
+            android:padding="5dp"
+            android:id="@+id/heading"
+            android:text="Systolic"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Bold.ttf"
+
+            android:textColor="@color/colorPrimary"
+            android:hint="124"
+            android:layout_weight=".2"
+            android:padding="8dp"
+            android:id="@+id/edtvalue"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".5"
+            android:textSize="@dimen/custom_font_Level_four"
+            fontPath="Roboto-Bold.ttf"
+            android:padding="8dp"
+            android:textColor="@color/rx_dark_green"
+            android:text="Ideal Systolic"
+            android:id="@+id/edtvalueCondi"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/img_night"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/img_afternoon"
+        android:layout_toRightOf="@id/img_night"
+        android:background="@drawable/center_afternoon" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Afternoon"
+            android:textColor="@color/colorPrimary" >
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutafternoon1"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/med_circle" />
+
+            <LinearLayout
+                android:id="@+id/Imgafternoon1"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:background="@drawable/med_circle"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:src="@drawable/med_left" />
+
+            <ImageView
+                android:id="@+id/n_Imgafternoontick1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mark"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutafternoon2"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/med_circle" />
+
+            <LinearLayout
+                android:id="@+id/Imgafternoon2"
+                android:layout_width="28dp"
+                android:orientation="horizontal"
+                android:layout_height="30dp"
+                android:background="@drawable/med_circle"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/med1_1" />
+
+            <ImageView
+                android:id="@+id/imgafternoontick2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mark"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutafternoon3"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/med_circle" />
+
+            <LinearLayout
+                android:id="@+id/imgafternoon3"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/med_circle"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/med_left" />
+
+            <ImageView
+                android:id="@+id/imgafternoontick3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mark"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutafternoon4"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/med_circle" />
+
+            <LinearLayout
+                android:id="@+id/imgafternoon4"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/med_circle"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/med5_1" />
+
+            <ImageView
+                android:id="@+id/imgafternoontick4"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mark"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutafternoon5"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/relativeLayoutafternoon7"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/med_circle" />
+
+            <LinearLayout
+                android:id="@+id/imgafternoon5"
+                android:orientation="horizontal"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:background="@drawable/med_circle"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:src="@drawable/med_right" />
+
+            <ImageView
+                android:id="@+id/imgafternoontick5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mark"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutafternoon6"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/relativeLayoutafternoon3"
+            android:layout_marginBottom="15dp"
+            android:layout_toLeftOf="@+id/relativeLayoutafternoon3" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/med_circle" />
+
+            <LinearLayout
+                android:id="@+id/imgafternoon6"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/med_circle"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/med4_1" />
+
+            <ImageView
+                android:id="@+id/imgticafternoon6"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mark"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutafternoon7"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/relativeLayoutafternoon6"
+            android:layout_toRightOf="@+id/relativeLayoutafternoon3" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/med_circle" />
+
+            <LinearLayout
+                android:id="@+id/imgafternoon7"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/med_circle"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/med3_2" />
+
+            <ImageView
+                android:id="@+id/imgtickafternoon7"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mark"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutafternoon8"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/relativeLayoutafternoon6"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:src="@drawable/med_circle" />
+
+            <LinearLayout
+                android:id="@+id/imgafternoon8"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/med_circle"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/med_left" />
+
+            <ImageView
+                android:id="@+id/imgtickafternoon8"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mark"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/afternoon_show_layout"
+            android:background="@drawable/circle_border">
+        </LinearLayout>
+        <TextView
+            android:id="@+id/afternoon_extra_medicne_count"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            fontPath="Roboto-Bold.ttf"
+            android:gravity="center"
+            android:background="@drawable/circle_2_5"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:text="1+"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

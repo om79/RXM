@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity" >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView10"
+        android:src="@drawable/next"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_toLeftOf="@+id/imageView11"
+        android:layout_toStartOf="@+id/imageView11"
+        android:layout_marginTop="42dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView11"
+        android:src="@drawable/friend"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView12"
+        android:src="@drawable/pre"
+
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_toRightOf="@+id/imageView11"
+        android:layout_toEndOf="@+id/imageView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textView47"
+        android:layout_below="@+id/imageView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:id="@+id/textView48"
+        android:layout_below="@+id/textView47"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/imageView10"
+        android:layout_alignStart="@+id/imageView10"
+        android:gravity="center"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_alignEnd="@+id/imageView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textView49"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView48"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView13"
+        android:src="@drawable/dwnarrow"
+        android:layout_below="@+id/textView49"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/btnsave"
+        android:background="@drawable/orgbtn"
+        android:textColor="#ffff"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/imageView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:id="@+id/btnemail"
+        android:background="@drawable/orgbtn"
+        android:textColor="#ffff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14dp"
+        android:layout_alignTop="@+id/btnsave"
+        android:layout_toRightOf="@+id/imageView11"
+        android:layout_toEndOf="@+id/imageView11"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

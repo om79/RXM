@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:background="@color/white"
+    android:id="@+id/medicine_item">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_weight=".2"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/medicine" />
+
+    <TextView
+        android:id="@+id/medicine_name"
+        android:layout_width="0dp"
+        android:layout_weight=".6"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:text = "Medicine Name"
+        tools:Text ="Medicine Name"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="#08446a" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight=".1"
+        android:layout_height="20dp"
+        android:id="@+id/img_clock"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/medicine_name"
+        android:src="@drawable/time_orange"
+         />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight=".1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="20dp"
+        android:src="@drawable/close_grey"
+        android:layout_toRightOf="@+id/img_clock"
+        android:id="@+id/img_delete"
+      />
+
+</LinearLayout>

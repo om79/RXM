@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix">
+
+
+    <LinearLayout
+        android:id="@+id/lnrtop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <TextView
+            android:id="@+id/Date"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Date"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"/>
+
+
+        <TextView
+            android:id="@+id/Time"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"/>
+
+        <TextView
+            android:id="@+id/Systolic"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Systolic"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"/>
+
+        <TextView
+            android:id="@+id/Diastolic"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Diastolic"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"/>
+
+
+        <TextView
+            android:id="@+id/Pulse"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Pulse"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"/>
+
+        <TextView
+            android:id="@+id/Weight"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Weight"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"/>
+
+        <LinearLayout
+            android:id="@+id/lnrbtm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnrtop"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+
+            <TextView
+                android:id="@+id/Location"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Location"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:textSize="@dimen/custom_font_Level_four"
+                />
+
+
+            <TextView
+                android:id="@+id/Position"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Position"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:textSize="@dimen/custom_font_Level_four"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnrItemDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnrtop"
+        android:background="@color/sky_blue"
+        android:orientation="vertical"
+        android:textColor="@color/black">
+    </LinearLayout>
+
+
+</RelativeLayout>

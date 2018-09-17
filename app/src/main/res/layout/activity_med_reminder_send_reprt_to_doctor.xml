@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+       android:src="@drawable/doctor_icon2"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_height="40dp"
+        android:hint="Type in an email address to send report"
+        android:layout_gravity="center"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:inputType="textWebEmailAddress"
+        fontPath="Roboto-Regular.ttf"
+        android:drawableLeft="@drawable/mail_blue"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/txt_email"
+        />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="OR"
+        android:layout_gravity="center"
+        android:textSize="@dimen/custom_font_Level_one"
+        fontPath="Roboto-Regular.ttf"
+
+        android:textColor="@color/white"
+
+        android:background="@drawable/org_circle"
+
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Choose a doctor to send the report"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:padding="10dp"
+        android:gravity="center"
+        fontPath="Roboto-Regular.ttf"
+        android:drawableLeft="@drawable/mail_blue"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawablePadding="5dp"
+        android:background="@drawable/border_rxspinner"
+        android:id="@+id/pick_doctor"
+        />
+
+    <CheckBox
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="I understand and agree to send my personnel data to the above email address and rxmedikart takes no responsibility of the data generated through this app"
+        android:textSize="@dimen/custom_font_Level_four"
+        android:id="@+id/chk_agree"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Report"
+        android:layout_margin="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_orange_curve"
+        android:textColor="@color/white"
+        android:id="@+id/btnsendreport" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Report"
+        android:layout_margin="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_orange_curve"
+        android:textColor="@color/white"
+        android:id="@+id/btnviewpdf" />
+
+
+</LinearLayout>

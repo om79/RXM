@@ -1,0 +1,343 @@
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/headinglayout"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+
+            android:text="Set Goal"
+            fontPath="Roboto-Bold.ttf"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/headinglayout"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:id="@+id/tlayoutView">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            fontPath="Roboto-Regular.ttf"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:text="Estimate the average of water your body needs"
+
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:text="Current body weight"
+        android:id="@+id/textView14"
+        fontPath="Roboto-Bold.ttf"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tlayoutView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/LinearLayout011"
+        android:layout_below="@+id/textView14"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/edittext"
+        >
+
+
+        <TextView
+            android:id="@+id/weight"
+            android:drawableLeft="@drawable/human_blue"
+            style="@style/style_double_textview_with_arrow"
+            android:gravity="center"
+
+            android:hint="Add current weight"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_width="0dp"
+            fontPath="Roboto-Regular.ttf"
+            android:textColor="#08446a"
+            android:layout_weight="0.4" />
+
+
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/Dosage_unit_selected"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:text="Kg"
+            style="@style/style_double_textview_with_arrow"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout011"
+        android:id="@+id/linearLayout7"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:text="Level of activity"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/textView114"
+            android:layout_below="@+id/LinearLayout011"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/Rdo_Grp_Activity"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/rdo_regular"
+                android:text="Regular Lifestyle"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/rdo_sedentry"
+                android:text="Sedentary Lifestyle"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/rdo_active"
+                android:text="Active Lifestyle"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Estimate Your Goal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            fontPath="Roboto-Regular.ttf"
+            android:id="@+id/dpbtn_water_needed"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:id="@+id/LinearLayout055"
+      android:visibility="gone"
+        android:layout_below="@+id/linearLayout7"
+
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggested Amount according to your weight"
+            android:id="@+id/textView17"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:id="@+id/lnr_estimatedd_water"
+            android:layout_below="@+id/textView14"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:layout_margin="2dp"
+                android:src="@drawable/water_drop_blue" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/watertxt"
+                android:padding="1dp"
+                android:maxLength="8"
+                android:digits="0,1,2,3,4,5,6,7,8,9,."
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="@dimen/custom_font_Level_one"
+                fontPath="Roboto-Bold.ttf"
+                android:textColor="@color/colorPrimary"
+                android:inputType="numberDecimal"
+                android:layout_weight="0.6" />
+
+            <View
+                android:layout_width="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center" />
+
+            <Spinner
+                android:id="@+id/spinnerMlSelect"
+                android:layout_width="0dp"
+                android:layout_margin="0dp"
+                android:spinnerMode="dialog"
+                android:layout_weight=".3"
+                style="@style/style_spinner"
+                android:gravity="left" />
+
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:layout_gravity="bottom"
+                android:src="@drawable/right_lower_corner_blue" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout055"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/btn_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Set Goal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAllCaps="false"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/setgoal_white"
+            fontPath="Roboto-Regular.ttf"
+            android:id="@+id/btnset"
+
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

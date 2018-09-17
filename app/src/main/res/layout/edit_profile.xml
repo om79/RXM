@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="true"
+    android:fillViewport="false"
+    android:id="@+id/mai_layout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/friend"
+            android:id="@+id/profile_pic"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Click on above Picture to change your profile picture"
+            android:id="@+id/txtnote"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:paddingBottom="15dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="4dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="5dp"
+            android:hint="Full Name"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:drawableStart="@drawable/user3"
+            android:drawablePadding="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Second Name"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView38"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/input_laname"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="4dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"
+            android:maxLength="10"
+            tools:text=""
+            android:hint="Add your Phone Number"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="5dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="4dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="textEmailAddress"
+            tools:text=""
+            android:hint="Your Email Address"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textIsSelectable="true"
+            android:drawableStart="@drawable/email2"
+            android:drawablePadding="5dp" />
+
+        <EditText
+            android:id="@+id/input_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="7dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:hint="Add Your Address"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Gender"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView68" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Gender"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp" />
+
+
+        <RadioGroup
+            android:id="@+id/sexgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/self"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnmale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:text="Male"
+                android:textColor="#08446a"
+                android:checked="false"
+                android:buttonTint="@color/colorAccent"
+                android:layout_marginLeft="2dp" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#08446a"
+                android:padding="12dp"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:buttonTint="@color/colorAccent"
+                android:text="Female" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#08446a"
+                android:padding="12dp"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:buttonTint="@color/colorAccent"
+                android:text="Other" />
+
+        </RadioGroup>
+
+        <!--<RadioGroup
+            android:id="@+id/sexgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/self"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnradio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="12dp"
+                android:text="Male"
+                android:textColor="#08446a"
+                android:checked="false"
+                android:layout_marginLeft="2dp" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnradio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#08446a"
+                android:padding="12dp"
+                android:text="Female" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/btnradio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="#08446a"
+                android:padding="12dp"
+                android:text="Other" />
+
+        </RadioGroup>-->
+
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:inputType="number"
+            android:maxLength="6"
+            tools:text=""
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:padding="5dp"
+            android:hint="Pincode"
+
+            android:textIsSelectable="false"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/location" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="15dp"
+            android:text="Update"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/orgbtn"
+            android:textColor="@android:color/white"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+        <!-- Link to Login Screen -->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="40dp"
+    android:background="@drawable/list_row_selector">
+
+
+
+    <!-- Movie invoiceno -->
+    <TextView
+        android:id="@+id/comb_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:padding="3dp"
+        android:text = "Production Question"
+        fontPath="Roboto-Regular.ttf"
+
+        tools:Text ="Product Title"/>
+
+    <!-- customername -->
+    <TextView
+        android:id="@+id/comd_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fontPath="Roboto-Regular.ttf"
+
+        android:textSize="@dimen/custom_font_Level_four"
+        android:textColor="@color/btncolor_orange"
+        android:padding="3dp"
+        android:text = "Productans" />
+
+
+
+</LinearLayout>

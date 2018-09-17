@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".buymain">
+
+    <item android:id="@+id/action_search"
+        android:title="Search Medicine"
+        android:icon="@drawable/search_white"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+    <!--app:actionViewClass="android.support.v7.widget.SearchView"-->
+
+    <!--<item android:id="@+id/cart_count"
+        android:title="0"
+        android:icon="@drawable/wcart"
+        app:showAsAction="always|withText"/>-->
+
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/badge_icon"
+        app:showAsAction="always"
+        android:title="cart"/>
+
+</menu>

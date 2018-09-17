@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Please leave your number and email here, \n We will call you right back!! "
+            android:id="@+id/textView73"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="14sp"
+            android:textAlignment="gravity"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="First Name "
+            android:id="@+id/txtFirstName"
+            android:textColor="#08446a"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/input_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:inputType="text"
+            tools:text=""
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+
+            android:hint="Full Name"
+
+
+            tools:text=""
+            android:layout_marginBottom="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textIsSelectable="true"
+            android:drawableStart="@drawable/user3"
+            android:drawablePadding="5dp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+
+            android:layout_marginBottom="5dp"
+            android:hint="Email Address"
+            android:drawableLeft="@drawable/email2"
+            android:inputType="textEmailAddress"
+            tools:text=""
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:drawablePadding="5dp" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginBottom="5dp"
+            android:hint="Your Phone Number"
+            android:inputType="number"
+            tools:text=""
+            android:maxLength="10"
+            android:layout_marginTop="5dp"
+
+            android:textIsSelectable="false"
+            android:padding="8dp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/phone" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bestime"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+
+            android:hint="Best Time to call"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_gravity="left"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:drawableStart="@drawable/clock"
+            android:drawablePadding="5dp" />
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Emergency Delivery"
+            android:textColor="#08446a"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your Message"
+            android:layout_marginBottom="5dp"
+            tools:text=""
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="5dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:padding="8dp"
+            android:drawableStart="@drawable/edit"
+            android:drawablePadding="5dp" />
+
+        <CheckBox
+            android:id="@+id/chk_emergency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Emergency Delivery"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Emergency Delivery date"
+            android:textColor="#08446a"
+            android:visibility="gone" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_row_selector"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/input_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="text"
+                tools:text=""
+                android:editable="false"
+                android:autoText="false"
+                android:enabled="true"
+                android:focusable="false"
+                android:clickable="false"
+                android:background="@drawable/drpdwn"
+                android:textColor="#08446a"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_button"
+                android:src="@drawable/dd_date"
+                android:layout_gravity="right"
+                android:adjustViewBounds="false"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Emergency Delivery Time"
+            android:textColor="#08446a"
+            android:visibility="gone" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_row_selector"
+
+            android:visibility="gone">
+
+
+
+            <EditText
+                android:id="@+id/input_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="text"
+                tools:text=""
+                android:editable="false"
+                android:autoText="false"
+                android:enabled="true"
+                android:focusable="false"
+                android:clickable="false"
+                android:background="@drawable/drpdwn"
+                android:textColor="#08446a"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_button"
+                android:src="@drawable/dd_time"
+                android:layout_gravity="end"
+                android:adjustViewBounds="false"
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"
+
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Submit Request"
+            android:layout_weight="1"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/orgbtn"
+            android:textColor="@android:color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <!-- Link to Login Screen -->
+
+    </LinearLayout>
+
+</LinearLayout>

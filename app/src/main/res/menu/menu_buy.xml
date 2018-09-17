@@ -1,0 +1,95 @@
+
+
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".buymainActivity">
+
+<!--    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>-->
+
+    <item android:id="@+id/action_searchmedicine"
+        android:title="Search Medicine"
+        android:icon="@drawable/search_white"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/badge_icon"
+        app:showAsAction="always"
+        android:title="cart"/>
+    <!--app:actionViewClass="android.support.v7.widget.SearchView"-->
+
+    <item android:id="@+id/edit_profile"
+        android:title="Edit Profile"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/add_member"
+        android:title="Family Tree"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/order_transaction"
+        android:title="My Orders"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/change_password"
+        android:title="Change Password"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/faqs"
+        android:title="FAQ's"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/return_cancel_policies"
+        android:title="Return and Cancellation policies"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/termscondition"
+        android:title="Terms and Conditions"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/contactus"
+        android:title="Contact Us"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/aboutus"
+        android:title="About Us"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/exportdb"
+        android:title="Export DB"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false"
+       />
+
+
+
+
+</menu>
+

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mnr_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mainrelative"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:id="@+id/background"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+           />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_above="@+id/textView39"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/wave_load_layout"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:id="@+id/waveLoadingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:wlv_borderColor="@color/gray"
+            app:wlv_borderWidth="0dp"
+            app:wlv_progressValue="40"
+            app:wlv_shapeType="circle"
+            app:wlv_titleBottom="1.25l"
+            app:wlv_titleBottomColor="@color/white"
+            app:wlv_titleBottomSize="@dimen/custom_font_Level_one"
+            app:wlv_waveAmplitude="70"
+            app:wlv_waveColor="@color/blue"
+            android:layout_marginTop="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="67dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/img_previous_date"
+                   android:src="@drawable/arrow_blue_left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    fontPath="Roboto-Regular.ttf"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="@dimen/custom_font_Level_two"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="16,jun 2016"
+                    android:id="@+id/date_txt"
+
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:id="@+id/img_next_date"
+                    android:src="@drawable/arrow_blue_right" />
+            </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/loading_image"
+            android:visibility="gone"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/background" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="0%"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_below="@+id/textView39"
+            android:gravity="center"
+            android:textSize="@dimen/custom_font_Level_high"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView38"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal Achieved"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:id="@+id/textView39"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_below="@+id/background"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+
+            android:id="@+id/flipperLayout"
+            android:layout_below="@+id/loading_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250ml"
+                fontPath="Roboto-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/cup_size_show_txt"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/circle_blue" />
+                <ImageView
+                    android:id="@+id/imgCup"
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/cup1" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Tap to change cup size"
+                android:layout_gravity="center"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/loading_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Daily Goal"
+                android:textSize="@dimen/custom_font_Level_one"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView19"
+                android:gravity="center_horizontal" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+
+                    android:background="@drawable/org_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.61"
+                    fontPath="Roboto-Bold.ttf"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/custom_font_Level_high"
+                    android:id="@+id/goal_show_txt"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Litre"
+                    fontPath="Roboto-Bold.ttf"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/custom_font_Level_two"
+                    android:id="@+id/goal_show_litre_txt"
+                    android:layout_below="@+id/goal_show_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_below="@+id/mainrelative"
+        android:layout_above="@+id/bottom_navigation"
+        android:id="@+id/linearLayout16">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/minus_cup"
+                android:id="@+id/textView109"
+             />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Number of cups to drink"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:id="@+id/consumed"
+                android:layout_below="@+id/textView109"
+                />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="5dp"
+                android:text="1"
+                android:background="@drawable/org_circle"
+                fontPath="Roboto-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/white"
+                android:id="@+id/minus_count"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:src="@drawable/curved_left_arrow_blue"
+            android:id="@+id/left_arrow_image"
+            android:layout_gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:text="Good"
+            android:id="@+id/icons_on_water"
+
+            />
+
+
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:src="@drawable/curved_right_arrow_blue"
+            android:id="@+id/right_arrow_image"
+            android:layout_gravity="center_vertical"/>
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+        >
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus_cup"
+                android:id="@+id/image_add"
+
+                android:layout_marginTop="10dp"
+              />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="5dp"
+                android:text="Consumed                     ."
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:id="@+id/drink"
+                android:layout_below="@+id/image_add"
+                />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="5dp"
+                android:text="1"
+                android:background="@drawable/org_circle"
+                fontPath="Roboto-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/white"
+                android:id="@+id/plus_count"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,1689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView27"
+                android:src="@drawable/logo_rx"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="FAQs"
+
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:background="@color/sky_blue"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView901"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:text="1.Can I know whether your Pharmacy is licensed ?"
+                android:id="@+id/textView9001"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Yes Certainly, we and our supply partners are a licensed pharmacy offering prescription medications online. Our licence number: is…….."
+                android:id="@+id/textView9002"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_marginBottom="20dp" />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="2. What are your hours of operation ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Our website is open 24 hours a day, 7 days a week. Call Centre support is available from Monday to Saturday, 09:30 am to 09:00 pm IST."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="3. How do I contact Pharmacists at rxBuying.com ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Our Team comprises of qualified pharmacists your first and last point of contact is a pharmacist, you can contact our team of pharmacists in multiple ways, whichever suites:"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- You can call our customer contact number…………"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- Use the chat feature on the website to contact our pharmacist"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- You can mail us your query on ...... @ rxBuying.com"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- You can also raise your query with our pharmacist at the time of delivery"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="4. How can I save more at rxBuying.com ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="At rxBuying.com, you have multiple avenues to save on your purchases:  Rewards for You! rxBuying has a Reward Points Program by which you automatically score points on all your purchases. Once you have received enough points, you can convert those points into earnings and redeem it on your future orders. You get to see more savings when you shop regularly for all your health products at our one-stop pharma. To know more about our Reward Points program, go to rewards section on the website."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Free Delivery! - at rxBuying.com we strongly advise you to plan your monthly purchase so that not only recieve free delivery but also ensure that you don't miss any dose due to non availability, order form Rs. 500 or more to avail free delivery"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="5. What are rxBuying.com&apos;s Privacy and Security Policies ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="At rxBuying.com, your privacy and security are extremely important to us. We are committed to protecting the confidentiality of your personal information (your name, address, email address or credit card information) and we never share them with any other person or company. It is used solely by our authorised personnel to process your order. "
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Please note that all information provided to us is subject to doctor–patient privilege laws. Being compliant with PCI DSS Level 3, we use the latest electronic security measures and our servers are protected by secure firewalls to prevent unauthorised access to your personal data."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="6. Do you accept any Insurance Plans ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="No, we do not accept any insurance plans. However, we can provide invoice and receipt towards your order to claim your insurance."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="7. What is rxBuying.com’s return policy ? "
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="To know about our Returns/Refunds policy, please click here."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="8. Why there are no pre payment options on your website ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="As per the laws pre-payment is not allowed for medicine purchase, however if you do not wish to pay by cash and wish to use your credit/debit card, you can do so at the time of delivery, our delivery cum patient counsellors are equiped with mobile swipe machines"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="9. I have noticed an error medicine information page, can I report it ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Yes we would appreciate your reporting to report the error on the page click on………….. Our pharmacist will review the information and if found correct we will update the same"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="10. Are medications available at rxBuying.com safe ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Yes we are committed to fight the couterfit medicines, hence we take special care while procuring medicines we procure medicines either directly from manufacturers or from manufacturer authorised distributors only"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="11. What is the meaning of Generic Drugs ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Generic Drugs, also known as Generics or Generic Medications, are drugs that are marketed without brand names and are considered identical as their brand-name counterparts in all respects such as strength, dose, active ingredients, intended use, route of administration, efficacy, bioavailability and safety. As required by the CDSCO, India’s regulatory body for pharmaceuticals, Generics must meet the same rigid standards as set for brand-name counterparts."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="12. Is it safe to use Generic Drugs ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Yes, all of our generic drugs are procured from the world-renowned manufacturers and thus our generic products meet rigorous specifications and are strictly regulated for safety, quality and potency. By law, generic drugs must be bio-equivalent to brand-drug counterparts."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="13. Can I just buy another medicine listed as substitute ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Yes, you can buy other substitutes if you prescription lists the salt names instead of a brand name. You can always encourage your doctor to write salts name on your prescription instead of a specific brand name."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="14. What information do you need from me to process my order as fast as possible ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="In order to process your order quickly, we need the following details from you:"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Your billing/shipping information Your prescription (required for the order of Prescription medicines) we strongly advise you to create your profile on rxBuying.com to maintain all your transaction records"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="15. I have already shared my prescription with you on the website/app, why do I need to produce hard copy at the time of delivery ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="As per the Drugs and cosmetics act 1940, there is no provision of digital copy(Scan or photo) of prescription hence in order to reduce the misuse/abuse of medicines it is mandatory to verify the physical prescription. Please keep your prescription handy at the time of delivery"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="16. Is there any limit on the number of prescriptions that I can upload ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="No you can upload multiple prescription and create multiple orders"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="17. What if I can’t find the products/medications I am looking for in your website ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="rxBuying.com stocks a wide range of pharmaceuticals and other healthcare products. However, if you do not find what you need, please feel free to contact our pharmacists by emailing to rx@rxBuying.com. We will get back to you as soon as possible to let you know the availability of the requested medication/products."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="18. Is it possible to buy more than one medication in a single order at rxBuying.com?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Certainly, you can upload as many prescriptions and place them as a single order at our Pharmacy. You may also combine your prescription medication order with herbal or OTC products."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="19. How is my order packaged ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="rxBuying.com takes greatest possible care in packaging your order. Untouched by human hands, your order will be packaged in factory-sealed blister-packs, to eliminate the risk of medicine replacement at any stage we pack your order in a specially desiged tamper proof pack, please do not accept the delivery if tamper proof seal is broken"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="20. Are there any other hidden charges ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="No. There are no hidden charges in any of our products."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="21. Does rxBuying.com charge any professional fees on prescription drug/patient councelling ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="No, at rxBuying.com it is our constant endevour to make your medicines more understandable and help you manage your disease hence we do not charge any additional professional fees for processing your prescription drug orders or patient counselling services."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="22. why do the prices of medicines vary ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Medicine prices vary by geographical location and often change on a day to day basis due to regulations and distributors. The prices listed on our site act as guidance and help you understand if you are paying the right price for your medicines."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="23. What if I am charged more than the actual price of my prescription drugs ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Prices of medicines fluctuate often and in the event that the price of the drug you have purchased is less than the purchase price paid, the difference will be credited to your rxBuying account you can use this against future purchases."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+
+                android:layout_marginBottom="20dp" />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="24. Does rxBuying.com deliver products to any location in India ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="No there are jurisdictions of licensed pharmacies at moment we serve Delhi NCR and Hyderabad, we will be adding more cities in the near future"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="25. What forms of payment does rxBuying.com accept for online orders ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="rxBuying.com accepts the following forms of payment:"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- Credit/debit card on delivery"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- Cash on Delivery (COD)"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="26. What delivery options does rxBuying.com offer ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="rxBuying.com offers 2 delivery options:"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- Standard Delivery"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- Express Delivery"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="27. What are standard delivery charges ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="The following are our Standard Delivery Charges: "
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- For orders of less than Rs. 1000: Rs. 49"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="- For orders of Rs. 1000 or more: FREE Delivery (no delivery charges)"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="28. How long does it take to deliver a standard delivery order ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="On average, it may take about 24 hrs-48hrs to deliver your order. Working days exclude public holidays and Sundays."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="29. What is Express Delivery ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Express Delivery refers to the orders that are processed and shipped immediately than standard delivery. By opting for the express delivery, you will get your order delivered within 6 working hours. If you are in urgent need of your medications, express delivery is the ideal option to get them quickly."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="30. What are the terms and conditions for the rxBuying Express Delivery option ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Express Delivery orders are charged an additional fee of Rs. 49 for orders of Rs. 1000 or more, and a fee of Rs. 148 for orders less than Rs. 1000."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="please check the availability of express delivery option by entering you pin code Your express delivery order will arrive within 6 hours. The Express Delivery charges are not refundable except in the event of our error. rxBuying reserves the right to change or discontinue Express Delivery option at our discretion."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="31. What is Cash on Delivery (COD) ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Cash on Delivery (COD) is a payment method by which you can pay for your ordered item(s) in cash at the time of delivery."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="32. What are the charges for Cash-on-Delivery (COD) payment method ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Cash-on-Delivery orders are charged an additional Rs. 49 for orders less than Rs. 1000 There are no COD charges for orders over Rs. 1000"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="33. How do I pay by Cash on Delivery (COD) method ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Payment by COD option is as easy as 1 - 2 - 3: In the website, select products and add them to your cart and then in the Payment &amp; Order Review page, simply ‘Select Your Payment Method’ as Cash on Delivery (COD). Then you are required to confirm your COD payment either by responding to our auto-dialed call or replying immediately to our Email or simply by calling our toll free number............ The sooner you confirm, the sooner we will start to process your order. We will despatch your order once it has been approved. Once the pharmacist delivers the product(s) you ordered, you pay him the complete order amount in cash."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="34. I  do not wish to pay by cash, can I pay using my credit/debit card ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Yes, If you do not wish to pay in cash you can pay using credit/debt card at the time of delivery, our delivery pharmacist are equiped with safe and authorised mobile swipe machines."
+
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+
+                android:layout_marginBottom="20dp" />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="35. How do I know if my order has been shipped ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="You’ll get email confirmation of your order along with tracking details and you can always login to your account and track status. If the status of your order appears as “In Transit”, your order has been shipped. You can also get information regarding your shipment by calling our toll-free number: ............."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="36. How will I know the status of my order ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="You can check your current order status by simply logging into your account. This lets you track your order in real time and know whether it has been processed, shipped or delivered to you.  Alternatively, you may check the status of your order by calling our toll-free number: ................."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+
+                android:layout_marginBottom="20dp" />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="37. What happens if I don’t receive my order ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="If you have not received your order within 3 working days of placing your order, please contact us immediately at ................. and we will re-ship the order to you at no extra cost. More often than not, our deliverables reach our customers on time. Only on rare occasions, it may take a bit longer"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="38. How do I cancel my order ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="If you wish to cancel your order, you can send an email request to cs@rxBuying.com or call us at our toll free number………... Please note that in case your order has already been dispatched, we cannot cancel it."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="39. Can I change my delivery address after I have placed my order ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="If your order has not been shipped yet, then we can deliver to a different address as per your request. To know further, you can contact us via the online chat or call at 1800-103-0304 or email to sales@rxBuying.com."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="40. How will my order be delivered ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Your order will be delivered by qualified pharmacist at your door step."
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="41. What is patient counselling ? How can it help me  ? Are there any additional charges for counselling ?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="The objective of patient counselling team is to educate you about your disease and medication and prepare you for a informed conversation with your physicians to achieve this we have ensured that you have multiple access to our pharmacist team as a result your calls are attended by qualified pharmacists and product delivery is also done by qualified pharmacist, feel free ask to them any question concerning your prescription , dosing, and general disease related information. This service is absolutely free of cost our customers who purchase medicines from us We advise you to cross check with your physicians as well"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0.04" />
+
+
+            <TextView
+                fontPath="Lato-Bold.ttf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="42. What is pill reminder feature on the website and phone appliation ?"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView72" />
+
+            <TextView
+                fontPath="Lato-Regular.ttf"
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="At rxBuying we consider our customers as our family, and as family we believe in &apos;Caring beyond prescription&apos;. Our medicine scheduler reminds you about your medicine at time which is scheduled by you, this will help you manage your disease better and stay healthy, After all, every family needs someone to remember the medication schedule."
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/textView78" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="43. What is your return policy?"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView901"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="We accept returns if the medicine provided to you does not match your order, or if the medicine is past its expiry date. Please check your orders at the time of delivery and report any return request before you pay our delivery personnel. Please refer to return policy under Terms &amp; conditions, for further details or write to us at care@rxmedikart.com"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/textView9001"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+

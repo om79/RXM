@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+ >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:id="@+id/lnr_filter"
+    android:paddingBottom="8dp"
+    android:background="@color/sky_blue"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_centerVertical="true"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/cart"
+        android:id="@+id/cat_img"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:id="@+id/txt_cat_description"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            fontPath="Lato-Regular.ttf"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cat_img"
+            android:layout_gravity="center_vertical"
+            android:text="No products available"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_height="wrap_content"
+            android:id="@+id/cat_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            fontPath="Lato-Regular.ttf"
+            android:text=""
+            android:layout_marginTop="1dp"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_count"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Filter"
+        android:id="@+id/btn_filter"
+        android:drawablePadding="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/filter_white_second"
+        android:background="@color/btncolor_orange"
+        android:layout_marginLeft="20dp"
+        android:layout_height="40dp" />
+
+</RelativeLayout>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridView"
+        android:gravity="center"
+        android:columnWidth="120dp"
+        android:numColumns="2"
+        android:layout_below="@+id/lnr_filter"
+        android:padding="10dp"
+        android:fitsSystemWindows="true"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    </GridView>
+
+    <TextView android:id="@+id/emptyview"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:gravity="center"
+
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_below="@+id/gridView"
+        android:layout_height="match_parent"
+        android:text="No Products Available" />
+
+</RelativeLayout>

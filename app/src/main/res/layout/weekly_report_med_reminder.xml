@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/lenearfirst"
+        android:background="@color/orange"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/friend"
+            android:id="@+id/profile_pic"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100 %"
+                android:textColor="@color/white"
+                android:textSize="@dimen/custom_font_Level_high"
+                android:id="@+id/Percentage" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekly Adherence"
+                android:textColor="@color/white"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:id="@+id/txtcaption" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22,wednesday"
+                android:textColor="@color/white"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:id="@+id/txtdate" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/spnr_layout"
+
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/lenearfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:src="@drawable/calendar_white"
+            android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:background="@drawable/border_rxspinner_white_arrow"
+        android:drawableLeft="@drawable/calendar_white"
+        android:layout_height="35dp"
+        android:text="Today"
+
+        style="@style/style_spinner"
+        android:id="@+id/spnr_Lastweek" />
+
+        <View
+           android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight=".002"
+            android:background="@color/gray"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/calendar_white"
+            android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight=".3"
+        style="@style/style_spinner"
+        android:background="@drawable/border_rxspinner_white_arrow"
+        android:layout_toRightOf="@+id/spnr_Lastweek"
+        android:text="All Meds"
+        android:id="@+id/spnr_med_filter" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/lnr_headings"
+        android:layout_below="@+id/spnr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:gravity="center"
+        fontPath="Roboto-Regular.ttf"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/spnr_layout"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:id="@+id/date_heading" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:layout_height="wrap_content"
+        android:text="Taken"
+        fontPath="Roboto-Regular.ttf"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/date_heading"
+        android:layout_below="@+id/spnr_layout"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:id="@+id/taken_heading" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+        android:text="Pending"
+        android:padding="5dp"
+        fontPath="Roboto-Regular.ttf"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/taken_heading"
+        android:layout_below="@+id/spnr_layout"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:id="@+id/pending_heading" />
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/expandable_selector"
+        android:layout_below="@+id/lnr_headings"
+        android:layout_alignParentRight="true"
+        android:groupIndicator="@null"
+        />
+   <!-- <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/linear_listview"
+
+        >
+
+
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bottom_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export Report"
+            android:padding="10dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fontPath="Roboto-Regular.ttf"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:id="@+id/send_report" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

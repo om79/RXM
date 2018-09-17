@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout6">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Member List"
+            android:id="@+id/textView2"
+            android:textColor="@color/colorPrimary"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <view
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/relativeLayout6"
+        class="android.support.v7.widget.RecyclerView"
+        android:id="@+id/recycler_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnadd"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/no_data_found_layout"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/recycler_view"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_high"
+            android:text="You have not added any member yet please click the below button to add member"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dwnarrow"
+           android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Add a Profile"
+        android:layout_margin="15dp"
+        android:id="@+id/btnadd"
+        android:background="@drawable/orgbtn"
+        android:textColor="#ffff"
+
+        fontPath="Roboto-Bold.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+
+
+
+</RelativeLayout>

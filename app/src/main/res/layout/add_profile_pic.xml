@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sky_blue"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Select your DP"
+        android:id="@+id/txttitle"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/iv_avatar"
+                android:src="@drawable/dp"
+                android:layout_alignTop="@+id/iv_browse"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Pick a Medikart Avatar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView45"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_below="@+id/iv_avatar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/iv_avatar"
+                android:layout_alignEnd="@+id/iv_avatar"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/iv_browse"
+                android:src="@drawable/selfie"
+                android:layout_alignTop="@+id/iv_browse"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Pick a Gallery Photo"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView46"
+                android:textSize="10sp"
+                android:layout_alignTop="@+id/textView45"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/iv_browse"
+                android:layout_alignStart="@+id/iv_browse"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/iv_camera"
+                android:src="@drawable/uldp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Take  a Selfie"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView18"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_alignTop="@+id/textView46"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/txttitle"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Cancel"
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/orgbtn"
+            android:textColor="#ffff"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

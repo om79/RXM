@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:text="Set reminder time"
+            fontPath="Roboto-Bold.ttf"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Frequency"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/orange"
+            android:textAllCaps="true"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Bold.ttf"
+            />
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            style="@style/style_spinner"
+            >
+
+            />
+            <ImageView
+                android:layout_width="30dp"
+                android:padding="10dp"
+                android:src="@drawable/frequency_blue"
+                android:layout_height="match_parent" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Set frequnecy"
+                android:background="@color/sky_blue"
+                android:layout_gravity="center"
+                android:textSize="@dimen/custom_font_Level_two"
+                fontPath="Roboto-Regular.ttf"
+                style="@style/style_double_textview_with_arrow"
+                android:id="@+id/reminder_frequency"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Intervel Times"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/orange"
+            android:textAllCaps="true"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Bold.ttf"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="Set intervel times"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Regular.ttf"
+            android:drawableLeft="@drawable/frequency_blue"
+             android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableRight="@drawable/ic_signal_cellular_4_bar"
+            android:drawablePadding="15dp"
+            android:background="@drawable/edittext"
+            android:id="@+id/pick_inervel_times"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick an alarm"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/orange"
+            android:textAllCaps="true"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Bold.ttf"
+            />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="Ringtone"
+            android:layout_gravity="center"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Regular.ttf"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/frequency_blue"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:drawableRight="@drawable/ic_signal_cellular_4_bar"
+            android:drawablePadding="15dp"
+            android:background="@drawable/edittext"
+            android:id="@+id/pick_ringtone"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            fontPath="Roboto-Regular.ttf"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginTop="10dp"
+            android:text="No reminder needed"
+            android:id="@+id/no_rem_chk" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicines to be taken as required"
+            android:layout_marginLeft="43dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_four"
+            fontPath="Roboto-Bold.ttf"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:gravity="right">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@color/sky_blue"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/orgbtn"
+            android:textColor="@color/white"
+            android:id="@+id/btnok" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

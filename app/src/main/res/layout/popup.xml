@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/pop_mimg"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="1dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/sky_blue" />
+
+            <TextView
+                android:id="@+id/pop_medname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Insulin"
+                fontPath="Roboto-Bold.ttf"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btt_close"
+                android:layout_width="40dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+               android:text="X" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/sky_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imageScheduled"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clock_orange" />
+
+            <TextView
+                android:id="@+id/Scheduledatetimetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                fontPath="Roboto-Regular.ttf"
+                android:text="Scheduled : 8.30 am, 14th April"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imageDosage"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pill_orange" />
+
+            <TextView
+                android:id="@+id/pop_dosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Dosage : 1.75"
+                fontPath="Roboto-Regular.ttf"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imageRefill"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bell_orange" />
+
+            <TextView
+                android:id="@+id/refill_reminder_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                fontPath="Roboto-Regular.ttf"
+                android:text="Refill Reminder : None"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="No Notification"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/txt_no_notification"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:textColor="@color/view_bg"
+            android:padding="1dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:id="@+id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/sky_blue"
+        android:layout_height="1px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" >
+
+        <Button
+            android:id="@+id/pop_reschedule"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            fontPath="Roboto-Regular.ttf"
+            android:background="@color/orange"
+            android:text="Reschedule"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/pop_taken"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="Take"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="Skipped"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

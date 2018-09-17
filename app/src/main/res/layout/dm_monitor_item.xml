@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector" >
+
+
+
+
+    <!-- Movie invoiceno -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text = "title"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/sky_blue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+
+        android:orientation="horizontal"
+        android:background="@color/sky_blue"
+        android:textColor="@color/black"
+        android:id="@+id/relativeLayout2">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = ""
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.25" />
+
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Title"
+            android:id="@+id/textView5"
+            android:layout_alignTop="@+id/textView34"
+            android:layout_toLeftOf="@+id/textView34"
+            android:layout_toStartOf="@+id/textView34"
+            android:layout_weight="0.5" />-->
+
+
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Max"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.2" />
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Min"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:id="@+id/avg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Avg"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.25" />
+
+
+
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/trend"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text = "Trends"-->
+        <!--android:padding="5dp"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--android:layout_weight="0.2"-->
+        <!--/>-->
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/relativeLayout2"
+        android:id="@+id/relativeLayout53" >
+
+        <TextView
+            android:id="@+id/bloodsugar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Blood Sugar"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.25" />
+
+        <!-- <TextView
+             android:id="@+id/dia_max"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text = "da_mx"
+             android:textSize="15dp"
+             android:layout_alignBaseline="@+id/diastolic"
+             android:layout_alignBottom="@+id/diastolic"
+             android:layout_alignRight="@+id/sys_max"
+             android:layout_alignEnd="@+id/sys_max" />-->
+
+        <TextView
+            android:id="@+id/bs_max"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "bs_max"
+            android:textColor="#df6301"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.25" />
+
+
+
+        <TextView
+            android:id="@+id/bs_min"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "bs_min"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:textColor="#df6301"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:id="@+id/bs_avg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "bs_ag"
+            android:padding="5dp"
+            android:textColor="#df6301"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.25" />
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/sys_img"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/arrownormal"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--android:layout_weight="0.2"-->
+        <!--/>-->
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout54"
+        android:layout_below="@+id/relativeLayout53">
+
+        TextView
+        android:id="@+id/diastolic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="0.5"
+        android:text = "Diastolic" />
+
+
+
+        TextView
+        android:id="@+id/dia_max"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text = "da_mx"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="0.1"
+        tools:Text ="dia_min" />
+
+        TextView
+        android:id="@+id/dia_min"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text = "da_mn"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="0.1"
+        tools:Text ="dia_min" />
+
+
+        TextView
+        android:id="@+id/avg_dia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text = "da_ag"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="0.1" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/dia_img"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="5dp"-->
+        <!--android:src="@drawable/arrownormal"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--android:layout_weight="0.2"-->
+        <!--/>-->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout55"
+        android:layout_below="@+id/relativeLayout54">
+
+        TextView
+        android:id="@+id/pulse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="0.5"
+        android:text = "Pulse" />
+
+
+
+        TextView
+        android:id="@+id/max_pulse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text = "pu_mx"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="0.1" />
+
+        TextView
+        android:id="@+id/min_pulse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text = "pu_mn"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="0.1" />
+
+
+        TextView
+        android:id="@+id/avg_pulse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text = "pu_ag"
+        android:padding="5dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="0.1"
+        />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/relativeLayout55"
+           android:id="@+id/lnrbot">
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.25"
+            android:textStyle="bold"
+            android:text = "weight" />
+
+
+
+        <TextView
+            android:id="@+id/max_wt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "wt_mx"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:textColor="#df6301"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:id="@+id/min_wt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "wt_mn"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:textColor="#df6301"
+            android:layout_weight="0.25" />
+
+
+        <TextView
+            android:id="@+id/avg_wt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "avg_wt"
+            android:padding="5dp"
+            android:textColor="#df6301"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.25" />
+
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/lnrbot"-->
+
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@color/sky_blue"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:id="@+id/sd">-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/txttitledate"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "Date"-->
+            <!--android:padding="5dp"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:layout_weight="0.3" />-->
+
+        <!--&lt;!&ndash;-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "Title"-->
+            <!--android:id="@+id/textView5"-->
+            <!--android:layout_alignTop="@+id/textView34"-->
+            <!--android:layout_toLeftOf="@+id/textView34"-->
+            <!--android:layout_toStartOf="@+id/textView34"-->
+            <!--android:layout_weight="0.5" />&ndash;&gt;-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/titletime"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "Time"-->
+            <!--android:padding="5dp"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:layout_weight="0.2" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/titlebloodsugar"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "Blood Sugar"-->
+            <!--android:padding="5dp"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:layout_weight="0.3" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/titleweight"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "Weight"-->
+            <!--android:padding="5dp"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:layout_weight="0.2" />-->
+
+
+
+
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/trend"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text = "Trends"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:drawablePadding="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="0.2"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_below="@+id/sd"-->
+        <!--android:id="@+id/lnrmain"-->
+        <!-->-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtDate"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "Date"-->
+            <!--android:textStyle="bold"-->
+            <!--android:padding="5dp"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:layout_weight="0.3" />-->
+
+        <!--&lt;!&ndash; <TextView-->
+             <!--android:id="@+id/dia_max"-->
+             <!--android:layout_width="wrap_content"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--android:text = "da_mx"-->
+             <!--android:textSize="15dp"-->
+             <!--android:layout_alignBaseline="@+id/diastolic"-->
+             <!--android:layout_alignBottom="@+id/diastolic"-->
+             <!--android:layout_alignRight="@+id/sys_max"-->
+             <!--android:layout_alignEnd="@+id/sys_max" />&ndash;&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txttime"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "txttime"-->
+            <!--android:textColor="#df6301"-->
+            <!--android:padding="5dp"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:layout_weight="0.2" />-->
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtbs"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "bs_min"-->
+            <!--android:padding="5dp"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:textColor="#df6301"-->
+            <!--android:layout_weight="0.3" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtwt"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text = "bs_ag"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColor="#df6301"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:layout_weight="0.2" />-->
+
+
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/sys_img"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/arrownormal"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:drawablePadding="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="0.2"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+
+
+    <!--</LinearLayout>-->
+</RelativeLayout>

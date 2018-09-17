@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/textViewItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="TextView"
+        android:visibility="gone"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="15sp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutMode="opticalBounds"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:showDividers="middle|beginning|end|none"
+        android:divider="#f18585">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineProvider="bounds"
+            android:showDividers="middle|beginning|end|none"
+            android:divider="#c70d0d"
+            android:dividerPadding="1dp">
+
+            <TextView
+                android:id="@+id/drug_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:text="TextView"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textSize="15sp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp" />
+
+            <TextView
+                android:id="@+id/drug_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:text="TextView"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textSize="15sp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_column="22" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:background="@color/btncolor_orange">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drug Interaction With Molecule"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drug Interaction"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+       >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="General Interaction"
+            android:id="@+id/general_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_weight=".4"
+
+            android:textColor="@color/gray"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:background="@color/transparent"
+            />
+        <View
+        android:layout_width="0dp"
+            android:layout_weight=".2"
+        android:layout_height="15dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/drug_btn"
+            android:layout_weight=".4"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/gray"
+            android:text="Drug Interaction"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:background="@color/transparent"
+
+            />
+
+    </LinearLayout>
+
+    <TabHost
+        android:id="@+id/dmTabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                fontPath="Lato-Regular.ttf"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        fontPath="Lato-Regular.ttf"
+                        android:id="@+id/lnrtest"
+                        android:layout_height="wrap_content"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/second_layout"
+                    fontPath="Lato-Regular.ttf"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Important advisory"
+                        android:padding="5dp"
+                        fontPath="Lato-Bold.ttf"
+                        android:id="@+id/important_advisory_txt"
+                        android:textColor="@color/rx_medikart_small_text_half_dark"
+                        android:textSize="@dimen/custom_font_Level_four"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/lnrSecond"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/drug_molecule_linear_heading"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/btncolor_orange">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight=".3"
+                            fontPath="Lato-Regular.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="Drug Interaction With Molecule"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/custom_font_Level_two"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight=".1"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight=".6"
+                            android:layout_height="wrap_content"
+                            android:text="Drug Interaction"
+                            fontPath="Lato-Regular.ttf"
+                            android:layout_gravity="left"
+                            android:paddingTop="5dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/custom_font_Level_two"
+                            android:gravity="left"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/lnrthird"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+
+
+
+    <item
+        android:id="@+id/circlularImage"
+        android:icon="@drawable/round_plus_white"
+        android:orderInCategory="100"
+        android:title="plus sign"
+        app:showAsAction="always"
+        android:onClick="onCircle_Menuclick"
+
+        />
+    <item
+        android:id="@+id/addMedicineBtn"
+        android:orderInCategory="100"
+        android:icon="@drawable/round_plus_white"
+        android:title=""
+        android:visible="false"
+        app:showAsAction="always"
+        />
+</menu>

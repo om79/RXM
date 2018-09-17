@@ -1,0 +1,625 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/sky_blue"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+       android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:id="@+id/view2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/firstid"
+            android:layout_alignStart="@+id/firstid" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstid"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/s_medicine_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/orangecircle"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="60dp"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_medicine_txt"
+                android:textColor="@color/gray"
+                android:gravity="center_vertical"
+                android:text="   Select Medicines"
+                android:padding="4dp"
+                app:customFont="Lato-regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:id="@+id/view" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondid"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/firstid"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/orangecircle"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/gray"
+                android:gravity="center_vertical"
+                android:text="   Upload Prescription"
+                android:padding="4dp"
+                app:customFont="Lato-regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdid"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/secondid"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/orangecircle"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/gray"
+                android:gravity="center_vertical"
+                android:text="Shipping Address"
+                android:padding="4dp"
+                app:customFont="Lato-regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forthdid"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/thirdid"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/orangecircle"
+                android:singleLine="true"
+                android:id="@+id/fr_orange_btn"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:text="Confirmation"
+                android:padding="4dp"
+                app:customFont="Lato-regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toplayout"
+        android:background="@color/sky_blue">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lin2"
+
+            android:layout_marginTop="20dp"
+            android:height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:background="#a2bacd"
+            android:alpha=".5" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:id="@+id/img"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.25"
+                android:paddingBottom="2dp"
+                android:layout_height="65dp">
+
+                <ImageView
+                    android:id="@+id/txtStatus"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fill_circle_grey"
+                    />
+                <TextView
+                    android:id="@+id/txtStatus1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:textColor="#a2bacd"
+                    android:layout_gravity="center"
+                    android:text="     Select Medicines"
+                    fontPath="Lato-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.25"
+
+                android:paddingBottom="2dp"
+                android:layout_height="65dp">
+
+
+                <ImageView
+                    android:id="@+id/txt0Status"
+                    android:layout_width="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    fontPath="Lato-Regular.ttf"
+                    android:src="@drawable/fill_circle_grey"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt0Status2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    fontPath="Lato-Regular.ttf"
+                    android:padding="2dp"
+                    android:textColor="#a2bacd"
+                    android:gravity="center"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    android:text="Upload Prescription"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.25"
+                android:paddingBottom="2dp"
+                android:layout_height="65dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fill_circle_grey"
+                    android:id="@+id/txt1Status"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt0Status3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    fontPath="Lato-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    android:text="    Shipping Address"
+                    android:padding="2dp"
+                    android:textColor="#a2bacd"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.25"
+
+                android:paddingBottom="2dp"
+                android:layout_height="65dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fill_circle_orange"
+                    android:id="@+id/txt2Status"
+                    android:gravity="center_horizontal" />
+
+
+                <TextView
+                    android:id="@+id/txt0Status4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fontPath="Lato-Regular.ttf"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    android:text="Confirmation"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplayout"
+        android:background="@drawable/bg"
+        android:layout_above="@+id/bottom_relative"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:fillViewport="true">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:id="@+id/dricn"
+                android:src="@drawable/drs"
+                android:padding="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+
+                android:adjustViewBounds="false"
+               />
+
+            item<com.viroopa.Buying.MedikartTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_medicine_txt"
+                android:textColor="@color/btncolor_orange"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:text="Thank you for your order"
+                android:layout_gravity="center_horizontal"
+                app:customFont="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+                />
+            <com.viroopa.Buying.MedikartTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_medicine_txt"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+                fontPath="fonts/Lato-Regular.ttf"
+            android:text="Your order number is : "
+            android:layout_gravity="center_horizontal"
+            app:customFont="Lato-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            />
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_medicine_txt"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                android:text="cus"
+                android:padding="5dp"
+                android:id="@+id/order_num"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/order_placed_text"
+                android:layout_gravity="center_horizontal"
+                app:customFont="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:id="@+id/txt_payment_id"
+                fontPath="fonts/Lato-Regular.ttf"
+                android:text="Your Payment ID is: "
+                android:layout_gravity="center_horizontal"
+                app:customFont="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="#ffad1c"
+            android:background="@color/colorPrimary"
+           >
+
+
+
+
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="Order Details"
+                app:customFont="Lato-Bold.ttf"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/custom_font_Level_two" />
+
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="24,february"
+                android:padding="4dp"
+                android:id="@+id/order_date"
+                app:customFont="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/list_Singleorderlist"
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:divider="#e7e7e7"
+            android:listSelector="@drawable/list_row_selector"
+            android:choiceMode="singleChoice"
+            tools:Text ="Prescrption lists"
+            android:dividerHeight="1dp" />
+
+        <com.viroopa.Buying.MedikartTextview
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:layout_marginLeft="0dp"
+            android:text="Price Summary"
+            app:customFont="Lato-Bold.ttf"
+            android:textAllCaps="false"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+
+            android:textSize="12sp"
+            android:background="#ebf4fb" />
+
+
+
+        <ListView
+            android:id="@+id/list_pricelist"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:choiceMode="singleChoice"
+            tools:Text ="Prescrption lists"
+            android:layout_alignParentTop="true">
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            >
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Note :"
+                android:textSize="@dimen/custom_font_Level_four"
+                app:customFont="Lato-regular.ttf"
+                android:textColor="@color/btncolor_orange"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView76" />
+
+            <com.viroopa.Buying.MedikartTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Our pharmacist will get in touch with you regarding your order and if your medicine is a prescribed one then kindly keep your prescription ready at the time of your medicine delivery as its mandotory as per goverment regulation. "
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                app:customFont="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:paddingLeft="5dp"
+                android:paddingRight="30dp"
+                android:layout_toRightOf="@+id/textView76"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/textView75"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/btncolor_orange"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="20dp"
+
+        android:id="@+id/bottom_relative"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/nextlayout"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <com.viroopa.Buying.MedikartTextview
+                android:id="@+id/txt_Next_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Total Price : "
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                fontPath="Lato-Bold.ttf"
+                android:layout_marginEnd="10dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/white"
+                />
+
+            <com.viroopa.Buying.MedikartTextview
+                android:id="@+id/TotalPrice"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:textColor="@color/white"
+                fontPath="Lato-Bold.ttf"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/txt_Next_first"
+
+                />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/previouslayout"
+            >
+
+            <ImageView
+                android:id="@+id/btnok"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/home_icon_white"
+                />
+
+
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

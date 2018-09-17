@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearFirst"
+        android:padding="5dp"
+        >
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:id="@+id/txtDate"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="22,wednesday"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txttaken"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="11sp"
+            android:text="Taken"
+            />
+
+
+
+        <TextView
+            android:layout_width="35dp"
+            android:id="@+id/txttakennumber"
+            android:layout_height="35dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:background="@drawable/circle_1_4"
+            android:text="12"
+            android:layout_marginBottom="2dp"
+
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txtmissed"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="11sp"
+            android:layout_height="wrap_content"
+            android:text="Missed"
+
+
+            />
+        <TextView
+            android:layout_width="35dp"
+            android:id="@+id/txtmissednumber"
+            android:layout_height="35dp"
+            android:text="01"
+            android:textColor="@color/white"
+           android:padding="10dp"
+            android:background="@drawable/circle_1_3"
+            android:textStyle="bold"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginBottom="2dp"
+            />
+
+    </LinearLayout>
+
+        <!--android:src="@drawable/ic_down_arrow_white"-->
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+

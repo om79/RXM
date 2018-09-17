@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/lnrLastReading"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/space_between_two_control"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingRight="10dp"
+        android:id="@+id/lnrcategory">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/colorPrimary"
+            fontPath="Roboto-Bold.ttf"
+            android:clickable="false"
+            android:id="@+id/txtcategory_Detail"
+            android:text="After Lunch"
+            android:layout_weight="0.33"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/colorPrimary"
+            fontPath="Roboto-Regular.ttf"
+            android:clickable="false"
+            android:gravity="right"
+            android:id="@+id/txtdmDATETIME"
+            android:text="16th:"
+            android:layout_weight="0.33"
+            android:paddingRight="5dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Me"
+        android:visibility="gone"
+        android:id="@+id/txtUsername"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/imgView_circlularImage"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/avtar1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/txtUsername"
+       />
+
+</RelativeLayout>

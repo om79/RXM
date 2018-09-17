@@ -1,0 +1,308 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/lnrrela"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        >
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </RelativeLayout>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearfirst"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+
+
+        >
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btnprevious"
+            android:src="@drawable/arrow_blue_left"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/firstdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mar 28, Sunday"
+            fontPath="Roboto-Regular.ttf"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|center_horizontal"
+           />
+        <TextView
+            android:id="@+id/seconddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mar 28, Sunday"
+            fontPath="Roboto-Regular.ttf"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:layout_gravity="center"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|center_horizontal"
+           />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btncancel"
+            android:padding="7dp"
+            android:src="@drawable/arrow_blue_right"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY" />
+
+        <!--<TextView
+            android:id="@+id/txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   >   "
+            android:textSize="25dp"
+            android:textStyle="bold" />-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/linearfirst"
+        android:id="@+id/water_heading"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Consumption"
+            android:drawableLeft="@drawable/round_blue_tick"
+            android:checked="true"
+            android:textColor="@color/colorPrimary"
+            android:drawablePadding="5dp"
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:id="@+id/rdbbs"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_below="@+id/water_heading"
+        android:layout_marginTop="2dp"
+        android:id="@+id/lnrgraphselection">
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:paddingLeft="10dp"
+            android:background="@color/transparent"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/txtmessage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/axis_desc"
+            android:padding="1dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:layout_below="@+id/viewPager"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txt_axis_indicator"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:text="Y-Water consumed(ml), X-Date"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/line_chart_below"
+            android:background="@color/white"
+            android:layout_below="@+id/axis_desc"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="15dp"
+                android:src="@drawable/rounded_green_button"/>
+
+            <TextView
+                android:layout_below="@+id/msg_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Good"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:id="@+id/textView40" />
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/circle_1_4"/>
+            <TextView
+                android:layout_below="@+id/msg_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:text="Average"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/circle_1_3"/>
+            <TextView
+                android:layout_below="@+id/msg_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="3dp"
+                android:text="Bad"
+                android:layout_weight="1"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                />
+
+
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_below="@+id/line_chart_below"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/viewpager_previous"
+                android:src="@drawable/curved_left_arrow_blue"
+                android:layout_height="30dp" />
+
+        <com.cepheuen.progresspageindicator.ProgressPageIndicator
+            android:id="@+id/pageIndicator"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotGap="10dp"
+            android:paddingBottom="10dp"
+            app:fillColor="#08446a"
+            app:radius="10dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/viewpager_next"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/curved_right_arrow_blue"
+                android:layout_height="30dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:padding="8dp"
+        android:id="@+id/msg_layout"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/lnrgraphselection"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/MainMessage"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seems you are not drinking enough water"
+            android:textSize="@dimen/custom_font_Level_high"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/secMessage"
+        android:layout_below="@+id/msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        fontPath="Roboto-Regular.ttf"
+        android:text="Body consist of 70% water. Drink more water"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:gravity="center_vertical"
+        />
+</RelativeLayout>
+
+
+</FrameLayout>

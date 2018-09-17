@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Set Dosage"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="2dp"
+        android:background="@color/colorAccent" />
+
+    <!--<LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_size"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:background="@drawable/edittext"
+        android:id="@+id/LinearLayout15"
+        android:gravity="center"
+        android:layout_weight="0.11"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+             android:src="@drawable/xminus"
+            android:id="@+id/btndaysminus"
+            android:background="@drawable/edittext" />
+            &lt;!&ndash;android:src="@drawable/x_minus"&ndash;&gt;
+            &lt;!&ndash;android:id="@+id/btnminus" />&ndash;&gt;
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Qty"
+            android:text=""
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:id="@+id/btndaysplus"
+             android:src="@drawable/xplus"
+            android:background="@drawable/edittext" />
+
+
+    </LinearLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_weight="0.81">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+
+            android:entries="@array/array_setdoseunit"
+            android:layout_below="@+id/numberPicker"
+            android:layout_alignRight="@+id/numberPicker"
+            android:layout_alignEnd="@+id/numberPicker"
+            android:spinnerMode="dialog" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:layout_margin="10dp"
+            android:background="@drawable/orgbtn"
+            android:textColor="@color/white"
+            android:id="@+id/btnok" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_margin="10dp"
+            android:background="@drawable/orgbtn"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel" />
+
+
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="minus"-->
+            <!--android:id="@+id/btndaysminus"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/edtdaysnumber"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:inputType="number" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Plus"-->
+            <!--android:id="@+id/btndaysplus"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

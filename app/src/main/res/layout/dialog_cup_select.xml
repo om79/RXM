@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:id="@+id/DoctorShowFirst">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            fontPath="Roboto-Bold.ttf"
+            android:gravity="left|center"
+            android:text="Select CupSize"
+            android:id="@+id/textView"
+            android:layout_weight="0.94"
+            android:textAlignment="gravity"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/btncancel"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:layout_weight="0.01"
+            android:padding="0dp" />
+
+    </LinearLayout>
+    <viroopa.com.medikart.wmMonitor.adapter.CoverFlow
+        android:layout_width="match_parent"
+        android:id="@+id/coverFlow"
+        android:layout_height="wrap_content">
+
+    </viroopa.com.medikart.wmMonitor.adapter.CoverFlow>
+
+
+
+
+</LinearLayout>

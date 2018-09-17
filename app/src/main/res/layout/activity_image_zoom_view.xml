@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+
+    <ImageView
+        android:id="@+id/imgView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:layout_above="@+id/linearLayout11"
+        android:layout_alignParentTop="true">
+    </ImageView>
+
+
+   <!-- <WebView
+        android:id="@+id/imgView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayout11"
+        android:layout_alignParentTop="true">
+    </WebView>-->
+
+      
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/linearLayout11"
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Ok"
+            android:layout_gravity="center"
+            android:id="@+id/button6"
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:textColor="@android:color/white"
+            android:background="@drawable/orgbtn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

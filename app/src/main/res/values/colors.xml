@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#08446a</color>
+    <color name="colorPrimaryDark">#083157</color>
+    <color name="colorAccent">#f38630</color>
+
+    <color name="test">#733d07</color>
+    <color name="genre">#666666</color>
+    <color name="btncolor_orange">#e47219</color>
+    <color name="base">#AAAAAA</color>
+
+
+    <color name="sky_blue">#e5ebf5</color>
+    <color name="btncolor">#f38630</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="activity_main_row_title_color">#cccccc</color>
+    <color name="gray">#bdbdbd</color>
+    <color name="blue">#304f9f</color>
+    <color name="Footer_blue">#09456a</color>
+    <color name="ripple_red">#ffbf5232</color>
+    <color name="aluminum">#999999</color>
+    <color name="view_bg">#b20e0f</color>
+
+    <color name="list_divider">#f38630</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+
+
+    <color name="rx_medikart_small_text_half_dark">#484848</color>
+    <color name="rx_dark_green">#6cd720</color>
+    <color name="tabbg">#dfe8f9</color>
+    <color name="orange">#df6301</color>
+
+    <color name="text_background">#dfe8f9</color>
+</resources>

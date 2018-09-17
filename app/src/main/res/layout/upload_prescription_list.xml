@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/heading"
+        android:background="@color/btncolor_orange"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+
+            android:text="Your Prescriptions"
+            android:drawableLeft="@drawable/price"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:padding="3dp" />
+
+
+    </LinearLayout>
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:groupIndicator="@null"
+        android:paddingLeft="5dp"
+
+        android:paddingRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        >
+    </ExpandableListView>
+
+    <TextView
+        android:layout_below="@+id/heading"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:text="You have not uploaded any prescriptions"
+        android:id="@+id/txt_no_prescriptions"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

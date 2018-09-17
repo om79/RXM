@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+
+    <item
+        android:title="Personal Information"
+        android:id="@+id/nav_first_heading">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_edit_profile"
+                    android:icon="@drawable/edit"
+                    fontPath="Lato-Regular.ttf"
+                    android:title="Edit Profile" />
+
+                <item android:id="@+id/nav_changepassword"
+                    android:icon="@drawable/changepass"
+                    fontPath="Lato-Regular.ttf"
+                    android:title="Change Password" />
+
+                <item android:id="@+id/nav_familytree"
+                    android:icon="@drawable/addmem"
+                    fontPath="Lato-Regular.ttf"
+                    android:title="Member Tree" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="My Activity"
+        android:id="@+id/nav_second_heading">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/nav_myorders"
+                    android:icon="@drawable/newcart"
+                    fontPath="Lato-Regular.ttf"
+                    android:title="My Orders" />
+
+
+                <item android:id="@+id/nav_myprescriptionlist"
+                    android:icon="@drawable/price"
+                    fontPath="Lato-Regular.ttf"
+                    android:title="My Prescriptions" />
+
+            </group>
+        </menu>
+    </item>
+    <!--<item android:title="Medicine Reminder">
+        <menu>
+            <item android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Add Medicine" />
+            <item android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Invite Med-Friend" />
+            <item android:id="@+id/nav_send1"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Invite Code" />
+            <item android:id="@+id/nav_send12"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Settings" />
+        </menu>
+    </item>-->
+    <item
+        android:title="Help"
+        fontPath="Lato-Regular.ttf"
+        android:id="@+id/nav_third_heading">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_faq"
+                    fontPath="Lato-Regular.ttf"
+                    android:icon="@drawable/faq"
+                    android:title="FAQ's" />
+
+                <item android:id="@+id/nav_policy"
+                    fontPath="Lato-Regular.ttf"
+                    android:icon="@drawable/doc"
+                    android:title="Return and privacy policies" />
+
+                <item android:id="@+id/nav_contactus"
+                    fontPath="Lato-Regular.ttf"
+                    android:icon="@drawable/contactus"
+                    android:title="Contact Us" />
+                <item android:id="@+id/nav_logout"
+                    fontPath="Lato-Regular.ttf"
+                    android:icon="@drawable/signout"
+                    android:title="Logout" />
+
+                <item android:id="@+id/nav_space"
+                    fontPath="Lato-Regular.ttf"
+
+                    android:title="    " />
+            </group>
+        </menu>
+    </item>
+
+</menu>

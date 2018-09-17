@@ -1,0 +1,600 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_screen"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bg"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity"
+    >
+
+
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:id="@+id/mainrelative"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule detail for your Medicine"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:textAllCaps="false"
+        android:id="@+id/head"
+        android:layout_gravity="center"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        />
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/head"
+        android:padding="10dp"
+        android:id="@+id/lnr_first">
+
+
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:orientation="horizontal"
+          android:layout_height="wrap_content"
+          >
+
+
+        <TextView
+            android:text="Select Previous/Add medicine"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Regular.ttf"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="@drawable/edittext_white_backgroud"
+            android:drawableLeft="@drawable/plain_arrow_down"
+            android:drawablePadding="5dp"
+            android:id="@+id/pick_medicine"
+            />
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/med_name_txt"
+            android:visibility="gone"
+            android:id="@+id/img_selected_med"
+            android:src="@drawable/med4_1"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/pill_heading"
+            android:layout_toEndOf="@+id/pill_heading" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_marginTop="10dp"
+          android:elevation="10dp"
+          android:padding="1dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/edittext_white_backgroud"
+
+          >
+
+
+        <TextView
+            android:id="@+id/Dosage_Amount"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_height="40dp"
+            fontPath="Roboto-Regular.ttf"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_weight="1"
+            android:text="Select Dosage"
+
+
+            />
+
+
+
+        <View
+            android:layout_width="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center" />
+
+        <Spinner
+            android:id="@+id/Dosage_unit_selected"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            style="@style/style_spinner_without_arow"
+            />
+
+
+
+
+      </LinearLayout>
+
+      <TextView
+          android:hint="Select a Scheduled date"
+          android:layout_marginTop="10dp"
+          android:padding="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:gravity="center_vertical"
+          android:drawableLeft="@drawable/blue_calendar"
+          android:textSize="@dimen/custom_font_Level_two"
+          android:background="@drawable/edittext"
+         android:textColor="@color/colorPrimary"
+          fontPath="Roboto-Regular.ttf"
+          android:drawablePadding="10dp"
+          android:id="@+id/select_date"
+          />
+      <LinearLayout android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_marginTop="10dp"
+          android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext"
+            android:layout_height="wrap_content">
+          <ImageView
+              android:layout_width="40dp"
+              android:padding="10dp"
+              android:src="@drawable/clock_blue"
+              android:layout_height="40dp" />
+          <Spinner
+              android:layout_width="wrap_content"
+              android:hint="Duration"
+              android:layout_height="40dp"
+              android:background="@color/sky_blue"
+              style="@style/style_spinner_without_arow"
+
+              fontPath="Roboto-Regular.ttf"
+              android:textSize="@dimen/custom_font_Level_two"
+              android:drawablePadding="5dp"
+              android:id="@+id/select_duration"
+              />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext"
+            android:layout_height="wrap_content">
+          <ImageView
+              android:layout_width="40dp"
+              android:padding="10dp"
+              android:src="@drawable/frequency_blue"
+              android:layout_height="40dp" />
+          <Spinner
+              android:layout_width="0dp"
+              android:hint="Frequency"
+              android:layout_height="40dp"
+              style="@style/style_spinner_without_arow"
+              android:background="@color/sky_blue"
+              android:layout_weight=".5"
+              android:textSize="@dimen/custom_font_Level_two"
+              android:id="@+id/select_frequency"
+              />
+        </LinearLayout>
+
+      </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:layout_width="40dp"
+          android:padding="10dp"
+          android:src="@drawable/round_blue_tick"
+          android:layout_height="40dp" />
+
+      <Spinner
+          style="@style/style_spinner_without_arow"
+          android:background="@color/sky_blue"
+          android:hint="Instructions"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:textSize="@dimen/custom_font_Level_two"
+          fontPath="Roboto-Regular.ttf"
+          android:id="@+id/select_condition"
+          />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/btnSetReminder"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/btn_sel"
+          android:padding="10dp"
+          android:drawablePadding="5dp"
+          fontPath="Roboto-Bold.ttf"
+          android:textColor="#fff"
+          android:textAllCaps="false"
+          android:drawableLeft="@drawable/bell_white"
+          android:text="Set Reminder Time"
+          android:layout_marginTop="10dp"
+          />
+      <CheckBox
+          android:layout_width="match_parent"
+          android:layout_marginTop="2dp"
+          android:text="Set Refill Reminder"
+          android:textSize="@dimen/custom_font_Level_one"
+          fontPath="Roboto-Regular.ttf"
+          android:textColor="@color/colorPrimary"
+          android:elevation="2dp"
+
+          style="@style/checkBoxStyle"
+          android:id="@+id/chk_refil_reminder"
+          android:layout_height="wrap_content" />
+
+      <LinearLayout android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_marginTop="5dp"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Add Doctor"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:gravity="center_vertical"
+            fontPath="Roboto-Regular.ttf"
+            android:drawableLeft="@drawable/add_doctor_blue"
+            android:padding="5dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/edittext"
+            android:id="@+id/add_doctor"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Pill Buddy"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            fontPath="Roboto-Regular.ttf"
+            android:drawableLeft="@drawable/add_pill_buddy"
+            android:drawablePadding="10dp"
+            android:background="@drawable/edittext"
+            android:id="@+id/add_pill_buddy"
+            />
+
+      </LinearLayout>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Schedule Medicine"
+          android:layout_margin="15dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:textAllCaps="false"
+          android:elevation="50dp"
+          android:layout_gravity="center"
+          android:background="@drawable/btn_orange_curve"
+          android:textColor="@color/white"
+          android:id="@+id/btnsave" />
+
+      <ProgressBar
+          android:theme="@style/LinearProgress"
+          android:layout_width="match_parent"
+          android:indeterminate="true"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:visibility="gone"
+          android:indeterminateTint="@color/orange"
+          android:id="@+id/progressBar"
+          android:progressTint="@color/orange"
+          android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/LinearLayout01"
+        android:visibility="gone"
+        android:layout_below="@+id/lnr_first"
+        android:layout_height="wrap_content">
+
+      <AutoCompleteTextView
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/editText7"
+          android:background="@color/tabbg"
+          android:padding="10dp"
+          android:hint="Medicine Name"
+          android:layout_weight="1"
+          android:inputType="textCapSentences"
+          />
+
+      <Space
+          android:layout_width="10dp"
+          android:layout_height="match_parent" />
+
+
+      <Button
+          android:id="@+id/txt_doctor"
+          android:layout_width="60dp"
+          android:layout_height="wrap_content"
+          android:background="@color/tabbg"
+          android:padding="2dp"
+          android:textAllCaps="false"
+          android:textSize="8sp"
+          android:drawableRight="@drawable/medi"
+          android:text="Pick shape &amp; Color"
+          android:layout_weight="1" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/LinearLayout02"
+        android:layout_below="@+id/LinearLayout01"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+      <Button
+          android:layout_width="110dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/editText9"
+          android:background="@color/tabbg"
+          android:padding="10dp"
+          android:hint="Dosage"
+          />
+
+      <Space
+          android:layout_width="10dp"
+          android:layout_height="match_parent" />
+
+      <Spinner
+          android:layout_width="1100dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/editText12"
+
+          android:padding="10dp"
+          android:hint="Frequency"
+          android:entries="@array/medadd_frequency"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/LinearLayout03"
+        android:layout_below="@+id/LinearLayout02"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@color/tabbg"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Select Date"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:id="@+id/textView4"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/LinearLayout04"
+        android:layout_below="@+id/LinearLayout03"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/editText11"
+          android:background="@color/tabbg"
+          android:padding="10dp"
+          android:hint="Schedule"
+          android:layout_weight="1" />
+
+      <Space
+          android:layout_width="10dp"
+          android:layout_height="match_parent" />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="Select Days"
+          android:id="@+id/button2"
+          android:background="@color/tabbg"
+          android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/LinearLayout05"
+        android:layout_below="@+id/LinearLayout04"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+      <Spinner
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/editText13"
+          android:padding="10dp"
+          android:hint="Condition"
+          android:entries="@array/addmed_condition"
+          android:layout_weight="1" />
+
+
+
+
+      <EditText
+          android:id="@+id/message"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textMultiLine"
+          android:lines="4"
+          android:background="@color/tabbg"
+          android:padding="10dp"
+          android:hint="Instructions"
+          tools:text=""
+          android:layout_marginTop="10dp"
+          android:layout_weight="1" />
+
+
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_doctor"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:layout_below="@+id/LinearLayout05"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/LinearLayout06"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_doctor"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Doctor Not in List"
+          android:textColor="#08446a"
+          android:id="@+id/textView32"
+          android:layout_marginLeft="12dp"
+          android:layout_marginStart="12dp"
+          android:layout_centerVertical="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/LinearLayout07"
+        android:layout_below="@+id/LinearLayout06"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+
+      <Space
+          android:layout_width="10dp"
+          android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:visibility="gone"
+        android:layout_below="@+id/LinearLayout07"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Clear"
+          android:layout_margin="10dp"
+          android:background="@drawable/orgbtn"
+          android:textColor="@color/white"
+          android:id="@+id/btnclear" />
+
+
+
+    </LinearLayout>
+
+
+  </RelativeLayout>
+
+
+
+</LinearLayout>

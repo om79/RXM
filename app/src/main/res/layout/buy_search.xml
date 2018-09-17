@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showin="@layout/activity_main"
+    android:id="@+id/search_main"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+   >
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill_vertical">
+
+
+<!--
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider_grey"
+            android:dividerHeight="1dp"
+            android:visibility="gone"
+            android:listSelector="@drawable/list_row_selector"
+            android:choiceMode="singleChoice"
+            tools:Text ="Prescrption lists"
+            />-->
+
+        <view
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            class="android.support.v7.widget.RecyclerView"
+            android:id="@+id/recycler_view"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/no_data"
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:visibility="gone"
+        android:text="No data matches your search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      />
+
+
+
+
+</RelativeLayout>

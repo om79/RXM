@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:id="@+id/ll_refil_order_item"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/txtstatus"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="6sp"
+            android:layout_weight=".3"
+            android:textColor="#08446a"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".3"
+          >
+            <ImageView
+                android:layout_width="10dp"
+                android:id="@+id/imgStatus"
+                android:src="@drawable/orangecircle"
+                android:layout_marginTop="10dp"
+                android:layout_height="10dp"
+                />
+        <LinearLayout
+            android:layout_width="30dp"
+            android:id="@+id/imgmedicine"
+            android:orientation="horizontal"
+            android:layout_height="30dp"
+            android:src="@drawable/medi" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".2"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txtmedicine"
+                android:layout_height="wrap_content"
+                fontPath="Roboto-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:text="sample"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txttime"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_height="wrap_content"
+                android:text="sample"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/gray"
+               />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            >
+
+            <!--       <View
+                       android:id="@+id/verticleLine"
+                       android:layout_width="1dp"
+                       android:layout_height="30dp"
+                       android:layout_centerInParent="true"
+                       android:background="#8a8f97" />-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

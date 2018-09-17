@@ -1,0 +1,33 @@
+<LinearLayout         xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center_vertical"
+        android:text="Me"
+        android:id="@+id/textViewdm"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+         android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+    <ImageView
+        android:id="@+id/circularimg_view"
+        android:layout_width="60dp"
+        android:padding="3dp"
+        android:layout_height="40dp"
+        android:src="@drawable/avtar1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/textViewdm"
+        android:layout_toEndOf="@+id/textView2" />
+
+</LinearLayout>

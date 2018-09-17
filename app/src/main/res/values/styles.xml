@@ -1,0 +1,196 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="MaterialDesignLibraryTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+
+
+    <style name="AppTheme" parent="@style/MaterialDesignLibraryTheme.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.Noactionbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="dialog_med_animation">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fab_scale_down</item>
+    </style>
+
+    <style name="style_textview_gray" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/gray</item>
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/custom_font_Level_two</item>
+
+    </style>
+
+    <style name="ToolbarTitleTextAppearance" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="fontPath">Lato-Regular.ttf</item>
+    </style>
+
+    <style name="style_textview_blue" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/gray</item>
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="style_textview_orange" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/gray</item>
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="MaterialDesignLibraryTheme.Light" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="style_spinner" parent="Widget.AppCompat.Spinner">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:spinnerMode">dropdown</item>
+
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/border_rxspinner</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="style_am_pm_spinner" parent="Widget.AppCompat.Spinner">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/border_am_pm_spinner</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+
+
+
+    <style name="style_textview_with_arrow" parent="Widget.AppCompat.EditText">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/border_rxspinner</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="style_double_textview_with_arrow" parent="Widget.AppCompat.EditText">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/noborder_with_arrow</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+
+    <style name="style_edittext" parent="Widget.AppCompat.EditText">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingRight">20dp</item>
+
+    </style>
+
+
+    <style parent="@android:style/Widget.Spinner" name="style_spinner_without_arow">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="style_button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingRight">20dp</item>
+
+    </style>
+
+    <style name="style_date_picker" parent="@android:style/Widget.DeviceDefault.DatePicker">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:headerBackground">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="TextViewCustomFont">
+        <item name="fontPath">Lato-Regular.ttf</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="LinearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/orange</item>
+        <item name="android:progressBackgroundTint">@color/sky_blue</item>
+    </style>
+
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="tabBackground">@drawable/tab_selector</item>
+        <item name="tabSelectedTextColor">@color/sky_blue</item>
+
+
+    </style>
+
+    <style name="titleTextStyle" >
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/orange</item>
+        <item name="android:textColorSecondary">@color/orange</item>
+    </style>
+
+</resources>

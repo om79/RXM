@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/list_row_selector"
+    android:id="@+id/relativeFirst"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/avtar1" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productname"
+
+        android:textColor="#09456a"
+        android:layout_alignParentTop="true"
+        fontPath="Lato-Bold.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        tools:text="Name"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relation"
+        android:textColor="#09456a"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_below="@+id/productname"
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_four"
+        tools:text="Relation"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:textColor="#09456a"
+        tools:text="100%"
+
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        fontPath="Lato-Bold.ttf"
+        android:textSize="@dimen/custom_font_Level_one"
+        android:layout_alignBottom="@+id/product_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/product_size"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_toLeftOf="@+id/price"
+        android:layout_toStartOf="@+id/price"
+        android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+
+
+</LinearLayout>

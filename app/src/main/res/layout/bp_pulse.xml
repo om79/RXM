@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/lnrfirst"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="@dimen/space_between_two_control">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            fontPath="Roboto-Bold.ttf"
+
+            android:text="Select Type"
+            android:textColor="@color/white"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            fontPath="Roboto-Bold.ttf"
+            android:text="X"
+            android:src="@drawable/close"
+            android:textColor="@color/white"
+            android:background="@drawable/btncancel"
+            android:id="@+id/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+<!-- Editext for Search -->
+<EditText android:id="@+id/inputSearch"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="Search products.."
+    android:inputType="text"
+    android:visibility="gone"/>
+
+<NumberPicker
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/numpicpulse"
+    fontPath="Roboto-Regular.ttf"
+    android:layout_gravity="center_horizontal"
+    android:textSize="@dimen/custom_font_Level_two"
+    />
+    <com.andexert.library.RippleView
+        android:id="@+id/rect"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:rv_type="rectangle"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:rv_zoom="true">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_margin="10dp"
+        android:background="@drawable/orgbtn"
+        android:textColor="@color/white"
+        android:id="@+id/btnok"
+        fontPath="Roboto-Bold.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_gravity="center"/>
+
+
+    </com.andexert.library.RippleView>
+
+</LinearLayout>

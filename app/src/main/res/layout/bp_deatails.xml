@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:ignore="MissingPrefix"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+             >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/lnrfirst"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:text="Details"
+            fontPath="Roboto-Bold.ttf"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView74"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Blood Pressure :"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:id="@+id/textView75"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView74"
+            android:layout_alignRight="@+id/textView74"
+            android:layout_alignTop="@+id/txtpulse"
+            android:padding="5dp"
+            android:text="Pulse :"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:id="@+id/textView76"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtcomment"
+            android:layout_alignEnd="@+id/textView80"
+            android:layout_alignRight="@+id/textView80"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Weight :"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:id="@+id/txtpulse"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="New Text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_below="@+id/txtbloodpressure"
+            android:layout_toRightOf="@+id/textView74" />
+
+        <TextView
+            android:id="@+id/txtbloodpressure"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="New Text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView75" />
+
+        <TextView
+            android:id="@+id/txtcomment"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="New Text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_below="@+id/txtweight"
+            android:layout_toRightOf="@+id/textView74" />
+
+        <TextView
+            android:id="@+id/textView80"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView76"
+            android:layout_toLeftOf="@+id/txtbloodpressure"
+            android:layout_toStartOf="@+id/txtbloodpressure"
+            android:padding="5dp"
+            android:text="Date : "
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:id="@+id/txtweight"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="New Text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_below="@+id/txtpulse"
+            android:layout_toRightOf="@+id/textView74" />
+
+        <TextView
+            android:id="@+id/txtdateofbirth"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="New Text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_below="@+id/txtcomment"
+            android:layout_toRightOf="@+id/textView74" />
+
+        <TextView
+            android:id="@+id/textView83"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView80"
+            android:layout_alignRight="@+id/textView80"
+            android:layout_below="@+id/textView80"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Comments :"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearSec"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <Button
+            android:id="@+id/btnEdit"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".3"
+            android:background="@drawable/orgbtn"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".3"
+            android:background="@drawable/orgbtn"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/custom_font_Level_two"/>
+    </LinearLayout>
+</LinearLayout>

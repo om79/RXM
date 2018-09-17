@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:paddingTop="25dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="15dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="horizontal"
+    android:id="@+id/lnrdrawablebuymain"
+    android:gravity="bottom"
+
+    >
+
+    <!--<ImageView android:layout_width="85dp"
+        android:layout_height="77dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:src="@drawable/avtar3"
+        android:id="@+id/iv_profile_pic" />-->
+
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:id="@+id/txt_edit_profile"
+        android:layout_gravity="top"
+        android:textSize="@dimen/custom_font_Level_four"
+        fontPath="Lato-Regular.ttf"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/iv_profile_pic"
+            android:src="@drawable/avtar1"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+           />
+    <Space
+        android:layout_width="15dp"
+        android:layout_height="50dp"
+        android:id="@+id/space"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_profile_pic"
+        android:layout_toEndOf="@+id/iv_profile_pic" />
+<!--
+        android:src="@drawable/avtar3"
+-->
+
+
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            fontPath="Lato-Regular.ttf"
+            android:layout_marginTop="25dp"
+            android:id="@+id/txt_profile_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textAllCaps="false"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/space"
+            android:layout_below="@+id/txt_edit_profile"
+            />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID"
+            fontPath="Lato-Regular.ttf"
+            android:id="@+id/txt_profile_email"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/txt_profile_name"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/space">
+
+        </TextView>
+
+
+
+
+</RelativeLayout>

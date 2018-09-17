@@ -1,0 +1,387 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity" >
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/relativeLayout"
+
+            android:gravity="center_vertical"
+            android:background="@color/sky_blue"
+            android:padding="10dp">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView16"
+                android:src="@drawable/box"
+             />
+                </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order No."
+                    android:textColor="#555"
+                    fontPath="Lato-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/items"
+                    fontPath="Lato-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_two"
+                  />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/refs_orderdt"
+                    fontPath="Lato-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_four"
+                  />
+            </LinearLayout>
+
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="sd"
+                android:textColor="@color/color_primary"
+
+                android:layout_alignTop="@+id/refs_orderdt"
+                android:layout_toRightOf="@+id/refs_orderdt"
+                android:layout_toEndOf="@+id/refs_orderdt"
+                android:layout_weight="0.6" />
+
+            <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceSmall"
+               android:text="sd"
+
+               android:textColor="@color/color_primary"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.4" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="sd"
+                android:id="@+id/refs_orderdt"
+                android:textColor="@color/color_primary"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.4" />-->
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:divider="#ffad1c"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Name"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView15"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_marginLeft="29dp"
+                android:layout_marginStart="29dp"
+                android:layout_above="@+id/refs_add"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Address"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView16"
+                fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_alignBaseline="@+id/refs_add"
+                android:layout_alignBottom="@+id/refs_add"
+                android:layout_alignLeft="@+id/textView15"
+                android:layout_alignStart="@+id/textView15" />
+            <TextView
+                android:id="@+id/refs_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text=""
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toEndOf="@+id/textView16"
+                android:layout_marginLeft="37dp"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_marginStart="37dp" />
+
+            <TextView
+                android:id="@+id/refs_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text=""
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_below="@+id/refs_name"
+                android:layout_alignLeft="@+id/refs_name"
+                android:layout_alignStart="@+id/refs_name"
+                android:layout_marginTop="10dp" />
+
+
+        </RelativeLayout>
+
+
+          <ExpandableListView
+          android:id="@+id/expandableListView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+              android:groupIndicator="@android:color/transparent"
+          android:layout_below="@+id/linearLayout21"
+          android:layout_alignParentRight="true"
+           android:divider="@color/list_divider"
+          />
+
+
+        <ListView
+            android:id="@+id/list_Singleorderlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp"
+            android:visibility="gone"
+            android:listSelector="@drawable/list_row_selector"
+            android:choiceMode="singleChoice"
+            tools:Text ="Prescrption lists"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="Price Summary"
+            fontPath="Lato-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="#f5f5f5"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="7dp" />
+
+
+
+
+        <ListView
+            android:id="@+id/list_pricelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:choiceMode="singleChoice"
+            tools:Text ="Prescrption lists"
+            android:layout_alignParentTop="true">
+        </ListView>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" />
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#09456a"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:visibility="gone">
+
+
+
+        <TextView
+            android:id="@+id/btnstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="@drawable/orgbtn"
+            android:textColor="#fff"
+            android:text="nn"
+            android:gravity="center"
+            android:layout_weight="1"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_margin="5dp" />
+
+      <!--  <TextView
+            android:id="@+id/btnprice"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:background="@drawable/orgbtn"
+            android:textColor="#fff"
+            android:text="Proceed Next"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />-->
+
+        <!-- <android.support.design.widget.TextInputLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1">
+
+
+         </android.support.design.widget.TextInputLayout>-->
+
+        <!--<android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnPromcode"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/orgbtn"
+            android:textColor="#fff"
+            android:layout_margin="5px"
+            android:text="Apply code"/>-->
+
+        <!-- <android.support.v7.widget.AppCompatButton
+             android:id="@+id/btnprocess"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:padding="8dp"
+             android:layout_margin="5px"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="1dp"
+             android:layout_marginRight="1dp"
+             android:background="@drawable/orgbtn"
+             android:textColor="#fff"
+             android:text="Process Next"/>-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/btncolor_orange"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="20dp"
+
+        android:id="@+id/bottom_relative"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/nextlayout"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/txt_Next_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Total Price : "
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                fontPath="Lato-Bold.ttf"
+                android:layout_marginEnd="10dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/TotalPrice"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:textColor="@color/white"
+                fontPath="Lato-Bold.ttf"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/txt_Next_first"
+
+                />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

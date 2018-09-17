@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/sky_blue"
+        android:paddingLeft="20dp"
+
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:id="@+id/view2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/firstid"
+            android:layout_alignStart="@+id/firstid"
+            android:layout_alignEnd="@+id/forthdid"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstid"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/s_medicine_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/orangecircle"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s_medicine_txt"
+                android:textColor="@color/gray"
+                android:gravity="center_vertical"
+                android:text="   Select Medicines"
+                android:padding="4dp"
+               fontPath="Lato-regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:id="@+id/view" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondid"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/firstid"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/orangecircle"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/gray"
+                android:gravity="center_vertical"
+                android:text="   Upload Prescription"
+                android:padding="4dp"
+               fontPath="Lato-regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdid"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/secondid"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/orangecircle"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentLeft="true"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:text="Shipping Address"
+                android:padding="4dp"
+                fontPath="Lato-Regular.ttf"
+
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forthdid"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/thirdid"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/orangecircle"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view2"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/gray"
+                android:gravity="center_vertical"
+                android:text="Confirmation"
+                android:padding="3dp"
+
+                fontPath="Lato-Regular.ttf"
+
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toprelative"
+        android:background="@color/sky_blue"
+        >
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lin2"
+
+            android:layout_marginTop="20dp"
+            android:height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:background="#a2bacd"
+            android:autoText="true"
+            android:alpha=".5" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:id="@+id/img"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.25"
+                android:paddingBottom="2dp"
+                android:layout_height="65dp">
+
+                <ImageView
+                    android:id="@+id/txtStatus"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fill_circle_grey"
+                    />
+                <TextView
+                    android:id="@+id/txtStatus1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:textColor="#A4B6CA"
+                    android:layout_gravity="center"
+                    android:text="     Select Medicines"
+                    fontPath="Lato-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.25"
+
+                android:paddingBottom="2dp"
+                android:layout_height="65dp">
+
+
+                <ImageView
+                    android:id="@+id/txt0Status"
+                    android:layout_width="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    fontPath="Lato-Regular.ttf"
+                    android:src="@drawable/fill_circle_grey"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt0Status2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    fontPath="Lato-Regular.ttf"
+                    android:padding="2dp"
+                    android:textColor="#A4B6CA"
+                    android:gravity="center"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    android:text="Upload Prescription"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.25"
+                android:paddingBottom="2dp"
+                android:layout_height="65dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fill_circle_orange"
+                    android:id="@+id/txt1Status"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt0Status3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    fontPath="Lato-Regular.ttf"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    android:text="    Shipping Address"
+                    android:padding="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="0.25"
+
+                android:paddingBottom="2dp"
+                android:layout_height="65dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fill_circle_grey"
+                    android:id="@+id/txt2Status"
+                    android:gravity="center_horizontal" />
+
+
+                <TextView
+                    android:id="@+id/txt0Status4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fontPath="Lato-Regular.ttf"
+                    android:padding="2dp"
+                    android:textColor="#A4B6CA"
+                    android:textSize="@dimen/custom_font_Level_four"
+                    android:text="Confirmation"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:visibility="gone"
+        android:paddingTop="20dp">
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:hint="Full Name"
+            android:text="16sp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+           />
+
+        <EditText
+            android:id="@+id/input_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:hint="Address"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:hint="Pincode"
+            android:inputType="number"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="State :"
+            android:textColor="#08446a"
+            android:visibility="gone"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_state"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:hint=""
+            android:inputType="text"
+            tools:text=""
+            android:textAllCaps="false"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginBottom="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="City :"
+            android:textColor="#08446a"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_city"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginBottom="10dp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <EditText
+            android:id="@+id/landamrk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:inputType="textCapSentences"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            android:hint="Landmark"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two" />
+
+
+
+        <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:padding="10dp"
+            android:hint="Your Phone Number"
+            android:inputType="number"
+            tools:text=""
+            android:layout_marginBottom="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:clickable="false"
+            android:focusable="false"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Submit"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/orgbtn"
+            android:textColor="@android:color/white"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" />
+
+       <!-- <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="text"
+                tools:text="First Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp">
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="text"
+                tools:text="Last Name" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            tools:text=""/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_city"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            tools:text="city data"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp">
+
+            <EditText
+                android:id="@+id/landamrk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="landmark"
+
+                android:inputType="text"
+                tools:text="landmark" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp">
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pincode"
+                android:inputType="number"
+                tools:text="pincode" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp">
+
+            <EditText
+                android:id="@+id/phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phoneno"
+                android:inputType="number"
+                tools:text="phoneno" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:text="Submit" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:text="Login"
+            android:visibility="gone" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toprelative"
+        android:padding="0dp"
+        android:id="@+id/secondLayout"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnaddaddress"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:text="Add New Address"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            fontPath="Lato-Regular.ttf"
+
+            android:background="@drawable/text_box_border_small"
+            android:textColor="@color/btncolor_orange"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_margin="0dp"
+            android:textAlignment="viewStart" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lst_address"
+        android:layout_above="@+id/bottom_relative"
+        android:layout_below="@+id/secondLayout"
+        android:choiceMode="singleChoice"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/btncolor_orange"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="20dp"
+
+        android:id="@+id/bottom_relative"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/nextlayout"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/txt_Next_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Next"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textAllCaps="true"
+                fontPath="Lato-regular.ttf"
+
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:id="@+id/btnNext"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/txt_Next_first"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/right_arrow_white"
+                />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/previouslayout"
+            >
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/previous_white_arrow"
+                />
+
+            <TextView
+                android:id="@+id/txt_prevoius_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Back"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@+id/btnBack"
+                android:textAllCaps="true"
+                fontPath="Lato-regular.ttf"
+
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

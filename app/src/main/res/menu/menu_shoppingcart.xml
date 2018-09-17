@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.viroopa.Buying.shoppingcart">
+    <item android:id="@+id/order_transaction"
+        android:title="My Orders"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/return_cancel_policies"
+        android:title="Return and Cancellation Policies"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/termscondition"
+        android:title="Terms and condition"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/badge_icon"
+        app:showAsAction="always"
+        android:title="cart"/>
+</menu>

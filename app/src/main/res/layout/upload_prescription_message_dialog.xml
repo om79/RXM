@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+
+            android:text="Upload Prescription"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            fontPath="Lato-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_one" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            fontPath="Lato-light.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/title_checkout_msg"
+            android:textColor="@color/colorPrimary"
+            fontPath="Lato-Regular.ttf"
+
+            android:layout_margin="10dp" />
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnok"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Ok"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/orgbtn"
+            android:textColor="@android:color/white"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="25dp"
+
+            android:paddingRight="25dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

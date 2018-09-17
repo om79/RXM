@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:ignore="MissingPrefix"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnrfirst"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_between_two_control"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:autoText="false"
+            android:padding="10dp"
+            android:text="Select Type"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textStyle="bold"/>
+
+
+
+        <Button
+            android:id="@+id/btncancel"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btncancel"
+            android:padding="0dp"
+            android:src="@drawable/close"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+    </LinearLayout>
+
+
+    <!-- List View -->
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/orgbtn"
+        android:text="OK"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

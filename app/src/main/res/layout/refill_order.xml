@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout21">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:id="@+id/linearLayout2"
+            android:background="@color/sky_blue"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+
+            >
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#08446a"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:layout_marginLeft="10dp"
+                fontPath="Lato-Regular.ttf"
+                android:background="#dfe8f9"
+                android:text="Date"
+                android:drawableLeft="@drawable/calender"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:textIsSelectable="false"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txtorderno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#08446a"
+                android:textSize="@dimen/custom_font_Level_one"
+                fontPath="Lato-Regular.ttf"
+                android:background="#dfe8f9"
+                android:text="Order No"
+                android:drawableLeft="@drawable/box"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#08446a"
+                android:textSize="@dimen/custom_font_Level_one"
+                fontPath="Lato-Regular.ttf"
+                android:background="#dfe8f9"
+                android:text="Price"
+                android:drawableLeft="@drawable/tag"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical" />
+
+
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#dfe8f9"
+                android:textSize="18dp"
+                android:background="#dfe8f9"
+                android:text=">"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+    <!--    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+
+            android:id="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#08446a"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:background="#dfe8f9"
+                android:text="Date"
+                android:drawableLeft="@drawable/calender"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/txtorderno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#08446a"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:background="#dfe8f9"
+                android:text="Order No"
+                android:drawableLeft="@drawable/box"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#08446a"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:background="#dfe8f9"
+                android:text="Price"
+                android:drawableLeft="@drawable/tag"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#dfe8f9"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:background="#dfe8f9"
+                android:text=">"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:visibility="gone"
+            android:id="@+id/rl_no_size_available"
+             android:padding="10dp"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:id="@+id/imageView23"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/shopping_cart_empty_orange"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="You haven't place your first order yet."
+                android:layout_gravity="center"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:id="@+id/txt_no_data_available"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kindly let us serve you."
+                android:layout_gravity="center"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                />
+
+            <Button
+                android:id="@+id/btnorder"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="false"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:text="Order A Medicine"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/orgbtn"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="July 2015"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#df6301"
+        android:id="@+id/textView42"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />-->
+
+    <ListView
+        android:id="@+id/list_orderlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector"
+        android:choiceMode="singleChoice"
+        tools:Text ="Prescrption lists"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:layout_below="@+id/linearLayout21"
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:divider="#e7e7e7" />
+
+</RelativeLayout>

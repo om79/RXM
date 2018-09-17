@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:binding="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:id="@+id/Main_rel_address"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="2:58, 26 mar, 2016"
+
+        fontPath="Lato-Regular.ttf"
+        android:drawablePadding="7dp"
+        android:drawableLeft="@drawable/greencircle"
+        android:textSize="@dimen/custom_font_Level_four"
+        android:id="@+id/tracking_time"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+
+        android:text="Order processing has been initiated."
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        fontPath="Lato-Bold.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:id="@+id/tracking_description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:height="1dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:id="@+id/second_line"
+        android:layout_below="@+id/btntracking"
+        fontPath="Lato-Regular.ttf"
+        android:textSize="@dimen/custom_font_Level_two"
+        android:background="#e7e7e7" />
+
+
+
+
+
+
+</LinearLayout>

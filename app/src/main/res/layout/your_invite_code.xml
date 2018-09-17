@@ -1,0 +1,273 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity"
+  >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/img_profile"
+
+        android:background="@drawable/friend"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Click to change DP"
+        fontPath="Roboto-Bold.ttf"
+        android:textSize="@dimen/custom_font_Level_four"
+        android:id="@+id/dp_caption"
+        android:textColor="@color/rx_medikart_small_text_half_dark"
+        android:layout_below="@+id/img_profile"
+        android:layout_alignLeft="@+id/img_profile"
+        android:layout_alignStart="@+id/img_profile" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/dp_caption"
+        android:padding="5dp"
+        fontPath="Roboto-Regular.ttf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/relativeLayout7">
+
+
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/edt_name"
+            android:padding="10dp"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/person_blue"
+            android:hint="Friend name"
+            android:background="@drawable/edittext"
+            android:layout_marginTop="10dp" />
+
+
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:maxLength="10"
+            fontPath="Roboto-Regular.ttf"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:drawableLeft="@drawable/call_blue"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_phone_number"
+            android:hint="Friend phone number"
+            android:background="@drawable/edittext"
+            android:layout_below="@+id/edt_name"
+            android:layout_alignLeft="@+id/edt_name"
+            android:layout_alignStart="@+id/edt_name" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            fontPath="Roboto-Regular.ttf"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:drawableLeft="@drawable/mail_blue"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_email"
+            android:hint="Friend email id"
+            android:background="@drawable/edittext"
+            android:layout_below="@+id/edt_name"
+            android:layout_alignLeft="@+id/edt_name"
+            android:layout_alignStart="@+id/edt_name" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact"
+            android:padding="10dp"
+
+            android:background="@color/orange"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:text="Pick a buddy from address book"
+            android:drawablePadding="5dp"
+            fontPath="Roboto-Bold.ttf"
+            android:gravity="center"
+            android:textColor="@color/white"
+           />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Invitation code"
+            android:layout_marginTop="10dp"
+            fontPath="Roboto-Bold.ttf"
+           android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:layout_alignBaseline="@+id/edt_email"
+            android:layout_alignBottom="@+id/edt_email"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/relativeLayout7"
+        android:id="@+id/generate_serial_number"
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:id="@+id/genetrate_textview"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:drawableLeft="@drawable/mail_blue"
+            android:drawablePadding="10dp"
+            android:background="@drawable/edittext"
+            android:layout_below="@+id/edt_name"
+            android:layout_alignLeft="@+id/edt_name"
+            android:layout_alignStart="@+id/edt_name" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="35dp"
+            android:text="Go"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            fontPath="Roboto-Bold.ttf"
+            android:id="@+id/btngenerate"
+            android:textAllCaps="false"
+            android:background="@drawable/rx_curve_blue_background"
+            android:textColor="#ffff"
+            android:padding="8dp"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generate_serial_number"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/drpdwn"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+
+
+        android:id="@+id/relativeLayout8">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="I want you to be notified if i forgot to take my medicines.Get Medikart App using this link http://goog.gl/medi23jk. Your invite code is Bxjm2ej."
+            android:id="@+id/textView52" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Thanks &amp; regards;"
+            android:visibility="gone"
+            android:id="@+id/textView53"
+            android:layout_below="@+id/textView52"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Anuj Shrivastav"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/textView54"
+            android:layout_below="@+id/textView53"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Send Invitation"
+        android:gravity="center"
+        android:enabled="false"
+        android:visibility="gone"
+        android:id="@+id/btnsave"
+        android:textAllCaps="false"
+        fontPath="Roboto-Bold.ttf"
+        android:background="@drawable/orgbtn"
+        android:textColor="#ffff"
+        android:padding="8dp"
+        android:textSize="12dp"
+        android:layout_below="@+id/relativeLayout8"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:background="@color/colorPrimary" >
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bottom_left" />
+
+    </LinearLayout>
+
+</RelativeLayout>

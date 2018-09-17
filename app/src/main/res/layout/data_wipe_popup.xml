@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:showin="@layout/activity_main"
+    tools:context=".MainActivity"
+    android:paddingBottom="20dp">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout9"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you sure to Wipe out this member data ?"
+            android:id="@+id/maintitle"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout10"
+        android:background="@color/white"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Yes"
+
+            android:background="@color/btncolor_orange"
+            android:textColor="@color/white"
+            android:id="@+id/btnYeswipe"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="No"
+            android:layout_marginLeft="20dp"
+            android:background="@color/btncolor_orange"
+            android:textColor="@color/white"
+            android:id="@+id/btnNowipe"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

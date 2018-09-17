@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.viroopa.medikart.wmMonitor.watermain">
+
+
+    <item android:id="@+id/action_member" android:title="select"
+        android:orderInCategory="100" app:showAsAction="always"
+        android:icon="@drawable/dricn"
+        android:visible="false"/>
+
+
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_report" android:title="Report"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_allmeds" android:title="All Meds"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/circlularImage" android:title=""
+        android:orderInCategory="100" app:showAsAction="always"
+        />
+</menu>

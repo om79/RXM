@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:background="@drawable/list_row_selector"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/tablet2"
+            android:focusable="false"
+            android:layout_toLeftOf="@+id/refi_product"
+            android:layout_toStartOf="@+id/refi_product"
+            android:paddingRight="5dp" />
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prodimg"
+            android:src="@drawable/bcart_orange"
+            android:layout_gravity="left"
+            android:adjustViewBounds="false"
+            android:padding="10dp"
+
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY" />-->
+
+
+        <TextView
+            android:id="@+id/refi_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:text="Product :"
+            android:focusable="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/refi_packsize"
+            android:layout_alignStart="@+id/refi_packsize" />
+
+<!--        <TextView
+            android:id="@+id/refi_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desc : "
+            android:textColor="@color/color_primary"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/refi_product"
+            android:layout_toRightOf="@+id/textView21"
+            android:layout_toEndOf="@+id/textView21"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp" />-->
+
+        <TextView
+            android:id="@+id/refi_packsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pack size :"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/refi_product"
+            android:layout_toRightOf="@+id/textView21"
+            android:layout_toEndOf="@+id/textView21"
+            fontPath="Roboto-Regular.ttf"
+            android:focusable="false"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp" />
+
+        <TextView
+            android:id="@+id/refi_amount"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="\u20B9 "
+            android:focusable="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_alignTop="@+id/refi_Qty"
+            android:layout_toRightOf="@+id/refi_Qty"
+            android:layout_toEndOf="@+id/refi_Qty" />
+
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:src="@drawable/x_minus"
+            android:id="@+id/btnminus"
+            android:textSize="25dp"
+            android:layout_alignTop="@+id/refi_Qty"
+            android:layout_toRightOf="@+id/refi_packsize"
+            android:layout_toEndOf="@+id/refi_product"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp" />-->
+
+        <TextView
+            android:id="@+id/refi_Qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty : "
+            android:focusable="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/refi_product"
+            android:layout_toRightOf="@+id/refi_packsize"
+            android:layout_toEndOf="@+id/refi_packsize"
+            android:layout_marginLeft="37dp"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginStart="37dp" />
+
+
+        <!--<EditText
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/refi_Qty"
+            android:padding="5dp"
+            android:textIsSelectable="false"
+            android:textSize="14dp"
+            android:textColor="@color/color_primary"
+            android:layout_alignBottom="@+id/refi_packsize"
+            android:layout_toRightOf="@+id/btnminus"
+            android:layout_toEndOf="@+id/btnminus" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:src="@drawable/x_plus"
+            android:id="@+id/btnplus"
+            android:textSize="25dp"
+            android:layout_alignTop="@+id/refi_Qty"
+            android:layout_toRightOf="@+id/refi_Qty"
+            android:layout_toEndOf="@+id/refi_Qty" />-->
+<!--        <TextView
+            android:id="@+id/refi_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount : "
+            android:layout_alignTop="@+id/refi_desc"
+            android:layout_alignRight="@+id/btnRegister"
+            android:layout_alignEnd="@+id/btnRegister"
+            android:layout_marginRight="73dp"
+            android:layout_marginEnd="73dp" />-->
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnaddtocart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:textColor="#fff"
+            android:focusable="false"
+            android:background="@drawable/orgbtn"
+            android:text="Add to Cart"
+            android:visibility="gone"
+            android:layout_below="@+id/refi_packsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:focusable="false"
+            android:id="@+id/textView20"
+            android:textColor="@color/colorPrimary"
+            android:layout_above="@+id/refi_packsize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="  "
+            android:focusable="false"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView21"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/textView20"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:focusable="false"
+            android:id="@+id/textView22"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignBottom="@+id/Qty"
+            android:layout_toRightOf="@+id/btnplus"
+            android:layout_toEndOf="@+id/btnplus"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnaddcart"
+            android:layout_gravity="right"
+            android:adjustViewBounds="false"
+            android:padding="8dp"
+            android:onClick="null"
+            android:clickable="false"
+
+             android:focusable="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

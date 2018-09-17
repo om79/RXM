@@ -1,0 +1,517 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/bg"
+   android:id="@+id/mainrel"
+     android:padding="10dp"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_frame"
+
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ffad1c"
+            android:dividerHeight="2dp"
+            android:id="@+id/relativeLayout"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+               fontPath="Lato-Regular.ttf"
+                android:text="Crocin - 500mg"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:textSize="@dimen/custom_font_Level_one"
+
+
+                android:id="@+id/ProductName"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="form name"
+                android:id="@+id/form_name"
+               fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/colorPrimary"
+                 android:layout_marginBottom="5dp"
+                android:layout_below="@+id/ProductName"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:background="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/form_name"
+                android:id="@+id/relativeLayout13">
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:src="@drawable/medi_sali"
+                android:background="@drawable/white_bg_border"
+                />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Add  to Cart"
+
+                android:id="@+id/btnAddtocarts"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="@dimen/custom_font_Level_two"
+                fontPath="Lato-Regular.ttf"
+                android:layout_below="@+id/LinearLayout15"
+                android:background="@drawable/orgbtn"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_alignLeft="@+id/LinearLayout15"
+                android:layout_alignStart="@+id/LinearLayout15" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Out of Stock"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="@drawable/ligh_blue_border"
+                fontPath="Lato-Regular.ttf"
+                android:textColor="@color/view_bg"
+                android:id="@+id/txt_out_of_stock"
+                android:layout_below="@+id/LinearLayout15"
+                android:textSize="14dp"
+                android:layout_alignLeft="@+id/LinearLayout15"
+                android:layout_alignStart="@+id/LinearLayout15" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_marginTop="10dp"
+                android:id="@+id/price_h"
+               fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/base"
+                android:layout_below="@+id/ProductName"
+
+                android:layout_alignLeft="@+id/product_price"
+                android:layout_alignStart="@+id/product_price" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 999.00"
+                android:textColor="@color/btncolor_orange"
+               fontPath="Lato-Bold.ttf"
+                android:textSize="@dimen/custom_font_Level_one"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/relativeLayout13"
+                android:id="@+id/product_price"
+                android:layout_below="@+id/price_h"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Flavour"
+                android:id="@+id/flavour_txt"
+               fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/base"
+                android:layout_below="@+id/product_price"
+                android:layout_alignLeft="@+id/product_price"
+                android:layout_alignStart="@+id/product_price"
+               />
+
+
+
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Flavour"
+                android:gravity="center"
+                android:id="@+id/flavour"
+                android:background="@drawable/textbox_border_light_black_white_background"
+               fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:layout_below="@+id/flavour_txt"
+                android:padding="5dp"
+                android:layout_alignLeft="@+id/product_price"
+                android:layout_alignStart="@+id/product_price"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:id="@+id/weight_txt"
+               fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/base"
+                android:layout_below="@+id/flavour"
+                android:layout_alignLeft="@+id/product_price"
+                android:layout_alignStart="@+id/product_price"
+                />
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:id="@+id/weight"
+                android:gravity="center"
+                android:background="@drawable/textbox_border_light_black_white_background"
+               fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:layout_below="@+id/weight_txt"
+                android:padding="5dp"
+                android:layout_alignLeft="@+id/product_price"
+                android:layout_alignStart="@+id/product_price"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:id="@+id/qtny"
+               fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/base"
+                android:layout_below="@+id/weight"
+
+                android:layout_alignLeft="@+id/product_price"
+                android:layout_alignStart="@+id/product_price"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/qtny"
+                android:id="@+id/LinearLayout15"
+                android:layout_alignLeft="@+id/product_price"
+                android:layout_alignStart="@+id/product_price"
+               >
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="fill_parent"
+
+                    android:text=" - "
+                    android:background="@drawable/ligh_blue_border"
+                    android:id="@+id/btnminus"
+                    android:textSize="@dimen/custom_font_Level_two" />
+
+                <TextView
+                    android:layout_width="45dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/Qty"
+                   fontPath="Lato-Regular.ttf"
+                    android:gravity="center"
+                    android:background="@drawable/textbox_border_light_black_white_background"
+                    android:textColor="@color/btncolor_orange"
+                    android:text=" 1"
+
+                    android:textSize="@dimen/custom_font_Level_two" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=" + "
+                    android:background="@drawable/ligh_blue_border"
+                    android:padding="2dp"
+                    android:id="@+id/btnplus"
+                    android:textSize="@dimen/custom_font_Level_two" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="Other details of the product : "
+            android:id="@+id/txtsecheading"
+           fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/txtsecheading"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayoutItemDetails"
+            android:layout_gravity="right|top"
+            android:divider="#df6301"
+            android:padding="10dp"
+            android:layout_below="@+id/txtsecheading"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#08446a"
+                android:textStyle="bold"
+                android:text="product name"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_above="@+id/txt_gender"
+                android:layout_toRightOf="@+id/txt_description"
+                android:layout_toEndOf="@+id/txt_description" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/gneder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unisex"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/manufacturer_name"
+                android:layout_alignStart="@+id/manufacturer_name" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/dosagemanufacturer_name"
+                android:layout_width="wrap_content"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:visibility="gone"
+                android:textColor="@color/btncolor_orange"
+                android:layout_height="wrap_content"
+                android:text="dosagemanufacturer_name"
+                android:layout_below="@+id/manufacturer_name"
+                android:layout_alignLeft="@+id/gneder_name"
+                android:layout_alignStart="@+id/gneder_name"
+                android:layout_marginTop="3dp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/manufacturer_name"
+                android:layout_width="wrap_content"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:layout_height="wrap_content"
+                android:text="manufacturer_name"
+                android:layout_alignTop="@+id/txt_manufaccturer"
+                android:layout_toRightOf="@+id/product_name"
+                android:layout_toEndOf="@+id/product_name" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:visibility="gone"
+                android:textColor="@color/btncolor_orange"
+                android:text="route"
+                android:layout_below="@+id/dosagemanufacturer_name"
+                android:layout_alignLeft="@+id/dosagemanufacturer_name"
+                android:layout_alignStart="@+id/dosagemanufacturer_name"
+                android:layout_marginTop="3dp"
+               />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#08446a"
+                android:textStyle="bold"
+                android:text="category"
+                android:layout_below="@+id/route"
+                android:layout_alignLeft="@+id/route"
+                android:layout_alignStart="@+id/route"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:visibility="gone"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:text="description"
+                android:layout_alignTop="@+id/txt_description"
+                android:layout_alignRight="@+id/product_name"
+                android:layout_alignEnd="@+id/product_name" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Product"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender  :  "
+                android:id="@+id/txt_gender"
+                fontPath="Lato-Regular.ttf"
+
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/base"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manufacturer :"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:layout_toRightOf="@+id/txt_gender"
+                android:textColor="@color/base"
+                android:id="@+id/txt_manufaccturer"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/gneder_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Dosage manufacturer_name :"
+                fontPath="Lato-Regular.ttf"
+                android:visibility="gone"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:id="@+id/txt_dosage_manufacturer_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+               android:layout_below="@+id/txt_manufaccturer"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Route of Administration :"
+                android:id="@+id/txt_route"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_four"
+                android:visibility="gone"
+                android:textColor="@color/rx_medikart_small_text_half_dark"
+                android:layout_below="@+id/txt_dosage_manufacturer_name"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="3dp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Category"
+                android:id="@+id/textView9"
+                android:layout_below="@+id/txt_route"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Description :"
+                android:visibility="gone"
+                android:id="@+id/txt_description"
+                android:layout_below="@+id/txt_route"
+                fontPath="Lato-Regular.ttf"
+                android:textSize="@dimen/custom_font_Level_two"
+                android:textColor="@color/base"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp" />
+
+         
+
+
+        </RelativeLayout>
+
+
+
+        <ExpandableListView
+            android:id="@+id/expandableListView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+
+            android:layout_below="@+id/relativeLayoutItemDetails"
+            android:layout_alignParentRight="true"
+            android:groupIndicator="@null"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

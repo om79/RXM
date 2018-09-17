@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    tools:ignore="MissingPrefix" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/lnrfirst"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="@dimen/space_between_two_control"
+        >
+        <ImageView
+            android:id="@+id/imgsetgoal"
+            android:layout_width="30dp"
+            android:layout_weight=".05"
+            android:padding="8dp"
+            android:layout_height="40dp"
+            android:src="@drawable/setgoal_white" />
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            fontPath="Roboto-Bold.ttf"
+            android:text="Set Goal"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold"
+            android:textSize="@dimen/custom_font_Level_one"
+            />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            fontPath="Roboto-Bold.ttf"
+            android:text="X"
+            android:textColor="@color/white"
+            android:background="@drawable/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Blood Sugar"
+        fontPath="Roboto-Bold.ttf"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/first_heading"
+        android:textSize="@dimen/custom_font_Level_two"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnrGlucoe"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+
+            >
+
+
+
+
+
+            <TextView
+                android:id="@+id/txtSetGoalGlucose"
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:hint="0.0"
+                android:drawableLeft="@drawable/water_drop_blue"
+                android:padding="10dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:drawablePadding="15dp"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/custom_font_Level_one"
+                />
+
+
+            <View
+                android:layout_width="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/txtSetGoalGlucoseUnit"
+                android:layout_width="0dp"
+                android:layout_weight=".08"
+                style="@style/style_double_textview_with_arrow"
+                android:text="mg/dL"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/custom_font_Level_one"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Weight"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/weight"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            >
+
+
+
+            <TextView
+                android:id="@+id/txtSetGoalWeight"
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="40dp"
+                android:hint="Enter Weight"
+                android:text=""
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/blue_weight"
+                android:padding="10dp"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/custom_font_Level_one"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:background="@color/gray"
+                android:layout_marginLeft="5dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/txtSetGoalWeightUnit"
+                android:layout_width="0dp"
+                android:layout_weight=".08"
+                style="@style/style_double_textview_with_arrow"
+                android:text="Kg"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/custom_font_Level_one"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+       android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="1dp"
+        android:gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentBottom="true">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rv_type="rectangle"
+
+            android:padding="2dp"
+            app:rv_zoom="true">
+
+            <Button
+                android:id="@+id/btnSave_SetGoal"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:background="@drawable/orgbtn"
+                android:layout_margin="3dp"
+                fontPath="Roboto-Bold.ttf"
+                android:text="Set Goal"
+                android:layout_marginBottom="@dimen/space_between_two_control"/>
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

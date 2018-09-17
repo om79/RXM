@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:background="@color/white"
+       >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Have a question ? Write to us"
+            android:textColor="#08446a"
+            fontPath="Lato-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:id="@+id/textView74"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp" />
+
+
+        <EditText
+            android:id="@+id/txtenquiry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="What is your enquiry about?*"
+            android:inputType="textCapSentences"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+
+            android:textSize="14sp"
+            android:padding="10dp"
+            fontPath="Lato-Regular.ttf"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your message here"
+            android:inputType="textCapSentences"
+            android:background="@drawable/drpdwn"
+            android:textColor="#08446a"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:text=""
+            fontPath="Lato-Regular.ttf"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="false"
+            android:layout_weight=".5"
+            android:text="Send Enquiry"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Lato-Regular.ttf"
+            android:layout_gravity="center"
+            android:background="@drawable/orgbtn"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:background="#f5f5f5"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Registerd office"
+            fontPath="Lato-Bold.ttf"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:padding="8dp"
+          />
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="8A, 11, Pul Prahladapur Shopping Complex, SurajKhand Road, New Delhi - 110044"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:layout_marginRight="40dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Lato-Regular.ttf"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="9555033444"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            fontPath="Lato-Regular.ttf"
+            android:padding="5dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/phone"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Care@rxmedikart.com"
+            fontPath="Lato-Regular.ttf"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/black_action_mail"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:textSize="@dimen/custom_font_Level_two"
+          />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/material_grey_300"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Branch office"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="8dp"
+          />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="22/9 first floor, MAIN MARKET NEAR PNB BANK"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0129 226 5079"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Prem@bluegreenpharma.com"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+
+</LinearLayout>
+    </LinearLayout>
+
+
+    <!--  <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/imageView23"
+               android:src="@drawable/logo_rx"
+               android:adjustViewBounds="true"
+               android:layout_marginLeft="50dp"
+               android:layout_marginRight="50dp" />-->
+    <!--  <TextView
+             android:layout_width="fill_parent"
+             android:background="@drawable/sky_blue_border"
+             android:padding="10dp"
+             android:layout_height="wrap_content"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:text="Contact us"
+             android:textStyle="bold"
+             android:textColor="@color/color_primary"
+             android:id="@+id/textView901"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="10dp"
+             android:layout_below="@+id/linearLayout"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:gravity="center_horizontal"
+             android:textSize="14sp" />
+   -->
+    <!-- <TextView
+         android:layout_width="fill_parent"
+         android:background="@color/white"
+         android:layout_height="wrap_content"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:text="www.rxBuying.com"
+         android:id="@+id/textView9002"
+         android:layout_gravity="center_horizontal"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:paddingLeft="20dp"
+         android:paddingTop="10dp"
+         android:paddingRight="20dp"
+         android:layout_below="@+id/textView901" />-->
+

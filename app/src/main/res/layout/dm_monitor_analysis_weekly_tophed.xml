@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    tools:ignore="MissingPrefix"
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+
+        android:orientation="horizontal"
+
+        android:textColor="@color/black"
+        android:id="@+id/lnrHeaderBlan">
+
+
+        <TextView
+            android:id="@+id/txttitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Title"
+            android:padding="5dp"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.42" />
+
+
+
+
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Max"
+            android:gravity="right"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:padding="5dp"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.15" />
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Min"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:padding="5dp"
+            android:gravity="right"
+
+            android:drawablePadding="5dp"
+            android:layout_weight="0.15" />
+
+        <TextView
+            android:id="@+id/avg"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text = "Avg"
+            android:padding="5dp"
+            fontPath="Roboto-Regular.ttf"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:textColor="@color/rx_medikart_small_text_half_dark"
+            android:drawablePadding="5dp"
+            android:layout_weight="0.2" />
+
+        <ImageView
+            android:id="@+id/imgavgright"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.07"
+          android:layout_marginTop="10dp"
+            android:src="@drawable/gray_down_arrows"
+           />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Mix"
+            android:id="@+id/textView2"
+            android:layout_alignTop="@+id/textView34"
+            android:layout_toLeftOf="@+id/textView34"
+            android:layout_toStartOf="@+id/textView34"
+            android:layout_weight="0.1"
+            android:gravity="center" />-->
+
+
+
+
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Trends"
+            android:id="@+id/textView33"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="0.2"
+            android:gravity="right" />-->
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

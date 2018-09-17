@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+android:background="@color/white"
+>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:id="@+id/lnrtest"
+        android:layout_weight=".7"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/imgstatusImage"
+            android:src="@drawable/center_photo"/>
+        <TextView
+            android:id="@+id/txtstatusmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_gravity="center"
+            android:textSize="8dp"
+            android:text="YOU DOING GREAT !"
+            android:layout_marginBottom="1dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/txtawsome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtstatusmessage"
+            android:layout_centerHorizontal="true"
+            android:text="AWESOME !!"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>

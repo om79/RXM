@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+
+            fontPath="Roboto-Bold.ttf"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:gravity="left|center"
+            android:text="Blood Pressure Reading"
+            android:id="@+id/textView"
+            android:layout_weight="0.9"
+            android:textAlignment="gravity"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            fontPath="Roboto-Bold.ttf"
+            android:text="X"
+            android:src="@drawable/close"
+            android:textColor="@color/white"
+            android:background="@drawable/btncancel"
+            android:id="@+id/btn_cancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lnrdisplay"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Bold.ttf"
+            android:textColor="@color/colorPrimary"
+            android:text="Your Blood Pressure : "
+            android:id="@+id/textView78"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_Level_two"
+            fontPath="Roboto-Bold.ttf"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:text="Normal Pressure"
+            android:id="@+id/analysisMessage"
+            android:layout_alignTop="@+id/textView78"
+            android:layout_toRightOf="@+id/textView78"
+            android:layout_toEndOf="@+id/textView78" />
+      <!--  <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:background="@drawable/orgbtn"
+            android:id="@+id/btnSave"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal" />-->
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Save"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:drawableLeft="@drawable/save_white_icon"
+        android:textColor="@color/white"
+        android:id="@+id/btn_Saves"
+        android:layout_marginBottom="5dp"
+        android:textSize="@dimen/custom_font_Level_two"
+
+        />
+
+
+
+</LinearLayout>

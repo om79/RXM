@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:id="@+id/lnrfirst"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_between_two_control"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        tools:ignore="MissingPrefix"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:autoText="false"
+            android:padding="10dp"
+            android:text="Set Goal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+
+            />
+
+
+        <Button
+            android:id="@+id/btn_setgoal_cancel"
+            fontPath="Roboto-Bold.ttf"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lnrGlucoe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+
+        >
+
+
+        <TextView
+            android:id="@+id/systolic"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Systolic"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"
+            />
+
+        <TextView
+            android:id="@+id/txtgoalSystolic"
+            fontPath="Roboto-Regular.ttf"
+            style="@style/style_textview_with_arrow"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter Systolic"
+            android:drawableLeft="@drawable/ic_edit"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/custom_font_Level_two"
+            />
+
+
+        <TextView
+            android:id="@+id/Diastolic"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Diastolic"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <TextView
+            android:id="@+id/txtgoalDiastolic"
+            fontPath="Roboto-Regular.ttf"
+            style="@style/style_textview_with_arrow"
+            android:layout_gravity="center_vertical"
+            android:hint="Enter Diastolic"
+            android:drawableLeft="@drawable/ic_edit"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            />
+
+
+        <TextView
+            android:id="@+id/weight"
+            fontPath="Roboto-Regular.ttf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:orientation="horizontal"
+            android:padding="1dp"
+
+            >
+
+            <TextView
+                android:id="@+id/txtgoalweight"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_width="0dp"
+                style="@style/style_double_textview_with_arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".1"
+                android:drawableLeft="@drawable/ic_edit"
+                android:hint="Enter Weight"
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@color/gray"/>
+
+
+
+
+            <TextView
+                android:id="@+id/txtgoalWeightunit"
+                fontPath="Roboto-Regular.ttf"
+                android:layout_width="0dp"
+                android:drawableLeft="@drawable/ic_edit"
+                style="@style/style_double_textview_with_arrow"
+                android:layout_weight=".08"
+                android:text="Kg"
+                android:textSize="@dimen/custom_font_Level_two"
+                />
+
+
+
+        </LinearLayout>
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:padding="1dp">
+
+
+        <com.andexert.library.RippleView
+            android:id="@+id/rect"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="50dp"
+            app:rv_type="rectangle"
+
+            app:rv_zoom="true">
+
+            <Button
+                android:id="@+id/btn_setgoal_save"
+                fontPath="Roboto-Bold.ttf"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="@dimen/space_between_two_control"
+
+                android:layout_weight="1"
+                android:background="@drawable/orgbtn"
+                android:text="Set Goal"
+                android:textColor="#fff"/>
+
+        </com.andexert.library.RippleView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_one"
+            fontPath="Lato-Regular.ttf"
+            android:text="Price Summary"
+            android:id="@+id/textView_main_heading"
+            android:textAllCaps="false"
+            android:autoText="false"
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@color/white"
+            android:id="@+id/btncancel"
+            android:textSize="@dimen/custom_font_Level_one"
+            fontPath="Lato-Regular.ttf"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            fontPath="Lato-Regular.ttf"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_below="@+id/heading"
+            android:id="@+id/h_txt"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:text="Final price summary"
+            android:textColor="@color/colorPrimary"
+            android:background="#ebf4fb" />
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/h_txt"
+            android:id="@+id/lst_price"
+           />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnok"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/lst_price"
+            android:text=" Ok"
+            fontPath="Lato-Bold.ttf"
+            android:gravity="center"
+            android:background="@drawable/orgbtn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/nextlayout"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:background="@color/btncolor_orange"
+        android:layout_alignParentBottom="true"
+       >
+
+        <TextView
+            android:id="@+id/txt_Next_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Total Price : "
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            fontPath="Lato-Bold.ttf"
+            android:layout_marginEnd="10dp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/TotalPrice"
+            android:layout_width="wrap_content"
+            android:text="10000"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+
+            android:textSize="@dimen/custom_font_Level_one"
+            android:textColor="@color/white"
+            fontPath="Lato-Bold.ttf"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_Next_first"
+
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

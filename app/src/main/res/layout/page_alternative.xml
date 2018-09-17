@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        android:paddingTop="10dp"
+
+        android:paddingBottom="1dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+           fontPath="Lato-Bold.ttf"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/custom_font_Level_one"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Medicine"
+            android:id="@+id/txt_medicine"
+            android:textColor="@color/colorPrimary"
+
+            />
+        <TextView
+            android:id="@+id/tx_sub_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text = "Substitute of Crocin 500mg"
+            android:layout_toRightOf="@+id/thumbnail"
+           fontPath="Lato-Bold.ttf"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="#666"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/txt_size"
+            />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:layout_below="@+id/txtsecheading"
+            android:background="@color/btncolor_orange"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:padding="2dp">
+
+        <!--<TextView
+            android:id="@+id/activity_main_row_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/listview_row_header_padding_horizontal"
+            android:paddingRight="@dimen/listview_row_header_padding_horizontal"
+            android:paddingBottom="@dimen/listview_row_header_padding_vertical"
+            android:paddingTop="@dimen/listview_row_header_padding_vertical"
+            android:textSize="@dimen/listview_row_header_size"
+            android:textColor="?attr/colorPrimary"
+            android:text = "Alternative Pack Size"
+            tools:Text ="Compositions"/>-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linear_search"
+            android:padding="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+        <EditText android:id="@+id/inputSearch"
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:padding="8dp"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/custom_font_Level_two"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/blue_search"
+            android:background="@drawable/drpdwn"
+            android:hint="Search"
+            android:inputType="textVisiblePassword"/>
+
+        <Button
+            android:layout_height="32dp"
+            android:text="sort"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/sort_white"
+            android:background="@drawable/orgbtn"
+            android:layout_weight=".2"
+            android:id="@+id/sort_btn"
+            fontPath="Lato-Regular.ttf"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:padding="5dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_alternative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/gray"
+
+            android:layout_below="@+id/linear_search"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_row_selector"
+            android:choiceMode="singleChoice"
+            tools:Text ="Prescrption lists"
+            android:layout_marginTop="10dp" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/no_data_available"
+        android:padding="5dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text = "No Substitute available"
+            android:layout_toRightOf="@+id/thumbnail"
+           fontPath="Lato-Bold.ttf"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/custom_font_Level_four"
+            android:textColor="#bdbdbd"
+            android:layout_gravity="center_vertical"
+
+            />
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+<!--
+</FrameLayout>-->

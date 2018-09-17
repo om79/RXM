@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mra__add_pilly__budy__on__code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="viroopa.com.medikart.MedicineReminder.MRA_Add_pilly_Budy_On_Code">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/center_photo"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/custom_font_Level_one"
+        android:text="Enter the code of your Friend to add as a Pill Buddy"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:id="@+id/edt_pill_buddy_code"
+        android:hint="Code Here"
+        android:elevation="5dp"
+        android:background="@drawable/ligh_blue_border"
+        android:layout_height="wrap_content" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:id="@+id/btn_add_friend"
+        android:elevation="15dp"
+        android:layout_gravity="center"
+        android:background="@color/orange"
+        android:text="Add As Pill Buddy"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

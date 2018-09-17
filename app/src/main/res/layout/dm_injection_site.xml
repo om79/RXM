@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/lnrfirst"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="@dimen/space_between_two_control"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            fontPath="Roboto-Bold.ttf"
+
+            android:text="Select Type"
+            android:textColor="@color/white"
+            android:id="@+id/textView"
+            android:textAllCaps="false"
+
+            android:layout_gravity="top|left"
+            android:layout_weight=".6"
+            android:textSize="@dimen/custom_font_Level_two"/>
+
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            fontPath="Roboto-Bold.ttf"
+            android:text="X"
+            android:src="@drawable/close"
+            android:textColor="@color/white"
+            android:background="@drawable/btncancel"
+            android:id="@+id/btncancel"
+            android:textSize="20sp"
+            android:padding="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+    <!-- Editext for Search -->
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search products.."
+        android:inputType="text"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:id="@+id/imageView22"
+        android:src="@drawable/dm_injection_site"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/lnrfirst"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnf1"
+        android:layout_marginTop="127dp"
+        android:padding="20dp"
+        android:layout_alignTop="@+id/imageView22"
+        android:layout_toLeftOf="@+id/rect"
+        android:layout_toStartOf="@+id/rect">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="1"
+            android:id="@+id/btnFront1"
+            android:background = "@drawable/rounded_button"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnf2"
+        android:padding="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_alignBottom="@+id/btnf3"
+        android:layout_marginStart="15dp"
+
+        android:layout_alignLeft="@+id/imageView22"
+        android:layout_alignStart="@+id/imageView22">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="2"
+            android:id="@+id/btnFront2"
+            android:background="@drawable/rounded_button"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnf3"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/btnf1"
+        android:layout_toLeftOf="@+id/btnb1"
+        >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="3"
+            android:id="@+id/btnFront3"
+            android:background="@drawable/rounded_button"
+            />
+    </LinearLayout>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rect"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:rv_type="rectangle"
+
+        android:layout_gravity="center"
+
+        app:rv_zoom="true"
+        android:layout_below="@+id/imageView22"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:background="@drawable/orgbtn"
+            android:textColor="@color/white"
+            android:id="@+id/btnok"
+
+            />
+
+    </com.andexert.library.RippleView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnb1"
+        android:padding="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_alignTop="@+id/btnb2"
+        android:layout_alignRight="@+id/rect"
+        android:layout_alignEnd="@+id/rect">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="1"
+            android:id="@+id/btnBack1"
+            android:background="@drawable/rounded_button"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnb2"
+        android:padding="20dp"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/btnf3"
+        android:layout_alignRight="@+id/imageView22"
+        android:layout_alignEnd="@+id/imageView22">
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="2"
+            android:id="@+id/btnBack2"
+            android:background="@drawable/rounded_button"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnb3"
+        android:layout_gravity="center_vertical"
+        android:padding="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignTop="@+id/btnb4"
+        android:layout_alignRight="@+id/imageView22"
+        android:layout_alignEnd="@+id/imageView22">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="3"
+            android:id="@+id/btnBack3"
+            android:background="@drawable/rounded_button"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnb4"
+        android:padding="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/btnf3"
+        android:layout_toLeftOf="@+id/btnb3"
+        android:layout_toStartOf="@+id/btnb3"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="4"
+            android:id="@+id/btnBack4"
+            android:background="@drawable/rounded_button"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
