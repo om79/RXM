@@ -214,14 +214,15 @@ public class AllSaltData extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+
                         hidePDialog();
                     }
                 });
 
-//        jsonObjReq_single.setRetryPolicy(new DefaultRetryPolicy(
-//                50000,
-//                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-//                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+        jsonObjReq_single.setRetryPolicy(new DefaultRetryPolicy(
+               50000,
+               DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+              DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
         queue.add(jsonObjReq_single);
 

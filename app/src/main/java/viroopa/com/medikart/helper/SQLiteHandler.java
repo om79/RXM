@@ -409,7 +409,13 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 ///////////////////////////   Buying app SEARCH TABLE created by Akhil   ///////////////////////////
 
 	//table for SEARCH MEDICINE DATA
-	private static final String TABLE_MEDIKART_SEARCH_DATA = "search_data_table";
+	private static final String TABLE_MEDIKART_SEARCH_DATA = "search_medicart_data_table";
+
+   // Waseem :Changed Table name Because  "TABLE_MEDIKART_SEARCH_DATA" and TABLE_Buying_SEARCH_DATA have same name
+	// TABLE_MEDIKART_SEARCH_DATA : Changed
+
+
+
 	// SEARCH MEDICINE DATA Columns names
 
 	private static final String MEDIKART_ID="id";
@@ -1448,8 +1454,6 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 		db.delete(TABLE_MED_REM_NOTIFICATION,null,null);
 		db.delete(TABLE_MEDIKART_SETTING,null,null);
 		db.delete(TABLE_MED_REM_MEDICINE_MASTER,null,null);
-
-
 
 
 		db.close();
