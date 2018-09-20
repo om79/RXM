@@ -7,12 +7,14 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -52,6 +54,7 @@ public class AllSaltData extends AppCompatActivity {
         globalVariable = (AppController) getApplicationContext();
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.drawable.rxlogo);
+
         setContentView(R.layout.activity_all_salt_data);
         Lst_all_salt=(ListView)findViewById(R.id.Lst_all_salt);
         getIntenet();
@@ -250,4 +253,18 @@ public class AllSaltData extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    /// Waseem  :  Managed back button
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+//
 }

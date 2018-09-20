@@ -11,6 +11,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -201,7 +202,16 @@ public class SaltDetail extends AppCompatActivity {
         nAddtocart_count = Integer.parseInt(pref.getString("addtocart_count", "0"));
         return true;
     }
+// Waseem : added on Acivityresult to manage home button on AllSaltData.java
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
+        if(requestCode == 99){
+            getIntenet();
+        }
+    }
+///////end
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -266,6 +276,7 @@ public class SaltDetail extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
 
     private void get_salt_information(String salt_id) {
         showPdialog("loading...");
@@ -370,7 +381,8 @@ public class SaltDetail extends AppCompatActivity {
                             Intent i_salt = new Intent(SaltDetail.this, AllSaltData.class);
                             i_salt.putExtra("Salt_id",pr_id);
                             i_salt.putExtra("total_count","10");
-                            startActivity(i_salt);
+
+                            startActivityForResult(i_salt,99);
                         }
                     });
                 }
