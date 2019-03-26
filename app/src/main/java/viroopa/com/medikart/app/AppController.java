@@ -14,6 +14,8 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
 import cat.ereza.customactivityoncrash.CustomActivityOnCrash;
+//import com.crashlytics.android.Crashlytics;
+//import io.fabric.sdk.android.Fabric;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import viroopa.com.medikart.R;
 import viroopa.com.medikart.util.LruBitmapCache;
@@ -402,6 +404,7 @@ public class AppController extends MultiDexApplication {
 	@Override
 	public void onCreate() {
 		super.onCreate();
+//		Fabric.with(this, new Crashlytics());
 		//CustomActivityOnCrash.install( this);
 
 		mInstance = this;

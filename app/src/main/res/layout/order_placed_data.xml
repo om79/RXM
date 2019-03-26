@@ -48,7 +48,7 @@
                 android:layout_alignParentStart="true" />
 
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="60dp"
 
                 android:layout_height="wrap_content"
@@ -57,7 +57,6 @@
                 android:gravity="center_vertical"
                 android:text="   Select Medicines"
                 android:padding="4dp"
-                app:customFont="Lato-regular.ttf"
                 android:textSize="@dimen/custom_font_Level_two"
                 android:id="@+id/view" />
         </LinearLayout>
@@ -82,7 +81,7 @@
                 android:layout_alignParentStart="true" />
 
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
 
@@ -90,7 +89,6 @@
                 android:gravity="center_vertical"
                 android:text="   Upload Prescription"
                 android:padding="4dp"
-                app:customFont="Lato-regular.ttf"
                 android:textSize="@dimen/custom_font_Level_two"
                 />
         </LinearLayout>
@@ -114,7 +112,7 @@
                 android:layout_alignParentStart="true" />
 
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
 
@@ -122,7 +120,6 @@
                 android:gravity="center_vertical"
                 android:text="Shipping Address"
                 android:padding="4dp"
-                app:customFont="Lato-regular.ttf"
                 android:textSize="@dimen/custom_font_Level_two"
                 />
         </LinearLayout>
@@ -147,14 +144,13 @@
                 android:layout_alignParentStart="true" />
 
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
                 android:gravity="center_vertical"
                 android:text="Confirmation"
                 android:padding="4dp"
-                app:customFont="Lato-regular.ttf"
                 android:textSize="@dimen/custom_font_Level_two"
                 />
         </LinearLayout>
@@ -178,7 +174,6 @@
             android:height="1dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-            fontPath="Lato-Regular.ttf"
             android:textSize="@dimen/custom_font_Level_two"
             android:background="#a2bacd"
             android:alpha=".5" />
@@ -216,7 +211,6 @@
                     android:textColor="#a2bacd"
                     android:layout_gravity="center"
                     android:text="     Select Medicines"
-                    fontPath="Lato-Regular.ttf"
                     android:textSize="@dimen/custom_font_Level_four"
                     />
             </LinearLayout>
@@ -237,7 +231,6 @@
                     android:layout_marginTop="13dp"
                     android:layout_height="15dp"
                     android:layout_gravity="center"
-                    fontPath="Lato-Regular.ttf"
                     android:src="@drawable/fill_circle_grey"
                     />
 
@@ -246,7 +239,6 @@
                     android:id="@+id/txt0Status2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    fontPath="Lato-Regular.ttf"
                     android:padding="2dp"
                     android:textColor="#a2bacd"
                     android:gravity="center"
@@ -279,7 +271,6 @@
                     android:id="@+id/txt0Status3"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    fontPath="Lato-Regular.ttf"
                     android:textSize="@dimen/custom_font_Level_four"
                     android:text="    Shipping Address"
                     android:padding="2dp"
@@ -310,7 +301,6 @@
                     android:id="@+id/txt0Status4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    fontPath="Lato-Regular.ttf"
                     android:padding="2dp"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/custom_font_Level_four"
@@ -361,7 +351,7 @@
                 android:adjustViewBounds="false"
                />
 
-            item<com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/s_medicine_txt"
@@ -370,24 +360,21 @@
                 android:layout_marginTop="5dp"
                 android:text="Thank you for your order"
                 android:layout_gravity="center_horizontal"
-                app:customFont="Lato-Bold.ttf"
                 android:textSize="@dimen/custom_font_Level_one"
                 />
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/s_medicine_txt"
             android:textColor="@color/rx_medikart_small_text_half_dark"
             android:gravity="center_vertical"
             android:layout_marginTop="5dp"
-                fontPath="fonts/Lato-Regular.ttf"
             android:text="Your order number is : "
             android:layout_gravity="center_horizontal"
-            app:customFont="Lato-Bold.ttf"
             android:textSize="@dimen/custom_font_Level_four"
             />
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/s_medicine_txt"
@@ -401,13 +388,12 @@
                 android:layout_marginBottom="25dp"
                 android:background="@drawable/order_placed_text"
                 android:layout_gravity="center_horizontal"
-                app:customFont="Lato-Bold.ttf"
                 android:textSize="@dimen/custom_font_Level_one"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp" />
 
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/rx_medikart_small_text_half_dark"
@@ -415,10 +401,8 @@
                 android:padding="5dp"
                 android:visibility="gone"
                 android:id="@+id/txt_payment_id"
-                fontPath="fonts/Lato-Regular.ttf"
                 android:text="Your Payment ID is: "
                 android:layout_gravity="center_horizontal"
-                app:customFont="Lato-Bold.ttf"
                 android:textSize="@dimen/custom_font_Level_four"
                 />
 
@@ -440,20 +424,19 @@
 
 
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
                 android:padding="10dp"
                 android:layout_marginLeft="5dp"
                 android:text="Order Details"
-                app:customFont="Lato-Bold.ttf"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="@dimen/custom_font_Level_two" />
 
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -463,7 +446,6 @@
                 android:text="24,february"
                 android:padding="4dp"
                 android:id="@+id/order_date"
-                app:customFont="Lato-Regular.ttf"
                 android:textSize="@dimen/custom_font_Level_two"
                 />
 
@@ -481,14 +463,13 @@
             tools:Text ="Prescrption lists"
             android:dividerHeight="1dp" />
 
-        <com.viroopa.Buying.MedikartTextview
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
 
             android:padding="10dp"
             android:layout_marginLeft="0dp"
             android:text="Price Summary"
-            app:customFont="Lato-Bold.ttf"
             android:textAllCaps="false"
             android:textColor="@color/rx_medikart_small_text_half_dark"
 
@@ -517,25 +498,23 @@
             android:orientation="vertical"
             >
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="Note :"
                 android:textSize="@dimen/custom_font_Level_four"
-                app:customFont="Lato-regular.ttf"
                 android:textColor="@color/btncolor_orange"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/textView76" />
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Our pharmacist will get in touch with you regarding your order and if your medicine is a prescribed one then kindly keep your prescription ready at the time of your medicine delivery as its mandotory as per goverment regulation. "
                 android:textColor="@color/rx_medikart_small_text_half_dark"
-                app:customFont="Lato-Regular.ttf"
                 android:textSize="@dimen/custom_font_Level_four"
                 android:paddingLeft="5dp"
                 android:paddingRight="30dp"
@@ -569,7 +548,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true">
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:id="@+id/txt_Next_first"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -583,7 +562,7 @@
                 android:textColor="@color/white"
                 />
 
-            <com.viroopa.Buying.MedikartTextview
+            <TextView
                 android:id="@+id/TotalPrice"
                 android:layout_width="wrap_content"
                 android:text=""
@@ -592,7 +571,6 @@
                 android:layout_marginEnd="10dp"
                 android:textSize="@dimen/custom_font_Level_one"
                 android:textColor="@color/white"
-                fontPath="Lato-Bold.ttf"
                 android:layout_height="30dp"
                 android:layout_toRightOf="@+id/txt_Next_first"
 

@@ -62,7 +62,7 @@
 
     </style>
 
-    <style name="MaterialDesignLibraryTheme.Light" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    <style name="MaterialDesignLibraryTheme.Light" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     </style>

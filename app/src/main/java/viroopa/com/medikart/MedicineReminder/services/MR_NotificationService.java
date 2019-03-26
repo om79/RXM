@@ -243,8 +243,6 @@ public class MR_NotificationService extends IntentService {
     }
 
     private void Showmr(){
-
-
         Intent Intenet_mr = new Intent(this, MRA_reminder_notification.class);
         Intenet_mr.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         Intenet_mr.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

@@ -26,7 +26,7 @@ public class AppConfig {
     
 
    // public static String URL_IPADDRESS = "https://www.rxmedikart.com/medikartapimobile";
-    public static String URL_IPADDRESS = "https://www.rxmedikart.com/medikartapi";
+    public static String URL_IPADDRESS = "http://www.medikart.com/medikartapi";
 
 
 

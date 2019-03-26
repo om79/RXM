@@ -503,6 +503,9 @@
             android:label="Add Pill Buddy"
 
             android:parentActivityName=".MedicineReminder.MRA_PillBuddy"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b1c457bef5795beccd8dc0ace61bcbea529ca560" />
     </application>
 
 </manifest>
