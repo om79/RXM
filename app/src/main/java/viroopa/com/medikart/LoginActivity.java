@@ -390,6 +390,11 @@ public class LoginActivity extends Activity {
                 error.toString();
             }
         });
+
+        cityrequest.setRetryPolicy(new DefaultRetryPolicy(
+                50000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         queue.add(cityrequest);
     }
 

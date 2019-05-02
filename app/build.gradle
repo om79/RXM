@@ -30,7 +30,7 @@ android {
     defaultConfig {
         applicationId "viroopa.com.medikart"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 22
         versionCode 21
         versionName "4.6"
         multiDexEnabled true
